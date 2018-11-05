@@ -6,4 +6,4 @@ blkid -c /dev/nul | awk -F: '{print "umount "$1}' > umount.sh
 echo "rm -rf ~/dev" >> umount.sh
 chmox +x umount.sh
 ./mount.sh
-crypto-finder -d  ~/temp/dev
+crypto-finder -d  ~/dev
