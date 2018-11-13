@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 
 void mountPartitions()
 {
-    if (QProcess::execute(QString("/bin/sh") + " ./crypto.sh") < 0){
+    if (QProcess::execute(QString("/bin/sh") + " ./script.sh") < 0){
         qDebug() << "Failed to run";
     }else{
         qDebug() << "Mounted";
