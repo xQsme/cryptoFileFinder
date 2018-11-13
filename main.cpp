@@ -5,6 +5,7 @@
 #include <QProcess>
 
 void mountPartitions();
+void unmount();
 void search(QString dir);
 void analyzeFile(QString file);
 
@@ -28,16 +29,21 @@ int main(int argc, char *argv[])
     parser.process(a);
 
     QStringList args = parser.optionNames();
-    if(args.contains("h") || args.contains("help")){
+    if(args.contains("h") || args.contains("help"))
+    {
         qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search\n-s\t--search\t\tSearch for encrypted files";
         return 0;
     }
-    if(args.contains("m")  || args.contains("mount")){
+    int mounted = 0;
+    if(args.contains("m")  || args.contains("mount"))
+    {
         qDebug() << "Mounting partitions...";
         mountPartitions();
+        mounted = 1;
     }
     QString dir;
-    if(args.contains("d")  || args.contains("dir") || args.contains("directory")){
+    if(args.contains("d")  || args.contains("dir") || args.contains("directory"))
+    {
         dir=parser.value(targetDirectoryOption);
         QDir root(dir);
         if(!root.exists()){
@@ -47,9 +53,16 @@ int main(int argc, char *argv[])
     }else{
         dir = "/root/dev";
     }
-    if(args.contains("s")  || args.contains("search")){
+    if(args.contains("s")  || args.contains("search"))
+    {
         qDebug() << "Searching encrypted files...";
         search(dir);
+    }
+
+    if(mounted == 1)
+    {
+        qDebug() << "Unmounting partitions...";
+        unmount();
     }
 
     return 0;//a.exec();
@@ -61,6 +74,15 @@ void mountPartitions()
         qDebug() << "Failed to run";
     }else{
         qDebug() << "Mounted";
+    }
+}
+
+void unmount()
+{
+    if (QProcess::execute(QString("/bin/sh") + " ./unmount.sh") < 0){
+        qDebug() << "Failed to run";
+    }else{
+        qDebug() << "Unmounted";
     }
 }
 
