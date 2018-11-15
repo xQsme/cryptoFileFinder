@@ -4,6 +4,7 @@
 #include <QDir>
 #include <QProcess>
 #include <QHash>
+#include <tgmath.h>
 
 int fast;
 int bytes;
@@ -92,9 +93,9 @@ int main(int argc, char *argv[])
             if(re.exactMatch(parser.value(targetBytesOption)))
             {
                 bytes=parser.value(targetBytesOption).toInt();
-                if(bytes < 512){
-                    bytes=512;
-                    qDebug() << "Byte value too low, defaulting to 512.";
+                if(bytes < 2048){
+                    bytes=2048;
+                    qDebug() << "Byte value too low, defaulting to 2048.";
                 }
             }
             else
@@ -105,7 +106,7 @@ int main(int argc, char *argv[])
         }
         else
         {
-            bytes=512;
+            bytes=2048;
         }
         fast=1;
     }
@@ -222,28 +223,18 @@ bool fileEntropy(QFile* file)
         }
     }
     QHashIterator<char, int> i(data);
-    float avg=0;
-    int divide=0;
-    while (i.hasNext()) {
-        i.next();
-        avg+=i.value();
-        divide++;
-    }
-    avg/=divide;
-    i.toFront();
-    int tooFar=0;
+    float entropy=0;
     while (i.hasNext())
     {
         i.next();
-        if(i.value() < avg*0.5 || i.value() > avg*1.5)
-        {
-            tooFar++;
-        }
+        float current = 1.0*i.value()/total;
+        entropy -= current*log2(current);
     }
-    if(tooFar > divide/2)
+    if(entropy<6)
     {
         return false;
     }
+    qDebug() << entropy;
     return true;
 }
 
@@ -261,5 +252,5 @@ QString fileLength()
 
 void help()
 {
-    qDebug() << "Usage:\n-m   --mount\t\t\tMount all partitions at \"~/dev\"\n-d   --dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s   --search\t\t\tSearch for encrypted files\n-o   --output\t\t\tOutput file (\"output.txt\" by default)\n-f   --fast\t\t\tRead only a certain number of bytes from each file\n-b   --bytes\t\t\tNumber of bytes to read when using the fast option (512 by default)";
+    qDebug() << "Usage:\n-m   --mount\t\t\tMount all partitions at \"~/dev\"\n-d   --dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s   --search\t\t\tSearch for encrypted files\n-o   --output\t\t\tOutput file (\"output.txt\" by default)\n-f   --fast\t\t\tRead only a certain number of bytes from each file\n-b   --bytes\t\t\tNumber of bytes to read when using the fast option (2048 by default)";
 }
