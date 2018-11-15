@@ -1,5 +1,4 @@
 # cryptoFileFinder
-find encrypted files in a system
 
 Requires qt5
 
