@@ -7,9 +7,9 @@
 
 void mountPartitions();
 void unmount();
-void search(QString dir, QTextStream* stream, int* count);
-void analyzeFile(QString file, QTextStream* stream, int* count);
-bool fileEntropy(QFile* file, int* total);
+void search(QString dir, QTextStream* stream, int* count, int fast);
+void analyzeFile(QString file, QTextStream* stream, int* count, int fast);
+bool fileEntropy(QFile* file, int* total, int fast);
 QString fileLength(int total);
 
 int main(int argc, char *argv[])
@@ -25,6 +25,9 @@ int main(int argc, char *argv[])
     QCommandLineOption searchOption(QStringList() << "s" << "search",
                                           QCoreApplication::translate("main", "Search for encrypted files"));
     parser.addOption(searchOption);
+    QCommandLineOption fastOption(QStringList() << "f" << "fast",
+                                          QCoreApplication::translate("main", "Read a maximum of 512 bytes from each file"));
+    parser.addOption(fastOption);
     QCommandLineOption targetOutputOption(QStringList() << "o" << "output",
                 QCoreApplication::translate("main", "Output file."),
                 QCoreApplication::translate("main", "file"));
@@ -38,7 +41,7 @@ int main(int argc, char *argv[])
     QStringList args = parser.optionNames();
     if(args.contains("h") || args.contains("help"))
     {
-        qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s\t--search\t\tSearch for encrypted files\n-o\t--output\t\tOutput file (\"output.txt\" by default)";
+        qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s\t--search\t\tSearch for encrypted files\n-o\t--output\t\tOutput file (\"output.txt\" by default)\n-f\t--fast\t\t\tRead a maxiumum of 512 bytes from each file";
         return 0;
     }
     int mounted = 0;
@@ -69,6 +72,11 @@ int main(int argc, char *argv[])
     {
         file="output.txt";
     }
+    int fast=0;
+    if(args.contains("f") || args.contains("fast"))
+    {
+        fast=1;
+    }
     if(args.contains("s")  || args.contains("search"))
     {
         qDebug() << "Searching encrypted files...";
@@ -76,7 +84,7 @@ int main(int argc, char *argv[])
         int count=0;
         output.open(QIODevice::WriteOnly | QIODevice::Text);
         QTextStream stream(&output);
-        search(dir, &stream, &count);
+        search(dir, &stream, &count, fast);
         qDebug() << "Found " << count << " encrypted files.";
     }
 
@@ -113,7 +121,7 @@ void unmount()
     }
 }
 
-void search(QString dir, QTextStream* stream, int* count)
+void search(QString dir, QTextStream* stream, int* count, int fast)
 {
     QDir root(dir);
     QList<QString> dirs;
@@ -127,30 +135,30 @@ void search(QString dir, QTextStream* stream, int* count)
             }
             else
             {
-                analyzeFile(file.absoluteFilePath(), stream, count);
+                analyzeFile(file.absoluteFilePath(), stream, count, fast);
             }
         }
     }
     foreach(QString d, dirs)
     {
-        search(d, stream, count);
+        search(d, stream, count, fast);
     }
 }
 
-void analyzeFile(QString file, QTextStream* stream, int* count)
+void analyzeFile(QString file, QTextStream* stream, int* count, int fast)
 {
     QFile fileToCheck(file);
     fileToCheck.open(QIODevice::ReadOnly | QIODevice::Text);
     int total=0;
-    if(fileEntropy(&fileToCheck, &total))
+    if(fileEntropy(&fileToCheck, &total, fast))
     {
         (*count)++;
-        *stream << file << ": encrypted with " + fileLength(total) + " block size." << endl;
-        qDebug() << file << ": encrypted with " + fileLength(total) + " block size.";
+        *stream << file << ": encrypted." << endl;
+        qDebug() << file << ": encrypted.";
     }
 }
 
-bool fileEntropy(QFile* file, int* total)
+bool fileEntropy(QFile* file, int* total, int fast)
 {
     if(file->size() < 32)
     {
@@ -168,6 +176,10 @@ bool fileEntropy(QFile* file, int* total)
         i.next();
         avg+=i.value();
         (*total)++;
+        if(fast == 1 && *total >= 512)
+        {
+            break;
+        }
     }
     avg/=(*total);
     i.toFront();

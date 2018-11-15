@@ -1,4 +1,4 @@
-/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.7z: encrypted with 32 bit multiple block size.
-/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.sh.gpg: encrypted with unknown block size.
-/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncrypted.7z: encrypted with unknown block size.
-/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncryptedFileName.7z: encrypted with unknown block size.
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.7z: encrypted.
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.sh.gpg: encrypted.
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncrypted.7z: encrypted.
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncryptedFileName.7z: encrypted.
