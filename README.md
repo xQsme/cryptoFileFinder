@@ -2,6 +2,8 @@
 
 Requires qt5
 
+The point of this program is to detect encrypted files within a system you don't have access to, so having a linux installation in a USB stick would be the typical usage scenario.
+
 Boot from USB, login as root and then:
 
 ```
@@ -18,4 +20,9 @@ Usage:
 -o   --output              Output file ("output.txt" by default)
 -f   --fast                Read only a certain number of bytes from each file
 -b   --bytes               Number of bytes to read when using the fast option (512 by default)
+```
+
+Common Usage:
+```
+./cryptoFinder -m -f -s
 ```
