@@ -9,8 +9,8 @@ void mountPartitions();
 void unmount();
 void search(QString dir, QTextStream* stream, int* count);
 void analyzeFile(QString file, QTextStream* stream, int* count);
-bool fileEntropy(QFile* file);
-QString fileLength(QFile* file);
+bool fileEntropy(QFile* file, int* total);
+QString fileLength(int total);
 
 int main(int argc, char *argv[])
 {
@@ -141,15 +141,16 @@ void analyzeFile(QString file, QTextStream* stream, int* count)
 {
     QFile fileToCheck(file);
     fileToCheck.open(QIODevice::ReadOnly | QIODevice::Text);
-    if(fileEntropy(&fileToCheck))
+    int total=0;
+    if(fileEntropy(&fileToCheck, &total))
     {
         (*count)++;
-        *stream << file << ": encrypted with " << fileLength(&fileToCheck) << " cypher." << endl;
-        qDebug() << file << ": encrypted with " << fileLength(&fileToCheck) << " cypher.";
+        *stream << file << ": encrypted with " + fileLength(total) + " block size." << endl;
+        qDebug() << file << ": encrypted with " + fileLength(total) + " block size.";
     }
 }
 
-bool fileEntropy(QFile* file)
+bool fileEntropy(QFile* file, int* total)
 {
     if(file->size() < 32)
     {
@@ -163,13 +164,12 @@ bool fileEntropy(QFile* file)
     }
     QHashIterator<char, int> i(count);
     float avg=0;
-    int total=0;
     while (i.hasNext()) {
         i.next();
         avg+=i.value();
-        total++;
+        (*total)++;
     }
-    avg/=total;
+    avg/=(*total);
     i.toFront();
     int tooFar=0;
     while (i.hasNext())
@@ -181,26 +181,21 @@ bool fileEntropy(QFile* file)
             tooFar++;
         }
     }
-    if(tooFar > total/2)
+    if(tooFar > (*total)/2)
     {
         return false;
     }
     return true;
 }
 
-QString fileLength(QFile* file)
+QString fileLength(int total)
 {
-   if(file->size()%256 == 0)
+   for(int i = 32; i <= 512; i+=32)
    {
-       return "256 bit";
+       if(total%i == 0)
+       {
+           return QString::number(i) + " bit multiple";
+       }
    }
-   if(file->size()%192 == 0)
-   {
-       return "192 bit";
-   }
-   if(file->size()%128 == 0)
-   {
-       return "128 bit";
-   }
-   return "Unknown";
+   return "unknown";
 }
