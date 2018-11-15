@@ -7,8 +7,8 @@
 
 void mountPartitions();
 void unmount();
-void search(QString dir, QTextStream* stream);
-void analyzeFile(QString file, QTextStream* stream);
+void search(QString dir, QTextStream* stream, int* count);
+void analyzeFile(QString file, QTextStream* stream, int* count);
 bool fileEntropy(QFile* file);
 QString fileLength(QFile* file);
 
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
     QStringList args = parser.optionNames();
     if(args.contains("h") || args.contains("help"))
     {
-        qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s\t--search\t\tSearch for encrypted files\n-o\t--output\tOutput file (\"output.txt\" by defualt)";
+        qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s\t--search\t\tSearch for encrypted files\n-o\t--output\t\tOutput file (\"output.txt\" by defualt)";
         return 0;
     }
     int mounted = 0;
@@ -73,10 +73,11 @@ int main(int argc, char *argv[])
     {
         qDebug() << "Searching encrypted files...";
         QFile output(file);
+        int count=0;
         output.open(QIODevice::WriteOnly | QIODevice::Text);
         QTextStream stream(&output);
-        search(dir, &stream);
-        qDebug() << "Done.";
+        search(dir, &stream, &count);
+        qDebug() << "Found " << count << " encrypted files.";
     }
 
     if(mounted == 1)
@@ -112,7 +113,7 @@ void unmount()
     }
 }
 
-void search(QString dir, QTextStream* stream)
+void search(QString dir, QTextStream* stream, int* count)
 {
     QDir root(dir);
     QList<QString> dirs;
@@ -126,23 +127,24 @@ void search(QString dir, QTextStream* stream)
             }
             else
             {
-                analyzeFile(file.absoluteFilePath(), stream);
+                analyzeFile(file.absoluteFilePath(), stream, count);
             }
         }
     }
     foreach(QString d, dirs)
     {
-        search(d, stream);
+        search(d, stream, count);
     }
 }
 
-void analyzeFile(QString file, QTextStream* stream)
+void analyzeFile(QString file, QTextStream* stream, int* count)
 {
     QFile fileToCheck(file);
     fileToCheck.open(QIODevice::ReadOnly | QIODevice::Text);
     if(fileEntropy(&fileToCheck))
     {
-        *stream << file << ": encrypted with " << fileLength(&fileToCheck) << " cypher.";
+        (*count)++;
+        *stream << file << ": encrypted with " << fileLength(&fileToCheck) << " cypher." << endl;
         qDebug() << file << ": encrypted with " << fileLength(&fileToCheck) << " cypher.";
     }
 }
