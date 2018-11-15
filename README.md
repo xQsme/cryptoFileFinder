@@ -19,7 +19,7 @@ Usage:
 -s   --search              Search for encrypted files
 -o   --output              Output file ("output.txt" by default)
 -f   --fast                Read only a certain number of bytes from each file
--b   --bytes               Number of bytes to read when using the fast option (512 by default)
+-b   --bytes               Number of bytes to read when using the fast option (2048 by default)
 ```
 
 Common Usage:
