@@ -12,7 +12,7 @@ cd cryptoFileFinder/release
 
 Usage:
 ```
--m  --mount               Mount all partitions
+-m  --mount                 Mount all partitions
 -d  --dir  --directory         Directory to search ("~/dev" by default)
 -s  --search		       Search for encrypted files
 -o  --output		       Output file ("output.txt" by default)
