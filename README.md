@@ -12,8 +12,10 @@ cd cryptoFileFinder/release
 
 Usage:
 ```
--m  --mount                    Mount all partitions
--d  --dir  --directory         Directory to search ("~/dev" by default)
--s  --search		       Search for encrypted files
--o  --output		       Output file ("output.txt" by default)
+-m   --mount               Mount all partitions at "~/dev"
+-d   --dir   --directory   Directory to search ("~/dev" by default)
+-s   --search              Search for encrypted files
+-o   --output              Output file ("output.txt" by default)
+-f   --fast                Read only a certain number of bytes from each file
+-b   --bytes               Number of bytes to read when using the fast option (512 by default)
 ```

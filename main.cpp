@@ -5,28 +5,39 @@
 #include <QProcess>
 #include <QHash>
 
+int fast;
+int bytes;
+int count;
+int total;
+
 void mountPartitions();
 void unmount();
-void search(QString dir, QTextStream* stream, int* count, int fast);
-void analyzeFile(QString file, QTextStream* stream, int* count, int fast);
-bool fileEntropy(QFile* file, int* total, int fast);
-QString fileLength(int total);
+void search(QString dir, QTextStream* stream);
+void analyzeFile(QString file, QTextStream* stream);
+bool fileEntropy(QFile* file);
+QString fileLength();
+void help();
 
 int main(int argc, char *argv[])
 {
+    int match=0;
     QCoreApplication a(argc, argv);
     QCommandLineParser parser;
     QCommandLineOption helpOption(QStringList() << "h" << "help",
-                                          QCoreApplication::translate("main", "Usage Help"));
+                QCoreApplication::translate("main", "Usage Help"));
     parser.addOption(helpOption);
     QCommandLineOption mountOption(QStringList() << "m" << "mount",
-                                          QCoreApplication::translate("main", "Mount all partitions"));
+                QCoreApplication::translate("main", "Mount all partitions"));
     parser.addOption(mountOption);
     QCommandLineOption searchOption(QStringList() << "s" << "search",
-                                          QCoreApplication::translate("main", "Search for encrypted files"));
+                QCoreApplication::translate("main", "Search for encrypted files"));
     parser.addOption(searchOption);
     QCommandLineOption fastOption(QStringList() << "f" << "fast",
-                                          QCoreApplication::translate("main", "Read a maximum of 512 bytes from each file"));
+                QCoreApplication::translate("main", "Read a maximum number of bytes from each file"));
+    QCommandLineOption targetBytesOption(QStringList() << "b" << "bytes",
+                QCoreApplication::translate("main", "Number of bytes to read from each file."),
+                QCoreApplication::translate("main", "bytes"));
+    parser.addOption(targetBytesOption);
     parser.addOption(fastOption);
     QCommandLineOption targetOutputOption(QStringList() << "o" << "output",
                 QCoreApplication::translate("main", "Output file."),
@@ -41,12 +52,13 @@ int main(int argc, char *argv[])
     QStringList args = parser.optionNames();
     if(args.contains("h") || args.contains("help"))
     {
-        qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s\t--search\t\tSearch for encrypted files\n-o\t--output\t\tOutput file (\"output.txt\" by default)\n-f\t--fast\t\t\tRead a maxiumum of 512 bytes from each file";
+        help();
         return 0;
     }
     int mounted = 0;
     if(args.contains("m")  || args.contains("mount"))
     {
+        match=1;
         qDebug() << "Mounting partitions...";
         mountPartitions();
         mounted = 1;
@@ -58,7 +70,7 @@ int main(int argc, char *argv[])
         QDir root(dir);
         if(!root.exists()){
             qDebug() << "Invalid directory: " << dir;
-            return 0;
+            return -1;
         }
     }else{
         dir = "/root/dev";
@@ -72,28 +84,54 @@ int main(int argc, char *argv[])
     {
         file="output.txt";
     }
-    int fast=0;
     if(args.contains("f") || args.contains("fast"))
     {
+        if(args.contains("b") || args.contains("bytes"))
+        {
+            QRegExp re("\\d*");
+            if(re.exactMatch(parser.value(targetBytesOption)))
+            {
+                bytes=parser.value(targetBytesOption).toInt();
+                if(bytes < 512){
+                    bytes=512;
+                    qDebug() << "Byte value too low, defaulting to 512.";
+                }
+            }
+            else
+            {
+                qDebug() << parser.value(fastOption) << " is not a valid number";
+                return -1;
+            }
+        }
+        else
+        {
+            bytes=512;
+        }
         fast=1;
+    }
+    else
+    {
+        fast=0;
     }
     if(args.contains("s")  || args.contains("search"))
     {
+        match=1;
         qDebug() << "Searching encrypted files...";
         QFile output(file);
-        int count=0;
+        count=0;
         output.open(QIODevice::WriteOnly | QIODevice::Text);
         QTextStream stream(&output);
-        search(dir, &stream, &count, fast);
+        search(dir, &stream);
         qDebug() << "Found " << count << " encrypted files.";
     }
-
     if(mounted == 1)
     {
         qDebug() << "Unmounting partitions...";
         unmount();
     }
-
+    if(match == 0){
+        help();
+    }
     return 0;//a.exec();
 }
 
@@ -121,7 +159,7 @@ void unmount()
     }
 }
 
-void search(QString dir, QTextStream* stream, int* count, int fast)
+void search(QString dir, QTextStream* stream)
 {
     QDir root(dir);
     QList<QString> dirs;
@@ -135,28 +173,27 @@ void search(QString dir, QTextStream* stream, int* count, int fast)
             }
             else
             {
-                analyzeFile(file.absoluteFilePath(), stream, count, fast);
+                analyzeFile(file.absoluteFilePath(), stream);
             }
         }
     }
     foreach(QString d, dirs)
     {
-        search(d, stream, count, fast);
+        search(d, stream);
     }
 }
 
-void analyzeFile(QString file, QTextStream* stream, int* count, int fast)
+void analyzeFile(QString file, QTextStream* stream)
 {
     QFile fileToCheck(file);
     fileToCheck.open(QIODevice::ReadOnly);
-    int total=0;
-    if(fileEntropy(&fileToCheck, &total, fast))
+    if(fileEntropy(&fileToCheck))
     {
-        (*count)++;
+        count++;
         if(fast==0)
         {
-            *stream << file + ": encrypted with " + fileLength(total) + " block size." << endl;
-            qDebug() << file + ": encrypted with " + fileLength(total) + " block size.";
+            *stream << file + ": encrypted with " + fileLength() + " block size." << endl;
+            qDebug() << file + ": encrypted with " + fileLength() + " block size.";
         }
         else
         {
@@ -166,28 +203,25 @@ void analyzeFile(QString file, QTextStream* stream, int* count, int fast)
     }
 }
 
-bool fileEntropy(QFile* file, int* total, int fast)
+bool fileEntropy(QFile* file)
 {
-    if(file->size() < 72)
+    if(file->size() < 32)
     {
         return false;
     }
-    QHash<char, int> count;
+    total=0;
+    QHash<char, int> data;
     while(!file->atEnd())
     {
         QByteArray read = file->read(1);
-        count[read[0]]++;
-        (*total)++;
-        if(fast == 1 && (*total) >= 512)
+        data[read[0]]++;
+        total++;
+        if(fast == 1 && total >= bytes)
         {
             break;
         }
     }
-    if(count.size() < 72)
-    {
-        return false;
-    }
-    QHashIterator<char, int> i(count);
+    QHashIterator<char, int> i(data);
     float avg=0;
     int divide=0;
     while (i.hasNext()) {
@@ -210,11 +244,10 @@ bool fileEntropy(QFile* file, int* total, int fast)
     {
         return false;
     }
-    qDebug() << count.size();
     return true;
 }
 
-QString fileLength(int total)
+QString fileLength()
 {
    for(int i = 32; i <= 512; i+=32)
    {
@@ -224,4 +257,9 @@ QString fileLength(int total)
        }
    }
    return "unknown";
+}
+
+void help()
+{
+    qDebug() << "Usage:\n-m   --mount\t\t\tMount all partitions at \"~/dev\"\n-d   --dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s   --search\t\t\tSearch for encrypted files\n-o   --output\t\t\tOutput file (\"output.txt\" by default)\n-f   --fast\t\t\tRead only a certain number of bytes from each file\n-b   --bytes\t\t\tNumber of bytes to read when using the fast option (512 by default)";
 }
