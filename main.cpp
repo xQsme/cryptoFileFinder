@@ -153,8 +153,8 @@ void analyzeFile(QString file, QTextStream* stream, int* count, int fast)
     if(fileEntropy(&fileToCheck, &total, fast))
     {
         (*count)++;
-        *stream << file << ": encrypted." << endl;
-        qDebug() << file << ": encrypted.";
+        *stream << file << endl;
+        qDebug() << file;
     }
 }
 
@@ -169,6 +169,10 @@ bool fileEntropy(QFile* file, int* total, int fast)
     {
         QByteArray read = file->read(1);
         count[read[0]]++;
+    }
+    if(count.size() < 35)
+    {
+        return false;
     }
     QHashIterator<char, int> i(count);
     float avg=0;
