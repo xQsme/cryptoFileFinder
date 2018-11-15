@@ -3,11 +3,14 @@
 #include <QCommandLineParser>
 #include <QDir>
 #include <QProcess>
+#include <QHash>
 
 void mountPartitions();
 void unmount();
-void search(QString dir);
-void analyzeFile(QString file);
+void search(QString dir, QTextStream* stream);
+void analyzeFile(QString file, QTextStream* stream);
+bool fileEntropy(QFile* file);
+QString fileLength(QFile* file);
 
 int main(int argc, char *argv[])
 {
@@ -22,7 +25,11 @@ int main(int argc, char *argv[])
     QCommandLineOption searchOption(QStringList() << "s" << "search",
                                           QCoreApplication::translate("main", "Search for encrypted files"));
     parser.addOption(searchOption);
-    QCommandLineOption targetDirectoryOption(QStringList() << "d" << "dir",
+    QCommandLineOption targetOutputOption(QStringList() << "o" << "output",
+                QCoreApplication::translate("main", "Output file."),
+                QCoreApplication::translate("main", "file"));
+    parser.addOption(targetOutputOption);
+    QCommandLineOption targetDirectoryOption(QStringList() << "d" << "dir" << "directory",
                 QCoreApplication::translate("main", "Specify <directory>."),
                 QCoreApplication::translate("main", "directory"));
     parser.addOption(targetDirectoryOption);
@@ -31,7 +38,7 @@ int main(int argc, char *argv[])
     QStringList args = parser.optionNames();
     if(args.contains("h") || args.contains("help"))
     {
-        qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search\n-s\t--search\t\tSearch for encrypted files";
+        qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s\t--search\t\tSearch for encrypted files\n-o\t--output\tOutput file (\"output.txt\" by defualt)";
         return 0;
     }
     int mounted = 0;
@@ -53,10 +60,23 @@ int main(int argc, char *argv[])
     }else{
         dir = "/root/dev";
     }
+    QString file;
+    if(args.contains("o") || args.contains("output"))
+    {
+        file=parser.value(targetOutputOption);
+    }
+    else
+    {
+        file="output.txt";
+    }
     if(args.contains("s")  || args.contains("search"))
     {
         qDebug() << "Searching encrypted files...";
-        search(dir);
+        QFile output(file);
+        output.open(QIODevice::WriteOnly | QIODevice::Text);
+        QTextStream stream(&output);
+        search(dir, &stream);
+        qDebug() << "Done.";
     }
 
     if(mounted == 1)
@@ -70,30 +90,35 @@ int main(int argc, char *argv[])
 
 void mountPartitions()
 {
-    if (QProcess::execute(QString("/bin/sh") + " ./script.sh") < 0){
-        qDebug() << "Failed to run";
-    }else{
-        qDebug() << "Mounted";
+    if (QProcess::execute("chmod +x script.sh") >= 0)
+    {
+        if (QProcess::execute(QString("/bin/sh") + " ./script.sh") < 0)
+        {
+            qDebug() << "Failed to run mount script.";
+        }
+        else
+        {
+            qDebug() << "Mounted at \"~/dev\".";
+        }
     }
 }
 
 void unmount()
 {
-    if (QProcess::execute(QString("/bin/sh") + " ./unmount.sh") < 0){
-        qDebug() << "Failed to run";
+    if (QProcess::execute(QString("/bin/sh") + " ./umount.sh") < 0){
+        qDebug() << "Failed to run unmount script.";
     }else{
-        qDebug() << "Unmounted";
+        qDebug() << "Unmounted all partitions.";
     }
 }
 
-void search(QString dir)
+void search(QString dir, QTextStream* stream)
 {
-    qDebug() << "searching: " << dir;
     QDir root(dir);
     QList<QString> dirs;
     foreach(QFileInfo file, root.entryInfoList())
     {
-        if(!dir.contains(file.absoluteFilePath()))
+        if(!root.absolutePath().contains(file.absoluteFilePath()))
         {
             if(file.isDir())
             {
@@ -101,17 +126,78 @@ void search(QString dir)
             }
             else
             {
-                analyzeFile(file.absoluteFilePath());
+                analyzeFile(file.absoluteFilePath(), stream);
             }
         }
     }
     foreach(QString d, dirs)
     {
-        search(d);
+        search(d, stream);
     }
 }
 
-void analyzeFile(QString file)
+void analyzeFile(QString file, QTextStream* stream)
 {
-    qDebug() << "Analyzing file: " << file;
+    QFile fileToCheck(file);
+    fileToCheck.open(QIODevice::ReadOnly | QIODevice::Text);
+    if(fileEntropy(&fileToCheck))
+    {
+        *stream << file << ": encrypted with " << fileLength(&fileToCheck) << " cypher.";
+        qDebug() << file << ": encrypted with " << fileLength(&fileToCheck) << " cypher.";
+    }
+}
+
+bool fileEntropy(QFile* file)
+{
+    QTextStream stream(file);
+    QHash<QString, int> count;
+    for(int i = 65; i <= 90; i++)
+    {
+        count.insert(QByteArray::fromHex(QString::number(i).toLocal8Bit()), 0);
+    }
+    while(!stream.atEnd())
+    {
+        count[stream.read(1).toLower()]++;
+    }
+    QHashIterator<QString, int> i(count);
+    int avg=0;
+    int total=0;
+    while (i.hasNext()) {
+        i.next();
+        avg+=i.value();
+        total++;
+    }
+    avg/=total;
+    i.toFront();
+    int tooFar=0;
+    while (i.hasNext())
+    {
+        i.next();
+        if(i.value() < avg*0.5 || i.value() > avg*1.5)
+        {
+            tooFar++;
+        }
+    }
+    if(tooFar > total/5)
+    {
+        return false;
+    }
+    return true;
+}
+
+QString fileLength(QFile* file)
+{
+   if(file->size()%256 == 0)
+   {
+       return "256 bit";
+   }
+   if(file->size()%192 == 0)
+   {
+       return "192 bit";
+   }
+   if(file->size()%128 == 0)
+   {
+       return "128 bit";
+   }
+   return "Unknown";
 }
