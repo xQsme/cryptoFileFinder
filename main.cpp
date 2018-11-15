@@ -168,7 +168,7 @@ void analyzeFile(QString file, QTextStream* stream, int* count, int fast)
 
 bool fileEntropy(QFile* file, int* total, int fast)
 {
-    if(file->size() < 64)
+    if(file->size() < 72)
     {
         return false;
     }
@@ -183,8 +183,7 @@ bool fileEntropy(QFile* file, int* total, int fast)
             break;
         }
     }
-    //Menos de 128 caracteres diferentes não interessa? Evitar falsos positivos
-    if(count.size() < 64)
+    if(count.size() < 72)
     {
         return false;
     }
@@ -202,7 +201,6 @@ bool fileEntropy(QFile* file, int* total, int fast)
     while (i.hasNext())
     {
         i.next();
-        //qDebug() << i.key() << ": " << i.value();
         if(i.value() < avg*0.5 || i.value() > avg*1.5)
         {
             tooFar++;
@@ -212,7 +210,7 @@ bool fileEntropy(QFile* file, int* total, int fast)
     {
         return false;
     }
-
+    qDebug() << count.size();
     return true;
 }
 
