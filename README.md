@@ -2,6 +2,8 @@
 
 Requires qt5
 
+The point of this program is to detect encrypted files withint a system you don't have access to, so having a linux installation in a USB stick would be the typical usage scenario.
+
 Boot from USB, login as root and then:
 
 ```
