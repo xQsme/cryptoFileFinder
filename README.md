@@ -6,7 +6,8 @@ Boot from USB, login as root and then:
 
 ```git clone https://github.com/xQsme/cryptoFileFinder.git
 cd cryptoFileFinder/release
-./cryptoFinder```
+./cryptoFinder
+```
 
 Usage:
 
