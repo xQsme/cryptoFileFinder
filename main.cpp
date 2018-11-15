@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
     QStringList args = parser.optionNames();
     if(args.contains("h") || args.contains("help"))
     {
-        qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s\t--search\t\tSearch for encrypted files\n-o\t--output\t\tOutput file (\"output.txt\" by defualt)";
+        qDebug() << "Usage:\n-m\t--mount\t\t\tMount all partitions\n-d\t--dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s\t--search\t\tSearch for encrypted files\n-o\t--output\t\tOutput file (\"output.txt\" by default)";
         return 0;
     }
     int mounted = 0;
