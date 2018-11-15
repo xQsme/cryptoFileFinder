@@ -75,6 +75,7 @@ int main(int argc, char *argv[])
     int fast=0;
     if(args.contains("f") || args.contains("fast"))
     {
+        qDebug() << "fast";
         fast=1;
     }
     if(args.contains("s")  || args.contains("search"))
@@ -148,19 +149,28 @@ void search(QString dir, QTextStream* stream, int* count, int fast)
 void analyzeFile(QString file, QTextStream* stream, int* count, int fast)
 {
     QFile fileToCheck(file);
-    fileToCheck.open(QIODevice::ReadOnly | QIODevice::Text);
+    fileToCheck.open(QIODevice::ReadOnly);
     int total=0;
     if(fileEntropy(&fileToCheck, &total, fast))
     {
         (*count)++;
-        *stream << file << endl;
-        qDebug() << file;
+        qDebug() << total;
+        if(fast==0)
+        {
+            *stream << file + ": encrypted with " + fileLength(total) + " block size." << endl;
+            qDebug() << file + ": encrypted with " + fileLength(total) + " block size.";
+        }
+        else
+        {
+            *stream << file << endl;
+            qDebug() << file;
+        }
     }
 }
 
 bool fileEntropy(QFile* file, int* total, int fast)
 {
-    if(file->size() < 32)
+    if(file->size() < 128)
     {
         return false;
     }
@@ -169,8 +179,14 @@ bool fileEntropy(QFile* file, int* total, int fast)
     {
         QByteArray read = file->read(1);
         count[read[0]]++;
+        (*total)++;
+        if(fast == 1 && (*total) >= 512)
+        {
+            break;
+        }
     }
-    if(count.size() < 35)
+    //Menos de 128 caracteres diferentes não interessa? Evitar falsos positivos
+    if(count.size() < 128)
     {
         return false;
     }
@@ -179,11 +195,6 @@ bool fileEntropy(QFile* file, int* total, int fast)
     while (i.hasNext()) {
         i.next();
         avg+=i.value();
-        (*total)++;
-        if(fast == 1 && *total >= 512)
-        {
-            break;
-        }
     }
     avg/=(*total);
     i.toFront();
@@ -201,6 +212,7 @@ bool fileEntropy(QFile* file, int* total, int fast)
     {
         return false;
     }
+
     return true;
 }
 
