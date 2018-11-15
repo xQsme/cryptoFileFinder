@@ -21,4 +21,6 @@ Usage:
 ```
 
 Common Usage:
-> ./cryptoFinder -m -f -s
+```
+./cryptoFinder -m -f -s
+```
