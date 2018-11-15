@@ -151,18 +151,18 @@ void analyzeFile(QString file, QTextStream* stream, int* count)
 
 bool fileEntropy(QFile* file)
 {
-    QTextStream stream(file);
-    QHash<QString, int> count;
-    for(int i = 65; i <= 90; i++)
+    if(file->size() < 32)
     {
-        count.insert(QByteArray::fromHex(QString::number(i).toLocal8Bit()), 0);
+        return false;
     }
-    while(!stream.atEnd())
+    QHash<char, int> count;
+    while(!file->atEnd())
     {
-        count[stream.read(1).toLower()]++;
+        QByteArray read = file->read(1);
+        count[read[0]]++;
     }
-    QHashIterator<QString, int> i(count);
-    int avg=0;
+    QHashIterator<char, int> i(count);
+    float avg=0;
     int total=0;
     while (i.hasNext()) {
         i.next();
@@ -175,12 +175,13 @@ bool fileEntropy(QFile* file)
     while (i.hasNext())
     {
         i.next();
+        //qDebug() << i.key() << ": " << i.value();
         if(i.value() < avg*0.5 || i.value() > avg*1.5)
         {
             tooFar++;
         }
     }
-    if(tooFar > total/5)
+    if(tooFar > total/2)
     {
         return false;
     }

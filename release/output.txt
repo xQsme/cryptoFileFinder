@@ -1,0 +1,5 @@
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/gpg/script.sh.gpg: encrypted with Unknown cypher.
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.7z: encrypted with Unknown cypher.
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.sh.gpg: encrypted with Unknown cypher.
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncrypted.7z: encrypted with Unknown cypher.
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncryptedFileName.7z: encrypted with Unknown cypher.
