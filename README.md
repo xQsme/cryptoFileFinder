@@ -19,3 +19,6 @@ Usage:
 -f   --fast                Read only a certain number of bytes from each file
 -b   --bytes               Number of bytes to read when using the fast option (512 by default)
 ```
+
+Common Usage:
+> ./cryptoFinder -m -f -s
