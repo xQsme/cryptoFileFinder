@@ -1,0 +1,5 @@
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.sh.gpg
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/care-mobile.7z
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncrypted.7z
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.7z
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncryptedFileName.jar
