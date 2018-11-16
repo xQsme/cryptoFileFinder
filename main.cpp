@@ -101,7 +101,6 @@ int main(int argc, char *argv[])
         }
         fast=1;
     }
-    int searching=0;
     if(args.contains("s")  || args.contains("search"))
     {
         int toUnmount=0;
@@ -110,7 +109,6 @@ int main(int argc, char *argv[])
             toUnmount=1;
         }
         match=1;
-        searching=1;
         Search s;
         s.setStuff(dir, file, fast, bytes, toUnmount);
         s.search();

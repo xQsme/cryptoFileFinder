@@ -16,9 +16,9 @@ void Search::setStuff(QString dir, QString file, int fast, int bytes, int toUnmo
 
 void Search::search()
 {
-    QFile output(file);
-    output.open(QIODevice::WriteOnly | QIODevice::Text);
-    QTextStream stream(&output);
+    output = new QFile(file);
+    output->open(QIODevice::WriteOnly | QIODevice::Text);
+    QTextStream stream(output);
     totalThreads = QThread::idealThreadCount();
     QList<Thread*> threads;
     for(int i = 0; i < totalThreads; i++)
@@ -27,8 +27,6 @@ void Search::search()
         connect(threads[i], SIGNAL(ended(int)), this, SLOT(ended(int)));
     }
     qDebug() << "Searching encrypted files with " + QString::number(totalThreads) + " thread(s).";
-    endedThreads=0;
-    count=0;
     for(int i = 0; i < totalThreads; i++)
     {
         threads[i]->run();
@@ -41,6 +39,7 @@ void Search::ended(int found)
     count+=found;
     if(endedThreads==totalThreads)
     {
+        output->close();
         if(toUnmount == 1)
         {
             qDebug() << "Unmounting partitions...";

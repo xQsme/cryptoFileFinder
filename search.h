@@ -15,6 +15,7 @@ public:
 private:
     QString dir;
     QString file;
+    QFile* output;
     QCoreApplication* app;
     int totalThreads=0;
     int endedThreads=0;

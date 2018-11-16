@@ -1,2 +1,8 @@
-/usr/bin/phar
-/usr/bin/phar.phar
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.7z
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncryptedFileName.7z
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/shrinkedAndroid.jar
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.sh.gpg
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/WP.jpg
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/care-mobile.7z
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncrypted.7z
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/WP.png

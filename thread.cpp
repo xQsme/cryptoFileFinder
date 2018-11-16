@@ -64,6 +64,7 @@ void Thread::analyzeFile(QString file, QTextStream* stream)
             qDebug() << file;
         }
     }
+    fileToCheck.close();
 }
 
 bool Thread::fileEntropy(QFile* file)
