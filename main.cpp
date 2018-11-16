@@ -51,11 +51,6 @@ int main(int argc, char *argv[])
         help();
         return 0;
     }
-    if(args.contains("u") || args.contains("umount") || args.contains("umount"))
-    {
-        qDebug() << "Unmounting partitions...";
-        return unmount();
-    }
     if(args.contains("m")  || args.contains("mount"))
     {
         match=1;
@@ -109,11 +104,24 @@ int main(int argc, char *argv[])
     int searching=0;
     if(args.contains("s")  || args.contains("search"))
     {
+        int toUnmount=0;
+        if(args.contains("u") || args.contains("umount") || args.contains("umount"))
+        {
+            toUnmount=1;
+        }
         match=1;
         searching=1;
         Search s;
-        s.setStuff(dir, file, fast, bytes);
+        s.setStuff(&a, dir, file, fast, bytes, toUnmount);
         s.search();
+    }
+    else
+    {
+        if(args.contains("u") || args.contains("umount") || args.contains("umount"))
+        {
+            qDebug() << "Unmounting partitions...";
+            return unmount();
+        }
     }
     if(match == 0){
         help();
@@ -146,7 +154,7 @@ int unmount()
         qDebug() << "Failed to run unmount script.";
         return -1;
     }
-    qDebug() << "Unmounted all partitions.";
+    qDebug() << "Done unmounting.";
     return 0;
 }
 

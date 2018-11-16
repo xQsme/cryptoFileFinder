@@ -5,12 +5,14 @@ Search::Search(QObject *parent) : QObject(parent)
 
 }
 
-void Search::setStuff(QString dir, QString file, int fast, int bytes)
+void Search::setStuff(QCoreApplication* app, QString dir, QString file, int fast, int bytes, int toUnmount)
 {
+    this->app=app;
     this->dir=dir;
     this->file=file;
     this->fast=fast;
     this->bytes=bytes;
+    this->toUnmount=toUnmount;
 }
 
 void Search::search()
@@ -40,6 +42,15 @@ void Search::ended(int found)
     count+=found;
     if(endedThreads==totalThreads)
     {
+        if(toUnmount == 1)
+        {
+            qDebug() << "Unmounting partitions...";
+            if (QProcess::execute(QString("/bin/sh") + " ./umount.sh") < 0){
+                qDebug() << "Failed to run unmount script.";
+            }
+            qDebug() << "Done unmounting.";
+        }
         qDebug() << "Found " + QString::number(count) + " encryted files.";
+        app->quit();
     }
 }
