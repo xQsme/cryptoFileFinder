@@ -14,7 +14,7 @@ cd cryptoFileFinder/release
 
 Usage:
 ```
--m   --mount                  Mount all partitions at "~/dev"
+-m   --mnt      --mount       Mount all partitions at "~/dev"
 -u   --umount   --unmount     Unmount all partitions at "~/dev" 
 -d   --dir      --directory   Directory to search ("~/dev" by default)
 -s   --search                 Search for encrypted files
