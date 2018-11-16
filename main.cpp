@@ -4,7 +4,7 @@
 #include "search.h"
 
 void mountPartitions();
-void unmount();
+int unmount();
 void search(QString dir, QTextStream* stream);
 void analyzeFile(QString file, QTextStream* stream);
 bool fileEntropy(QFile* file);
@@ -22,6 +22,9 @@ int main(int argc, char *argv[])
     QCommandLineOption mountOption(QStringList() << "m" << "mount",
                 QCoreApplication::translate("main", "Mount all partitions"));
     parser.addOption(mountOption);
+    QCommandLineOption unmountOption(QStringList() << "u" << "umount" << "unmount",
+                QCoreApplication::translate("main", "Mount all partitions"));
+    parser.addOption(unmountOption);
     QCommandLineOption searchOption(QStringList() << "s" << "search",
                 QCoreApplication::translate("main", "Search for encrypted files"));
     parser.addOption(searchOption);
@@ -48,13 +51,16 @@ int main(int argc, char *argv[])
         help();
         return 0;
     }
-    int mounted = 0;
+    if(args.contains("u") || args.contains("umount") || args.contains("umount"))
+    {
+        qDebug() << "Unmounting partitions...";
+        return unmount();
+    }
     if(args.contains("m")  || args.contains("mount"))
     {
         match=1;
         qDebug() << "Mounting partitions...";
         mountPartitions();
-        mounted = 1;
     }
     QString dir;
     if(args.contains("d")  || args.contains("dir") || args.contains("directory"))
@@ -109,11 +115,6 @@ int main(int argc, char *argv[])
         s.setStuff(dir, file, fast, bytes);
         s.search();
     }
-    if(mounted == 1)
-    {
-        qDebug() << "Unmounting partitions...";
-        unmount();
-    }
     if(match == 0){
         help();
     }
@@ -139,16 +140,23 @@ void mountPartitions()
     }
 }
 
-void unmount()
+int unmount()
 {
     if (QProcess::execute(QString("/bin/sh") + " ./umount.sh") < 0){
         qDebug() << "Failed to run unmount script.";
-    }else{
-        qDebug() << "Unmounted all partitions.";
+        return -1;
     }
+    qDebug() << "Unmounted all partitions.";
+    return 0;
 }
 
 void help()
 {
-    qDebug() << "Usage:\n-m   --mount\t\t\tMount all partitions at \"~/dev\"\n-d   --dir\t--directory\tDirectory to search (\"~/dev\" by default)\n-s   --search\t\t\tSearch for encrypted files\n-o   --output\t\t\tOutput file (\"output.txt\" by default)\n-f   --fast\t\t\tRead only a certain number of bytes from each file\n-b   --bytes\t\t\tNumber of bytes to read when using the fast option (2048 by default)";
+    qDebug() << "Usage:\n-m   --mount\t\t\tMount all partitions at \"~/dev\"" <<
+                "\n-u   --umount\t--unmount\tUnmount all partitions at \"~/dev\"" <<
+                "\n-d   --dir\t--directory\tDirectory to search (\"~/dev\" by default)" <<
+                "\n-s   --search\t\t\tSearch for encrypted files" <<
+                "\n-o   --output\t\t\tOutput file (\"output.txt\" by default)" <<
+                "\n-f   --fast\t\t\tRead only a certain number of bytes from each file" <<
+                "\n-b   --bytes\t\t\tNumber of bytes to read when using the fast option (2048 by default)";
 }
