@@ -5,9 +5,8 @@ Search::Search(QObject *parent) : QObject(parent)
 
 }
 
-void Search::setStuff(QCoreApplication* app, QString dir, QString file, int fast, int bytes, int toUnmount)
+void Search::setStuff(QString dir, QString file, int fast, int bytes, int toUnmount)
 {
-    this->app=app;
     this->dir=dir;
     this->file=file;
     this->fast=fast;
@@ -51,6 +50,5 @@ void Search::ended(int found)
             qDebug() << "Done unmounting.";
         }
         qDebug() << "Found " + QString::number(count) + " encryted files.";
-        app->quit();
     }
 }

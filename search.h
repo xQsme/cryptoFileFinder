@@ -10,7 +10,7 @@ class Search : public QObject
     Q_OBJECT
 public:
     explicit Search(QObject *parent = nullptr);
-    void setStuff(QCoreApplication* app, QString dir, QString file, int fast, int bytes, int toUnmount);
+    void setStuff(QString dir, QString file, int fast, int bytes, int toUnmount);
     void search();
 private:
     QString dir;

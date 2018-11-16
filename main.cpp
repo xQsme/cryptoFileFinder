@@ -112,7 +112,7 @@ int main(int argc, char *argv[])
         match=1;
         searching=1;
         Search s;
-        s.setStuff(&a, dir, file, fast, bytes, toUnmount);
+        s.setStuff(dir, file, fast, bytes, toUnmount);
         s.search();
     }
     else
@@ -125,10 +125,6 @@ int main(int argc, char *argv[])
     }
     if(match == 0){
         help();
-    }
-    if(searching == 1)
-    {
-        return a.exec();
     }
     return 0;
 }
