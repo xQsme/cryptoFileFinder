@@ -100,9 +100,11 @@ int main(int argc, char *argv[])
         }
         fast=1;
     }
+    int searching=0;
     if(args.contains("s")  || args.contains("search"))
     {
         match=1;
+        searching=1;
         Search s;
         s.setStuff(dir, file, fast, bytes);
         s.search();
@@ -115,7 +117,11 @@ int main(int argc, char *argv[])
     if(match == 0){
         help();
     }
-    return a.exec();
+    if(searching == 1)
+    {
+        return a.exec();
+    }
+    return 0;
 }
 
 void mountPartitions()

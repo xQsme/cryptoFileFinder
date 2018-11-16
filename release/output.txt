@@ -3,3 +3,4 @@
 /home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncrypted.7z
 /home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/script.7z
 /home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/scriptEncryptedFileName.jar
+/home/xqsme/Git/build-cryptoFinder-Desktop-Release/toAnalyze/WP.jpg
