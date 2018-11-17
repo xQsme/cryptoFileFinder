@@ -40,7 +40,7 @@ void Search::ended(int found)
     if(endedThreads==totalThreads)
     {
         output->close();
-        if(toUnmount == 1)
+        if(toUnmount)
         {
             qDebug() << "Unmounting partitions...";
             if (QProcess::execute(QString("/bin/sh") + " ./umount.sh") < 0){

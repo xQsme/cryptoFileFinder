@@ -26,7 +26,7 @@ void Thread::search(QString dir, QTextStream* stream)
     {
         if(!root.absolutePath().contains(file.absoluteFilePath()))
         {
-            if(file.isDir())
+            if(file.isDir() && file.absoluteFilePath().left(2)!="/.")
             {
                 dirs.append(file.absoluteFilePath());
             }
@@ -53,7 +53,7 @@ void Thread::analyzeFile(QString file, QTextStream* stream)
     if(fileEntropy(&fileToCheck))
     {
         count++;
-        if(fast==0)
+        if(!fast)
         {
             *stream << file + ": encrypted with " + fileLength() + " block size." << endl;
             qDebug() << file + ": encrypted with " + fileLength() + " block size.";
@@ -67,11 +67,11 @@ void Thread::analyzeFile(QString file, QTextStream* stream)
     fileToCheck.close();
 }
 
-bool Thread::fileEntropy(QFile* file)
+int Thread::fileEntropy(QFile* file)
 {
     if(file->size() < 32)
     {
-        return false;
+        return 0;
     }
     total=0;
     QHash<char, int> data;
@@ -80,7 +80,7 @@ bool Thread::fileEntropy(QFile* file)
         QByteArray read = file->read(1);
         data[read[0]]++;
         total++;
-        if(fast == 1 && total >= bytes)
+        if(fast && total >= bytes)
         {
             break;
         }
@@ -95,16 +95,16 @@ bool Thread::fileEntropy(QFile* file)
     }
     if(entropy<6)
     {
-        return false;
+        return 0;
     }
-    return true;
+    return 1;
 }
 
 QString Thread::fileLength()
 {
    for(int i = 32; i <= 512; i+=32)
    {
-       if(total%i == 0)
+       if(!total%i)
        {
            return QString::number(i) + " bit multiple";
        }

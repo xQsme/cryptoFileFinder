@@ -5,9 +5,6 @@
 
 void mountPartitions();
 int unmount();
-void search(QString dir, QTextStream* stream);
-void analyzeFile(QString file, QTextStream* stream);
-bool fileEntropy(QFile* file);
 QString fileLength();
 void help();
 
@@ -121,7 +118,7 @@ int main(int argc, char *argv[])
             return unmount();
         }
     }
-    if(match == 0){
+    if(!match){
         help();
     }
     return 0;

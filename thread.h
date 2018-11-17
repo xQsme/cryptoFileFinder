@@ -20,7 +20,7 @@ private:
     int currentFile;
     void search(QString dir, QTextStream* stream);
     void analyzeFile(QString file, QTextStream* stream);
-    bool fileEntropy(QFile* file);
+    int fileEntropy(QFile* file);
     QString fileLength();
 signals:
     void ended(int thread);
