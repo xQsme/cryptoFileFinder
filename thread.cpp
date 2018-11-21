@@ -97,6 +97,12 @@ int Thread::fileEntropy(QFile* file)
     {
         return 0;
     }
+    return getchi2(data);
+}
+
+int Thread::getchi2(QHash<char, int> data){
+    QHashIterator<char, int> i(data);
+
     return 1;
 }
 

@@ -22,6 +22,7 @@ private:
     void analyzeFile(QString file, QTextStream* stream);
     int fileEntropy(QFile* file);
     QString fileLength();
+    int getchi2(QHash<char, int> data);
 signals:
     void ended(int thread);
 };
