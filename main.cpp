@@ -1,4 +1,3 @@
-#include <QCoreApplication>
 #include <QtCore>
 #include "thread.h"
 #include "search.h"

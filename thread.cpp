@@ -113,7 +113,7 @@ int Thread::compressionVsEncryption(QHash<char, int> data, int max){
     {
         i.next();
         chi2+=(i.value()-avg)*(i.value()-avg)/avg;
-        if(((i.value()*1.0/max)+(i.value()*1.0/max)) <= 1){
+        if(i.value()+avg <= max){
             nSuccess++;
         }
     }
