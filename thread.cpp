@@ -87,23 +87,43 @@ int Thread::fileEntropy(QFile* file)
     }
     QHashIterator<char, int> i(data);
     float entropy=0;
+    int max=0;
     while (i.hasNext())
     {
         i.next();
         float current = 1.0*i.value()/total;
         entropy -= current*log2(current);
+        if(i.value() > max){
+            max = i.value();
+        }
     }
     if(entropy<6)
     {
         return 0;
     }
-    return getchi2(data);
+    return compressionVsEncryption(data, max);
 }
 
-int Thread::getchi2(QHash<char, int> data){
+int Thread::compressionVsEncryption(QHash<char, int> data, int max){
+    float avg = total/data.keys().length();
     QHashIterator<char, int> i(data);
-
-    return 1;
+    float chi2=0;
+    float nSuccess=0;
+    while (i.hasNext())
+    {
+        i.next();
+        chi2+=(i.value()-avg)*(i.value()-avg)/avg;
+        if(((i.value()*1.0/max)+(i.value()*1.0/max)) <= 1){
+            nSuccess++;
+        }
+    }
+    float piDiff=abs((nSuccess/data.keys().length()-M_PI_4)/M_PI_4);
+    if(chi2 < 450)
+    {
+        qDebug() << "Pi error: " << piDiff;
+        return 1;
+    }
+    return 0;
 }
 
 QString Thread::fileLength()
