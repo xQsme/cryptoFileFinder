@@ -91,9 +91,9 @@ int Thread::fileEntropy(QFile* file)
     if(compressionVsEncryption(data, file))
     {
         qDebug() << "Size:" << file->size();
-        *stream << "Size: " << file->size() << endl;
+        *stream << file->size() << ";";
         qDebug() << "Entropy:" << entropy;
-        *stream << "Entropy: " << entropy << endl;
+        *stream << entropy << ";";
         return 1;
     }
     return 0;
@@ -111,7 +111,7 @@ int Thread::compressionVsEncryption(QHash<char, int> data, QFile* file){
     if(chi2 < 300)
     {
         qDebug() << "Chi^2:" << chi2;
-        *stream << "Chi2: " << chi2 << endl;
+        *stream << chi2 << ";";
         return 1;
     }
     return 0;
