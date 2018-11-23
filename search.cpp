@@ -5,12 +5,10 @@ Search::Search(QObject *parent) : QObject(parent)
 
 }
 
-void Search::setStuff(QString dir, QString file, int fast, int bytes, int toUnmount)
+void Search::setStuff(QString dir, QString file, int toUnmount)
 {
     this->dir=dir;
     this->file=file;
-    this->fast=fast;
-    this->bytes=bytes;
     this->toUnmount=toUnmount;
 }
 
@@ -23,7 +21,7 @@ void Search::search()
     QList<Thread*> threads;
     for(int i = 0; i < totalThreads; i++)
     {
-        threads.append(new Thread(i, totalThreads, dir, &stream, fast, bytes));
+        threads.append(new Thread(i, totalThreads, dir, &stream));
         connect(threads[i], SIGNAL(ended(int)), this, SLOT(ended(int)));
     }
     qDebug() << "Searching encrypted files with " + QString::number(totalThreads) + " thread(s).";

@@ -6,23 +6,21 @@ class Thread : public QThread
 {
     Q_OBJECT
 public:
-    Thread(int thread, int totalThreads, QString dir, QTextStream* stream, int fast, int bytes);
+    Thread(int thread, int totalThreads, QString dir, QTextStream* stream);
     void run();
 private:
     int thread;
     int totalThreads;
     QString dir;
     QTextStream* stream;
-    int fast;
-    int bytes;
     int total;
     int count;
     int currentFile;
-    void search(QString dir, QTextStream* stream);
-    void analyzeFile(QString file, QTextStream* stream);
+    void search(QString dir);
+    void analyzeFile(QString file);
     int fileEntropy(QFile* file);
     QString fileLength();
-    int compressionVsEncryption(QHash<char, int> data, int max, QFile* file);
+    int compressionVsEncryption(QHash<char, int> data, QFile* file);
     int approximatePi(QFile* file);
 signals:
     void ended(int thread);

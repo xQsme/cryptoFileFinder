@@ -1,24 +1,22 @@
 #include "thread.h"
 
-Thread::Thread(int thread, int totalThreads, QString dir, QTextStream* stream, int fast, int bytes)
+Thread::Thread(int thread, int totalThreads, QString dir, QTextStream* stream)
 {
     this->thread=thread;
     this->totalThreads=totalThreads;
     this->dir=dir;
     this->stream=stream;
-    this->fast=fast;
-    this->bytes=bytes;
     currentFile=0;
     count=0;
 }
 
 void Thread::run()
 {
-    search(dir, stream);
+    search(dir);
     emit ended(count);
 }
 
-void Thread::search(QString dir, QTextStream* stream)
+void Thread::search(QString dir)
 {
     QDir root(dir);
     QList<QString> dirs;
@@ -35,34 +33,26 @@ void Thread::search(QString dir, QTextStream* stream)
                 currentFile++;
                 if(currentFile % totalThreads == thread)
                 {
-                    analyzeFile(file.absoluteFilePath(), stream);
+                    analyzeFile(file.absoluteFilePath());
                 }
             }
         }
     }
     foreach(QString d, dirs)
     {
-        search(d, stream);
+        search(d);
     }
 }
 
-void Thread::analyzeFile(QString file, QTextStream* stream)
+void Thread::analyzeFile(QString file)
 {
     QFile fileToCheck(file);
     fileToCheck.open(QIODevice::ReadOnly);
     if(fileEntropy(&fileToCheck))
     {
         count++;
-        if(!fast)
-        {
-            *stream << file + ": encrypted with " + fileLength() + " block size." << endl;
-            qDebug() << file + ": encrypted with " + fileLength() + " block size.";
-        }
-        else
-        {
-            *stream << file << endl;
-            qDebug() << file;
-        }
+        *stream << file << endl;
+        qDebug() << file;
     }
     fileToCheck.close();
 }
@@ -80,10 +70,6 @@ int Thread::fileEntropy(QFile* file)
         QByteArray read = file->read(1);
         data[read[0]]++;
         total++;
-        if(fast && total >= bytes)
-        {
-            break;
-        }
     }
     QHashIterator<char, int> i(data);
     float entropy=0;
@@ -101,10 +87,19 @@ int Thread::fileEntropy(QFile* file)
     {
         return 0;
     }
-    return compressionVsEncryption(data, max, file);
+
+    if(compressionVsEncryption(data, file))
+    {
+        qDebug() << "Size:" << file->size();
+        *stream << "Size: " << file->size() << endl;
+        qDebug() << "Entropy:" << entropy;
+        *stream << "Entropy: " << entropy << endl;
+        return 1;
+    }
+    return 0;
 }
 
-int Thread::compressionVsEncryption(QHash<char, int> data, int max, QFile* file){
+int Thread::compressionVsEncryption(QHash<char, int> data, QFile* file){
     float avg = total/data.keys().length();
     QHashIterator<char, int> i(data);
     float chi2=0;
@@ -113,8 +108,10 @@ int Thread::compressionVsEncryption(QHash<char, int> data, int max, QFile* file)
         i.next();
         chi2+=(i.value()-avg)*(i.value()-avg)/avg;
     }
-    if(chi2 < 450 && approximatePi(file))
+    if(chi2 < 300)
     {
+        qDebug() << "Chi^2:" << chi2;
+        *stream << "Chi2: " << chi2 << endl;
         return 1;
     }
     return 0;
@@ -138,10 +135,6 @@ int Thread::approximatePi(QFile* file)
         count++;
         if(x+y <= 128 && x+y >= -128){
             nSuccess++;
-        }
-        if(fast && count >= bytes/2)
-        {
-            break;
         }
     }
     float piDiff=abs((1.0*nSuccess/count-M_PI_4)/M_PI_4);

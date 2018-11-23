@@ -24,13 +24,6 @@ int main(int argc, char *argv[])
     QCommandLineOption searchOption(QStringList() << "s" << "search",
                 QCoreApplication::translate("main", "Search for encrypted files"));
     parser.addOption(searchOption);
-    QCommandLineOption fastOption(QStringList() << "f" << "fast",
-                QCoreApplication::translate("main", "Read a maximum number of bytes from each file"));
-    QCommandLineOption targetBytesOption(QStringList() << "b" << "bytes",
-                QCoreApplication::translate("main", "Number of bytes to read from each file."),
-                QCoreApplication::translate("main", "bytes"));
-    parser.addOption(targetBytesOption);
-    parser.addOption(fastOption);
     QCommandLineOption targetOutputOption(QStringList() << "o" << "output",
                 QCoreApplication::translate("main", "Output file."),
                 QCoreApplication::translate("main", "file"));
@@ -74,29 +67,6 @@ int main(int argc, char *argv[])
     {
         file="output.txt";
     }
-    int fast=0;
-    int bytes=2048;
-    if(args.contains("f") || args.contains("fast"))
-    {
-        if(args.contains("b") || args.contains("bytes"))
-        {
-            QRegExp re("\\d*");
-            if(re.exactMatch(parser.value(targetBytesOption)))
-            {
-                bytes=parser.value(targetBytesOption).toInt();
-                if(bytes < 2048){
-                    bytes=2048;
-                    qDebug() << "Byte value too low, defaulting to 2048.";
-                }
-            }
-            else
-            {
-                qDebug() << parser.value(fastOption) << " is not a valid number";
-                return -1;
-            }
-        }
-        fast=1;
-    }
     if(args.contains("s")  || args.contains("search"))
     {
         int toUnmount=0;
@@ -106,7 +76,7 @@ int main(int argc, char *argv[])
         }
         match=1;
         Search s;
-        s.setStuff(dir, file, fast, bytes, toUnmount);
+        s.setStuff(dir, file, toUnmount);
         s.search();
     }
     else
@@ -154,7 +124,5 @@ void help()
                 "\n-u   --umount\t--unmount\tUnmount all partitions at \"~/dev\"" <<
                 "\n-d   --dir\t--directory\tDirectory to search (\"~/dev\" by default)" <<
                 "\n-s   --search\t\t\tSearch for encrypted files" <<
-                "\n-o   --output\t\t\tOutput file (\"output.txt\" by default)" <<
-                "\n-f   --fast\t\t\tRead only a certain number of bytes from each file" <<
-                "\n-b   --bytes\t\t\tNumber of bytes to read when using the fast option (2048 by default)";
+                "\n-o   --output\t\t\tOutput file (\"output.txt\" by default)";
 }
