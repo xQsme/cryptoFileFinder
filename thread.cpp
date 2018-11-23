@@ -101,29 +101,52 @@ int Thread::fileEntropy(QFile* file)
     {
         return 0;
     }
-    return compressionVsEncryption(data, max);
+    return compressionVsEncryption(data, max, file);
 }
 
-int Thread::compressionVsEncryption(QHash<char, int> data, int max){
+int Thread::compressionVsEncryption(QHash<char, int> data, int max, QFile* file){
     float avg = total/data.keys().length();
     QHashIterator<char, int> i(data);
     float chi2=0;
-    float nSuccess=0;
     while (i.hasNext())
     {
         i.next();
         chi2+=(i.value()-avg)*(i.value()-avg)/avg;
-        if(i.value()+avg <= max){
-            nSuccess++;
-        }
     }
-    float piDiff=abs((nSuccess/data.keys().length()-M_PI_4)/M_PI_4);
-    if(chi2 < 450)
+    if(chi2 < 450 && approximatePi(file))
     {
-        qDebug() << "Pi error: " << piDiff;
         return 1;
     }
     return 0;
+}
+
+int Thread::approximatePi(QFile* file)
+{
+    file->reset();
+    int x;
+    int y;
+    int nSuccess=0;
+    int count=0;
+    while(!file->atEnd())
+    {
+        x = file->read(1)[0];
+        if(file->atEnd())
+        {
+            break;
+        }
+        y = file->read(1)[0];
+        count++;
+        if(x+y <= 128 && x+y >= -128){
+            nSuccess++;
+        }
+        if(fast && count >= bytes/2)
+        {
+            break;
+        }
+    }
+    float piDiff=abs((1.0*nSuccess/count-M_PI_4)/M_PI_4);
+    qDebug() << "Pi error: " << piDiff;
+    return 1;
 }
 
 QString Thread::fileLength()

@@ -22,7 +22,8 @@ private:
     void analyzeFile(QString file, QTextStream* stream);
     int fileEntropy(QFile* file);
     QString fileLength();
-    int compressionVsEncryption(QHash<char, int> data, int max);
+    int compressionVsEncryption(QHash<char, int> data, int max, QFile* file);
+    int approximatePi(QFile* file);
 signals:
     void ended(int thread);
 };
