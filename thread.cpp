@@ -51,8 +51,8 @@ void Thread::analyzeFile(QString file)
     if(fileEntropy(&fileToCheck))
     {
         count++;
-        *stream << file << endl;
-        qDebug() << file;
+        *stream << file.split(".").last() << endl;
+        qDebug() << file.split(".").last();
     }
     fileToCheck.close();
 }
@@ -83,7 +83,7 @@ int Thread::fileEntropy(QFile* file)
             max = i.value();
         }
     }
-    if(entropy<6)
+    if(entropy < 7.5)
     {
         return 0;
     }
@@ -94,6 +94,7 @@ int Thread::fileEntropy(QFile* file)
         *stream << file->size() << ";";
         qDebug() << "Entropy:" << entropy;
         *stream << entropy << ";";
+        approximatePi(file);
         return 1;
     }
     return 0;
@@ -120,25 +121,29 @@ int Thread::compressionVsEncryption(QHash<char, int> data, QFile* file){
 int Thread::approximatePi(QFile* file)
 {
     file->reset();
-    int x;
-    int y;
+    int value;
+    int iterations=3;
     int nSuccess=0;
     int count=0;
     while(!file->atEnd())
     {
-        x = file->read(1)[0];
-        if(file->atEnd())
+        value=0;
+        for(int i = 0; i < iterations; i++)
         {
-            break;
+            if(file->atEnd())
+            {
+                break;
+            }
+            value += file->read(1)[0];
         }
-        y = file->read(1)[0];
         count++;
-        if(x+y <= 128 && x+y >= -128){
+        if(value <= 128 && value >= -128){
             nSuccess++;
         }
     }
     float piDiff=abs((1.0*nSuccess/count-M_PI_4)/M_PI_4);
     qDebug() << "Pi error: " << piDiff;
+    *stream << piDiff << ";";
     return 1;
 }
 
