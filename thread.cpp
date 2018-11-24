@@ -64,14 +64,14 @@ int Thread::fileEntropy(QFile* file)
         return 0;
     }
     total=0;
-    QHash<char, int> data;
+    QHash<char, long> data;
     while(!file->atEnd())
     {
         QByteArray read = file->read(1);
         data[read[0]]++;
         total++;
     }
-    QHashIterator<char, int> i(data);
+    QHashIterator<char, long> i(data);
     float entropy=0;
     int max=0;
     while (i.hasNext())
@@ -88,7 +88,7 @@ int Thread::fileEntropy(QFile* file)
         return 0;
     }
 
-    if(compressionVsEncryption(data, file))
+    if(compressionVsEncryption(data))
     {
         qDebug() << "Size:" << file->size();
         *stream << file->size() << ";";
@@ -100,9 +100,9 @@ int Thread::fileEntropy(QFile* file)
     return 0;
 }
 
-int Thread::compressionVsEncryption(QHash<char, int> data, QFile* file){
+int Thread::compressionVsEncryption(QHash<char, long> data){
     float avg = total/data.keys().length();
-    QHashIterator<char, int> i(data);
+    QHashIterator<char, long> i(data);
     float chi2=0;
     while (i.hasNext())
     {

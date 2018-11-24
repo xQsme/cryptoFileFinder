@@ -1,4 +1,2 @@
 Username: root
 Password: ps1
-
-./crypto.sh

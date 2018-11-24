@@ -13,14 +13,14 @@ private:
     int totalThreads;
     QString dir;
     QTextStream* stream;
-    int total;
+    long total;
     int count;
     int currentFile;
     void search(QString dir);
     void analyzeFile(QString file);
     int fileEntropy(QFile* file);
     QString fileLength();
-    int compressionVsEncryption(QHash<char, int> data, QFile* file);
+    int compressionVsEncryption(QHash<char, long> data);
     int approximatePi(QFile* file);
 signals:
     void ended(int thread);
