@@ -48,29 +48,51 @@ void Thread::analyzeFile(QString file)
 {
     QFile fileToCheck(file);
     fileToCheck.open(QIODevice::ReadOnly);
-    if(fileEntropy(&fileToCheck))
+    if(fileToCheck.size() < 32)
     {
-        count++;
-        *stream << file.split(".").last() << endl;
-        qDebug() << file.split(".").last();
+        return;
+    }
+    total=0;
+    QHash<char, long> data;
+    while(!fileToCheck.atEnd())
+    {
+        QByteArray read = fileToCheck.read(1);
+        data[read[0]]++;
+        total++;
+    }
+    float entropy = fileEntropy(data);
+    if(entropy > 7)
+    {
+        float chi2 = calculateChi2(data);
+        if(chi2 < 350)
+        {
+            float piError = approximatePi(&fileToCheck);
+            if(piError < 0.18 && piError > 0.13)
+            {
+                QString command = fileCommand(file);
+                if(command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.compare("image")))
+                {
+                    count++;
+                    qDebug() << "Size:" << fileToCheck.size();
+                    *stream << fileToCheck.size() << ";";
+                    qDebug() << "Entropy:" << entropy;
+                    *stream << entropy << ";";
+                    qDebug() << "Chi^2:" << chi2;
+                    *stream << chi2 << ";";
+                    qDebug() << "Pi error: " << piError;
+                    *stream << piError << ";";
+                    qDebug() << "Command: " << command;
+                    *stream << command << ";";
+                }
+            }
+        }
     }
     fileToCheck.close();
 }
 
-int Thread::fileEntropy(QFile* file)
+float Thread::fileEntropy(QHash<char, long> data)
 {
-    if(file->size() < 32)
-    {
-        return 0;
-    }
-    total=0;
-    QHash<char, long> data;
-    while(!file->atEnd())
-    {
-        QByteArray read = file->read(1);
-        data[read[0]]++;
-        total++;
-    }
+
     QHashIterator<char, long> i(data);
     float entropy=0;
     int max=0;
@@ -83,24 +105,10 @@ int Thread::fileEntropy(QFile* file)
             max = i.value();
         }
     }
-    if(entropy < 7.5)
-    {
-        return 0;
-    }
-
-    if(compressionVsEncryption(data))
-    {
-        qDebug() << "Size:" << file->size();
-        *stream << file->size() << ";";
-        qDebug() << "Entropy:" << entropy;
-        *stream << entropy << ";";
-        approximatePi(file);
-        return 1;
-    }
-    return 0;
+    return entropy;
 }
 
-int Thread::compressionVsEncryption(QHash<char, long> data){
+float Thread::calculateChi2(QHash<char, long> data){
     float avg = total/data.keys().length();
     QHashIterator<char, long> i(data);
     float chi2=0;
@@ -109,16 +117,10 @@ int Thread::compressionVsEncryption(QHash<char, long> data){
         i.next();
         chi2+=(i.value()-avg)*(i.value()-avg)/avg;
     }
-    if(chi2 < 300)
-    {
-        qDebug() << "Chi^2:" << chi2;
-        *stream << chi2 << ";";
-        return 1;
-    }
-    return 0;
+    return chi2;
 }
 
-int Thread::approximatePi(QFile* file)
+float Thread::approximatePi(QFile* file)
 {
     file->reset();
     int value;
@@ -141,20 +143,16 @@ int Thread::approximatePi(QFile* file)
             nSuccess++;
         }
     }
-    float piDiff=abs((1.0*nSuccess/count-M_PI_4)/M_PI_4);
-    qDebug() << "Pi error: " << piDiff;
-    *stream << piDiff << ";";
-    return 1;
+    return abs((1.0*nSuccess/count-M_PI_4)/M_PI_4);
 }
 
-QString Thread::fileLength()
+QString Thread::fileCommand(QString file)
 {
-   for(int i = 32; i <= 512; i+=32)
-   {
-       if(!total%i)
-       {
-           return QString::number(i) + " bit multiple";
-       }
-   }
-   return "unknown";
+    QProcess process;
+    QStringList args;
+    args << file;
+    process.start("file", args);
+    process.waitForFinished();
+    QString output(process.readAllStandardOutput());
+    return output;
 }

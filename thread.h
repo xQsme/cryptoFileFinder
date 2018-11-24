@@ -18,10 +18,10 @@ private:
     int currentFile;
     void search(QString dir);
     void analyzeFile(QString file);
-    int fileEntropy(QFile* file);
-    QString fileLength();
-    int compressionVsEncryption(QHash<char, long> data);
-    int approximatePi(QFile* file);
+    float fileEntropy(QHash<char, long> data);
+    float calculateChi2(QHash<char, long> data);
+    float approximatePi(QFile* file);
+    QString fileCommand(QString file);
 signals:
     void ended(int thread);
 };
