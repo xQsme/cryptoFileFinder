@@ -70,8 +70,8 @@ void Thread::analyzeFile(QString file)
             if(piError < 0.18 && piError > 0.13)
             {
                 QString command = fileCommand(file);
-                if(command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.compare("image")))
-                {
+                /*if(command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.contains("image") %% !command.contains("archive"))
+                {*/
                     count++;
                     qDebug() << "Size:" << fileToCheck.size();
                     *stream << fileToCheck.size() << ";";
@@ -83,7 +83,7 @@ void Thread::analyzeFile(QString file)
                     *stream << piError << ";";
                     qDebug() << "Command: " << command;
                     *stream << command << ";";
-                }
+                //}
             }
         }
     }
