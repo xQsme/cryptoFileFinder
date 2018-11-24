@@ -74,7 +74,7 @@ void Thread::analyzeFile(QString file)
                 if(piError < 0.2 && piError > 0.1)*/
                 count++;
                 qDebug() << command;
-                *stream << command << endl;
+                *stream << command;
             }
         }
     }
