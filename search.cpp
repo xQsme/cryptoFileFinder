@@ -17,7 +17,6 @@ void Search::search()
     output = new QFile(file);
     output->open(QIODevice::WriteOnly | QIODevice::Text);
     QTextStream stream(output);
-    stream << "Size;Entropy;Chi^2;Pi Error;Termination;Command" << endl;
     totalThreads = QThread::idealThreadCount();
     QList<Thread*> threads;
     for(int i = 0; i < totalThreads; i++)

@@ -60,34 +60,21 @@ void Thread::analyzeFile(QString file)
         data[read[0]]++;
         total++;
     }
-    float entropy = fileEntropy(data);
-    if(entropy > 7)
+    QString command = fileCommand(file);
+    if(command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.contains("image") && !command.contains("archive")))
     {
-        float chi2 = calculateChi2(data);
-        int limit=22017.84 + (374.6088 - 22017.84)/(1.0 + pow((1.0*fileToCheck.size()/2269952000), 0.8129303));
-        if(chi2 < limit)
+        float entropy = fileEntropy(data);
+        if(entropy > 7)
         {
-            float piError = approximatePi(&fileToCheck);
-            if(piError < 0.2 && piError > 0.1)
+            float chi2 = calculateChi2(data);
+            int limit=22017.84 + (374.6088 - 22017.84)/(1.0 + pow((1.0*fileToCheck.size()/2269952000), 0.8129303));
+            if(chi2 < limit)
             {
-                QString command = fileCommand(file);
-                /*if(command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.contains("image") && !command.contains("archive"))
-                {*/
-                    count++;
-                    qDebug() << "Size:" << fileToCheck.size();
-                    *stream << fileToCheck.size() << ";";
-                    qDebug() << "Entropy:" << entropy;
-                    *stream << entropy << ";";
-                    qDebug() << "Chi^2:" << chi2 << "/" << limit;
-                    *stream << chi2 << "/" << limit << ";";
-                    qDebug() << "Pi error: " << piError;
-                    *stream << piError << ";";
-                    qDebug() << "Termination: " << file.split(".").last();
-                    *stream << file.split(".").last() << ";";
-                    qDebug() << "Command: " << command.split(":")[1];
-                    *stream << command.split(":")[1] << endl;
-                    qDebug() << "Thread: " << thread;
-                //}
+                /*float piError = approximatePi(&fileToCheck);
+                if(piError < 0.2 && piError > 0.1)*/
+                count++;
+                qDebug() << command;
+                *stream << command << endl;
             }
         }
     }
