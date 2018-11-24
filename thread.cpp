@@ -64,10 +64,11 @@ void Thread::analyzeFile(QString file)
     if(entropy > 7)
     {
         float chi2 = calculateChi2(data);
-        if(chi2 < 350)
+        int limit=22017.84 + (374.6088 - 22017.84)/(1.0 + pow((1.0*fileToCheck.size()/2269952000), 0.8129303));
+        if(chi2 < limit)
         {
             float piError = approximatePi(&fileToCheck);
-            if(piError < 0.18 && piError > 0.13)
+            if(piError < 0.2 && piError > 0.1)
             {
                 QString command = fileCommand(file);
                 /*if(command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.contains("image") && !command.contains("archive"))
@@ -77,14 +78,14 @@ void Thread::analyzeFile(QString file)
                     *stream << fileToCheck.size() << ";";
                     qDebug() << "Entropy:" << entropy;
                     *stream << entropy << ";";
-                    qDebug() << "Chi^2:" << chi2;
-                    *stream << chi2 << ";";
+                    qDebug() << "Chi^2:" << chi2 << "/" << limit;
+                    *stream << chi2 << "/" << limit << ";";
                     qDebug() << "Pi error: " << piError;
                     *stream << piError << ";";
                     qDebug() << "Termination: " << file.split(".").last();
                     *stream << file.split(".").last() << ";";
                     qDebug() << "Command: " << command.split(":")[1];
-                    *stream << command.split(":")[1] << ";";
+                    *stream << command.split(":")[1] << endl;
                     qDebug() << "Thread: " << thread;
                 //}
             }
