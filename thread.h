@@ -21,6 +21,7 @@ private:
     float fileEntropy(QHash<char, long> data);
     float calculateChi2(QHash<char, long> data);
     float approximatePi(QFile* file);
+    void nGrams(QFile* file);
     QString fileCommand(QString file);
 signals:
     void ended(int thread);

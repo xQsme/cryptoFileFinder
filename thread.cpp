@@ -52,17 +52,17 @@ void Thread::analyzeFile(QString file)
     {
         return;
     }
-    total=0;
-    QHash<char, long> data;
-    while(!fileToCheck.atEnd())
-    {
-        QByteArray read = fileToCheck.read(1);
-        data[read[0]]++;
-        total++;
-    }
     QString command = fileCommand(file);
-    if(command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.contains("image") && !command.contains("archive")))
+    if(true || command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.contains("image") && !command.contains("archive")))
     {
+        total=0;
+        QHash<char, long> data;
+        while(!fileToCheck.atEnd())
+        {
+            QByteArray read = fileToCheck.read(1);
+            data[read[0]]++;
+            total++;
+        }
         float entropy = fileEntropy(data);
         if(entropy > 7)
         {
@@ -70,11 +70,12 @@ void Thread::analyzeFile(QString file)
             int limit=22017.84 + (374.6088 - 22017.84)/(1.0 + pow((1.0*fileToCheck.size()/2269952000), 0.8129303));
             if(chi2 < limit)
             {
+                nGrams(&fileToCheck);
                 /*float piError = approximatePi(&fileToCheck);
                 if(piError < 0.2 && piError > 0.1)*/
                 count++;
                 qDebug() << command;
-                *stream << command;
+                *stream << command.split(": ")[1] << endl;
             }
         }
     }
@@ -135,6 +136,31 @@ float Thread::approximatePi(QFile* file)
         }
     }
     return abs((1.0*nSuccess/count-M_PI_4)/M_PI_4);
+}
+
+void Thread::nGrams(QFile* file)
+{
+    for(int i=2; i <= 16; i*=2)
+    {
+        file->reset();
+        total=0;
+        QHash<char, long> data;
+        while(!file->atEnd())
+        {
+            int current = 0;
+            for(int k = 0; k < i; k++)
+            {
+                if(!file->atEnd())
+                {
+                    current += file->read(1)[0];
+                }
+            }
+            data[current]++;
+            total++;
+        }
+        *stream << fileEntropy(data) << ";";
+        *stream << calculateChi2(data) << ";";
+    }
 }
 
 QString Thread::fileCommand(QString file)
