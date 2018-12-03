@@ -152,7 +152,7 @@ void Thread::nGrams(QFile* file)
             }
             if(!file->atEnd())
             {
-                file->seek(file->pos()-1);
+                file->seek(file->pos()-i+1);
             }
             data[static_cast<char>(current)]++;
             total++;
@@ -175,7 +175,7 @@ void Thread::nGramSequence(QFile* file)
             total++;
             if(!file->atEnd())
             {
-                file->seek(file->pos()-1);
+                file->seek(file->pos()-i+1);
             }
         }
         *stream << nGramEntropy(data) << ";";
