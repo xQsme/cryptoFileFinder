@@ -1,0 +1,1487 @@
+Entropy 2-grams	Chi^2 2-grams	Entropy 3-grams	Chi^2 3-grams	Size	Termination	File Command	10.3887524951	-13818.5100000016	-13818.5100000016	-13818.5100000016	-13818.5100000016	-13818.5100000016	-13818.5100000016	-13818.5100000016	-13818.5100000016
+15.9915	65719.6	22.1003	1021810	5577296	128-cbc	openssl enc'd data with salted password									
+15.9915	65719.6	22.1003	1021810	5577296	128-cbc	openssl enc'd data with salted password									
+15.9915	65357.8	22.1001	1021920	5577296	128-ecb	openssl enc'd data with salted password	16300								
+15.9915	65357.8	22.1001	1021920	5577296	128-ecb	openssl enc'd data with salted password	15000000.55								
+15.9915	65868.6	22.1001	1021800	5577296	192-cbc	openssl enc'd data with salted password									
+15.9915	65789.1	22.1004	1020230	5577296	192-ecb	openssl enc'd data with salted password	35000000								
+15.9915	65789.1	22.1004	1020230	5577296	192-ecb	openssl enc'd data with salted password									
+15.9915	65789.1	22.1004	1020230	5577296	192-ecb	openssl enc'd data with salted password	35000000	15000000							
+15.9915	65401.3	22.0997	1022980	5577296	256-cbc	openssl enc'd data with salted password	350000000	20000000							
+15.9915	65401.3	22.0997	1022980	5577296	256-cbc	openssl enc'd data with salted password	2500000	250000							
+15.9915	65927.5	22.1006	1020290	5577296	256-ecb	openssl enc'd data with salted password									
+15.9915	65927.5	22.1006	1020290	5577296	256-ecb	openssl enc'd data with salted password									
+15.4462	120691	16.6135	5499	101426	aar	Zip archive data, at least v1.0 to extract									
+15.7842	114045	17.8772	34597	245627	aar	Zip archive data, at least v1.0 to extract									
+15.71	113892	17.4729	6450	184207	aar	Zip archive data, at least v1.0 to extract									
+15.7066	113665	17.4637	7367	183035	aar	Zip archive data, at least v1.0 to extract									
+15.4306	113391	16.5642	5541	98093	aar	Zip archive data, at least v1.0 to extract									
+15.7753	113379	17.8505	37482	241987	aar	Zip archive data, at least v1.0 to extract									
+15.4197	112005	16.5532	5556	97318	aar	Zip archive data, at least v1.0 to extract									
+15.7082	111660	17.4651	7039	183119	aar	Zip archive data, at least v1.0 to extract									
+15.7051	110976	17.4534	7188	181582	aar	Zip archive data, at least v1.0 to extract		1500000							
+15.7811	110567	17.8574	34232	242210	aar	Zip archive data, at least v1.0 to extract									
+15.7818	110192	17.8582	35375	242297	aar	Zip archive data, at least v1.0 to extract									
+15.7795	107565	17.86	31157	242514	aar	Zip archive data, at least v1.0 to extract									
+15.781	107537	17.8619	30393	242588	aar	Zip archive data, at least v1.0 to extract	500                  1								
+15.7943	107355	17.9266	14331	253223	aar	Zip archive data, at least v1.0 to extract	1000                  2								
+15.7904	102235	17.9018	13576	248820	aar	Zip archive data, at least v1.0 to extract	16000                 10								
+15.7866	102093	17.887	14342	246338	aar	Zip archive data, at least v1.0 to extract	50000                 75								
+15.423	101975	16.5278	2884	95409	aar	Zip archive data, at least v1.0 to extract	2500000	250000							
+15.365	100967	16.4216	9547	89042	aar	Zip archive data, at least v1.0 to extract	5000000	1500000							
+15.7886	100261	17.8868	14148	246366	aar	Zip archive data, at least v1.0 to extract	35000000	15000000							
+15.7886	100114	17.884	13702	245763	aar	Zip archive data, at least v1.0 to extract	350000000	30000000							
+15.3918	99991	16.4755	5444	92202	aar	Zip archive data, at least v1.0 to extract									
+15.8416	97183	18.2734	8868	322017	aar	Zip archive data, at least v1.0 to extract									
+15.649	94942	17.2255	25067	155989	aar	Zip archive data, at least v1.0 to extract									
+15.9197	93972.6	19.2376	87144	638808	aar	Zip archive data, at least v1.0 to extract									
+15.7805	93493.7	17.8422	13777	238795	aar	Zip archive data, at least v1.0 to extract									
+15.681	93308.5	17.3502	6195	169134	aar	Zip archive data, at least v1.0 to extract									
+15.6778	92064.5	17.3395	6284	167834	aar	Zip archive data, at least v1.0 to extract									
+15.8367	91471.3	18.2361	9081	313882	aar	Zip archive data, at least v1.0 to extract									
+15.3483	89975	16.3805	6059	86427	aar	Zip archive data, at least v1.0 to extract									
+15.3561	89856	16.3894	5995	86941	aar	Zip archive data, at least v1.0 to extract									
+15.6747	89244	17.3233	6051	165885	aar	Zip archive data, at least v1.0 to extract									
+15.7812	88594.3	17.8509	4609	239451	aar	Zip archive data, at least v1.0 to extract									
+15.836	88259.8	18.2188	8610	310022	aar	Zip archive data, at least v1.0 to extract									
+15.8041	87171.3	18.017	41572	271776	aar	Zip archive data, at least v1.0 to extract									
+15.8014	87087	18.016	41444	271615	aar	Zip archive data, at least v1.0 to extract									
+15.3385	86771	16.3564	5932	84966	aar	Zip archive data, at least v1.0 to extract									
+15.3407	86523	16.3577	5951	85064	aar	Zip archive data, at least v1.0 to extract									
+15.9035	86065.3	18.9507	14594	519049	aar	Zip archive data, at least v1.0 to extract									
+15.832	81576.8	18.1821	5613	301794	aar	Zip archive data, at least v1.0 to extract									
+15.8576	81528	18.4337	15946	360831	aar	Zip archive data, at least v1.0 to extract									
+15.7983	81364.5	17.9786	37858	264471	aar	Zip archive data, at least v1.0 to extract									
+15.7666	78492.3	17.7607	7199	225094	aar	Zip archive data, at least v1.0 to extract									
+15.7621	76405.3	17.7408	6959	221913	aar	Zip archive data, at least v1.0 to extract									
+15.8982	76017.1	18.8747	13585	491577	aar	Zip archive data, at least v1.0 to extract									
+15.7272	71546	17.5715	21011	199090	aar	Zip archive data, at least v1.0 to extract									
+15.7457	66211	17.6454	6618	207651	aar	Zip archive data, at least v1.0 to extract									
+15.709	66200.7	17.4821	20379	187108	aar	Zip archive data, at least v1.0 to extract									
+15.7431	65970.7	17.6334	6715	205871	aar	Zip archive data, at least v1.0 to extract									
+15.2321	65370	16.1348	5339	72920	aar	Zip archive data, at least v1.0 to extract									
+15.8034	64654.5	17.9788	7558	262077	aar	Zip archive data, at least v1.0 to extract									
+15.2328	64111	16.1271	5369	72548	aar	Zip archive data, at least v1.0 to extract									
+15.2249	64088	16.1194	5458	72157	aar	Zip archive data, at least v1.0 to extract									
+15.5259	63848.5	16.8382	21731	120212	aar	Zip archive data, at least v1.0 to extract									
+15.2308	63384	16.1207	5401	72207	aar	Zip archive data, at least v1.0 to extract									
+15.2158	62434	16.0978	5362	71090	aar	Zip archive data, at least v1.0 to extract									
+15.187	58010	16.0319	5377	67945	aar	Zip archive data, at least v1.0 to extract									
+15.5023	55834.5	16.7704	18542	114580	aar	Zip archive data, at least v1.0 to extract									
+15.5021	54342	16.7612	18398	113841	aar	Zip archive data, at least v1.0 to extract									
+15.502	54240.5	16.764	18163	114048	aar	Zip archive data, at least v1.0 to extract									
+15.5714	53821	16.9623	5982	129205	aar	Zip archive data, at least v1.0 to extract									
+15.568	52756.5	16.9544	5705	128402	aar	Zip archive data, at least v1.0 to extract									
+15.5504	48855.5	16.8931	5782	123122	aar	Zip archive data, at least v1.0 to extract									
+15.5508	48787	16.8889	5727	122789	aar	Zip archive data, at least v1.0 to extract									
+15.571	48769	16.9448	3131	127419	aar	Zip archive data, at least v1.0 to extract									
+15.0781	47204	15.8256	5423	58949	aar	Zip archive data, at least v1.0 to extract									
+15.5481	46352.5	16.8957	3133	123144	aar	Zip archive data, at least v1.0 to extract									
+15.5342	46022	16.842	5644	118819	aar	Zip archive data, at least v1.0 to extract									
+15.4983	45700	16.7543	9903	112083	aar	Zip archive data, at least v1.0 to extract									
+15.0144	44687	15.7491	5412	55960	aar	Zip archive data, at least v1.0 to extract									
+15.5184	43943.5	16.8068	5655	115972	aar	Zip archive data, at least v1.0 to extract									
+15.5109	43154.5	16.7853	5630	114232	aar	Zip archive data, at least v1.0 to extract									
+14.9772	40550	15.6664	5417	52868	aar	Zip archive data, at least v1.0 to extract									
+14.9803	40484	15.6696	5388	52973	aar	Zip archive data, at least v1.0 to extract									
+15.4941	39688	16.7262	5583	109649	aar	Zip archive data, at least v1.0 to extract									
+14.9258	27421	15.578	1648	49383	aar	Zip archive data, at least v1.0 to extract									
+15.4263	130584	16.573	15183	98997	aar	Zip archive data, at least v2.0 to extract									
+15.428	130416	16.572	15266	98990	aar	Zip archive data, at least v2.0 to extract									
+15.429	130101	16.5732	15162	99045	aar	Zip archive data, at least v2.0 to extract									
+15.4288	129448	16.572	15155	98930	aar	Zip archive data, at least v2.0 to extract									
+15.4463	125446	16.6249	7292	102194	aar	Zip archive data, at least v2.0 to extract									
+15.4552	125311	16.6273	7560	102392	aar	Zip archive data, at least v2.0 to extract									
+15.4554	125278	16.6273	7560	102392	aar	Zip archive data, at least v2.0 to extract									
+15.4506	124947	16.6289	7284	102469	aar	Zip archive data, at least v2.0 to extract									
+15.4506	124944	16.629	7263	102469	aar	Zip archive data, at least v2.0 to extract									
+15.449	124022	16.6208	7300	101933	aar	Zip archive data, at least v2.0 to extract									
+15.4492	123990	16.6208	7302	101930	aar	Zip archive data, at least v2.0 to extract									
+15.4529	123743	16.6262	7296	102286	aar	Zip archive data, at least v2.0 to extract									
+15.4592	123538	16.6281	7324	102446	aar	Zip archive data, at least v2.0 to extract									
+15.4531	123358	16.6252	7267	102194	aar	Zip archive data, at least v2.0 to extract									
+15.4533	122226	16.6252	6759	102157	aar	Zip archive data, at least v2.0 to extract									
+15.4537	122204	16.6256	6759	102205	aar	Zip archive data, at least v2.0 to extract									
+15.4542	122109	16.6258	6722	102205	aar	Zip archive data, at least v2.0 to extract									
+15.4523	121658	16.6261	6015	102240	aar	Zip archive data, at least v2.0 to extract									
+15.4536	121653	16.626	6010	102240	aar	Zip archive data, at least v2.0 to extract									
+15.4523	121646	16.6263	5973	102240	aar	Zip archive data, at least v2.0 to extract									
+15.4325	115724	16.574	7318	98665	aar	Zip archive data, at least v2.0 to extract									
+15.4322	114968	16.573	7190	98544	aar	Zip archive data, at least v2.0 to extract									
+15.4339	114916	16.573	7207	98551	aar	Zip archive data, at least v2.0 to extract									
+15.7078	113817	17.4713	7814	184191	aar	Zip archive data, at least v2.0 to extract									
+15.7112	113276	17.4726	7613	184155	aar	Zip archive data, at least v2.0 to extract									
+15.7102	112855	17.4708	7604	183920	aar	Zip archive data, at least v2.0 to extract									
+15.7103	112831	17.4708	7604	183920	aar	Zip archive data, at least v2.0 to extract									
+15.4247	112718	16.5505	7211	97049	aar	Zip archive data, at least v2.0 to extract									
+15.4211	112546	16.5523	7221	97154	aar	Zip archive data, at least v2.0 to extract									
+15.4249	112529	16.5532	7224	97243	aar	Zip archive data, at least v2.0 to extract									
+15.4211	112526	16.5523	7220	97154	aar	Zip archive data, at least v2.0 to extract									
+15.4199	111593	16.5444	7262	96679	aar	Zip archive data, at least v2.0 to extract									
+15.4114	111311	16.534	7282	96026	aar	Zip archive data, at least v2.0 to extract									
+15.4195	110544	16.5391	7246	96311	aar	Zip archive data, at least v2.0 to extract									
+15.4176	110487	16.5391	7261	96319	aar	Zip archive data, at least v2.0 to extract									
+15.4168	110442	16.5355	7335	96104	aar	Zip archive data, at least v2.0 to extract									
+15.7012	110416	17.446	8224	181059	aar	Zip archive data, at least v2.0 to extract									
+15.7008	110268	17.4458	8122	181054	aar	Zip archive data, at least v2.0 to extract									
+15.4152	110132	16.5356	7286	96072	aar	Zip archive data, at least v2.0 to extract									
+15.4155	109931	16.5292	7337	95689	aar	Zip archive data, at least v2.0 to extract									
+15.417	109444	16.5321	7228	95825	aar	Zip archive data, at least v2.0 to extract									
+15.4141	109162	16.5372	6441	96137	aar	Zip archive data, at least v2.0 to extract									
+15.7036	109119	17.4477	7473	181193	aar	Zip archive data, at least v2.0 to extract									
+15.4217	109069	16.5348	7246	96034	aar	Zip archive data, at least v2.0 to extract									
+15.4164	108734	16.5376	6397	96136	aar	Zip archive data, at least v2.0 to extract									
+15.4213	107262	16.5353	6439	96016	aar	Zip archive data, at least v2.0 to extract									
+15.4028	106168	16.5175	5750	94872	aar	Zip archive data, at least v2.0 to extract									
+15.7916	105985	17.9085	19236	249983	aar	Zip archive data, at least v2.0 to extract									
+15.7896	105836	17.9088	19059	250034	aar	Zip archive data, at least v2.0 to extract									
+15.41	105259	16.5178	5687	94881	aar	Zip archive data, at least v2.0 to extract									
+15.4111	104919	16.5177	5630	94872	aar	Zip archive data, at least v2.0 to extract									
+15.6937	103568	17.4163	6984	176922	aar	Zip archive data, at least v2.0 to extract									
+15.697	103534	17.417	7219	177065	aar	Zip archive data, at least v2.0 to extract									
+15.6961	103521	17.417	7224	177010	aar	Zip archive data, at least v2.0 to extract									
+15.6949	102977	17.4166	6954	176922	aar	Zip archive data, at least v2.0 to extract									
+15.7877	101392	17.8882	18220	246429	aar	Zip archive data, at least v2.0 to extract									
+15.3971	101370	16.4897	5923	92992	aar	Zip archive data, at least v2.0 to extract									
+15.3956	101226	16.4886	6042	92963	aar	Zip archive data, at least v2.0 to extract									
+15.3971	100645	16.489	6051	92962	aar	Zip archive data, at least v2.0 to extract									
+15.7849	99680.7	17.8925	10261	247244	aar	Zip archive data, at least v2.0 to extract									
+15.7852	99544	17.8925	10064	247245	aar	Zip archive data, at least v2.0 to extract									
+15.3948	98973	16.4768	5896	92135	aar	Zip archive data, at least v2.0 to extract									
+15.3953	98869	16.4768	5908	92135	aar	Zip archive data, at least v2.0 to extract									
+15.6911	98321.5	17.3918	6730	173972	aar	Zip archive data, at least v2.0 to extract									
+15.8363	95890	18.2366	20432	314305	aar	Zip archive data, at least v2.0 to extract									
+15.786	95648.3	17.8796	9366	244854	aar	Zip archive data, at least v2.0 to extract									
+15.3913	95594	16.4618	5288	91268	aar	Zip archive data, at least v2.0 to extract									
+15.3914	95557	16.4621	5245	91268	aar	Zip archive data, at least v2.0 to extract									
+15.3914	95509	16.4621	5225	91268	aar	Zip archive data, at least v2.0 to extract									
+15.7873	95098	17.8819	8780	245030	aar	Zip archive data, at least v2.0 to extract									
+15.6827	94622	17.3652	6119	170739	aar	Zip archive data, at least v2.0 to extract									
+15.6818	94332	17.3569	6906	170013	aar	Zip archive data, at least v2.0 to extract									
+15.6853	94254.5	17.3646	6129	170754	aar	Zip archive data, at least v2.0 to extract									
+15.6792	92926	17.3476	7353	168727	aar	Zip archive data, at least v2.0 to extract									
+15.6791	92924	17.3475	7385	168727	aar	Zip archive data, at least v2.0 to extract									
+15.7747	92801	17.8211	18448	235348	aar	Zip archive data, at least v2.0 to extract									
+15.6836	92795	17.3588	6330	170027	aar	Zip archive data, at least v2.0 to extract									
+15.7713	92400	17.801	21692	232498	aar	Zip archive data, at least v2.0 to extract									
+15.7693	92314.7	17.7967	20988	231777	aar	Zip archive data, at least v2.0 to extract									
+15.6832	92151.5	17.3471	7285	168640	aar	Zip archive data, at least v2.0 to extract									
+15.7779	92052.3	17.8221	18300	235349	aar	Zip archive data, at least v2.0 to extract									
+15.8378	91727.8	18.2434	8629	315392	aar	Zip archive data, at least v2.0 to extract									
+15.7701	91275	17.798	20182	231791	aar	Zip archive data, at least v2.0 to extract									
+15.6823	91257	17.3396	7381	167853	aar	Zip archive data, at least v2.0 to extract									
+15.7698	91228	17.7976	20735	231773	aar	Zip archive data, at least v2.0 to extract									
+15.7701	91176	17.7979	20407	231793	aar	Zip archive data, at least v2.0 to extract									
+15.6775	90174.5	17.3317	7205	166882	aar	Zip archive data, at least v2.0 to extract									
+15.7749	89470	17.8107	15169	233419	aar	Zip archive data, at least v2.0 to extract									
+15.7748	89320.7	17.8104	15176	233420	aar	Zip archive data, at least v2.0 to extract									
+15.8323	88631.8	18.2142	9712	309150	aar	Zip archive data, at least v2.0 to extract									
+15.8333	88628.8	18.2134	10242	309156	aar	Zip archive data, at least v2.0 to extract									
+15.8343	88399.8	18.214	10072	309244	aar	Zip archive data, at least v2.0 to extract									
+15.7763	88266.3	17.8109	15122	233420	aar	Zip archive data, at least v2.0 to extract									
+15.8331	88216.8	18.2134	9730	309150	aar	Zip archive data, at least v2.0 to extract									
+15.779	87891.3	17.8326	8557	236649	aar	Zip archive data, at least v2.0 to extract									
+15.7655	86270.3	17.764	18723	226151	aar	Zip archive data, at least v2.0 to extract									
+15.7787	86097	17.8283	7032	235824	aar	Zip archive data, at least v2.0 to extract									
+15.7771	86092.3	17.8261	7414	235535	aar	Zip archive data, at least v2.0 to extract									
+15.8645	86071.2	18.4926	11315	375688	aar	Zip archive data, at least v2.0 to extract									
+15.6654	86013	17.297	7541	162887	aar	Zip archive data, at least v2.0 to extract									
+15.6657	85988	17.2966	7180	162835	aar	Zip archive data, at least v2.0 to extract									
+15.7783	85939.7	17.8268	7414	235552	aar	Zip archive data, at least v2.0 to extract									
+15.8243	85916.3	18.1512	20411	296176	aar	Zip archive data, at least v2.0 to extract									
+15.6681	85895.5	17.2962	7166	162834	aar	Zip archive data, at least v2.0 to extract									
+15.7658	85853	17.7645	18566	226148	aar	Zip archive data, at least v2.0 to extract									
+15.8245	85715.3	18.1511	20358	296136	aar	Zip archive data, at least v2.0 to extract									
+15.8643	85300	18.49	10841	375079	aar	Zip archive data, at least v2.0 to extract									
+15.7795	85222.3	17.8284	6936	235741	aar	Zip archive data, at least v2.0 to extract									
+15.8645	85206.2	18.4905	10752	375062	aar	Zip archive data, at least v2.0 to extract									
+15.7689	85124	17.765	18661	226320	aar	Zip archive data, at least v2.0 to extract									
+15.8235	84515.5	18.1422	20472	294379	aar	Zip archive data, at least v2.0 to extract									
+15.8234	84484.5	18.1418	20449	294303	aar	Zip archive data, at least v2.0 to extract									
+15.8631	84308	18.4769	12005	371795	aar	Zip archive data, at least v2.0 to extract									
+15.8633	84279.8	18.477	11961	371795	aar	Zip archive data, at least v2.0 to extract									
+15.8213	83762	18.1319	20276	292329	aar	Zip archive data, at least v2.0 to extract									
+15.7739	83530.3	17.8006	8832	231422	aar	Zip archive data, at least v2.0 to extract									
+15.7602	83519.3	17.7475	17419	223592	aar	Zip archive data, at least v2.0 to extract									
+15.7609	83497.7	17.7478	17511	223660	aar	Zip archive data, at least v2.0 to extract									
+15.7609	83486	17.7478	17511	223660	aar	Zip archive data, at least v2.0 to extract									
+15.3294	83381	16.34	6124	83923	aar	Zip archive data, at least v2.0 to extract									
+15.8238	83139.8	18.1326	20150	292372	aar	Zip archive data, at least v2.0 to extract									
+15.8228	82653.3	18.1329	19441	292530	aar	Zip archive data, at least v2.0 to extract									
+15.7752	82620.3	17.7972	8771	230939	aar	Zip archive data, at least v2.0 to extract									
+15.7749	82589.3	17.7993	8669	231187	aar	Zip archive data, at least v2.0 to extract									
+15.6601	82335.5	17.2686	7442	159662	aar	Zip archive data, at least v2.0 to extract									
+15.3368	82047	16.3394	6146	83930	aar	Zip archive data, at least v2.0 to extract									
+15.8221	82020.3	18.1284	16357	291548	aar	Zip archive data, at least v2.0 to extract									
+15.8228	81726.5	18.1284	16355	291585	aar	Zip archive data, at least v2.0 to extract									
+15.6628	81628.5	17.2693	7377	159662	aar	Zip archive data, at least v2.0 to extract									
+15.8231	81557.3	18.128	16445	291546	aar	Zip archive data, at least v2.0 to extract									
+15.3165	81221	16.3155	6195	82571	aar	Zip archive data, at least v2.0 to extract									
+15.6571	80462	17.2542	6750	158063	aar	Zip archive data, at least v2.0 to extract									
+15.3203	79951	16.3194	5921	82661	aar	Zip archive data, at least v2.0 to extract									
+15.6568	79239.5	17.2531	6511	157858	aar	Zip archive data, at least v2.0 to extract									
+15.6564	79088	17.254	5804	158025	aar	Zip archive data, at least v2.0 to extract									
+15.6568	79013	17.2543	5765	158035	aar	Zip archive data, at least v2.0 to extract									
+15.6567	78760.5	17.2539	5759	158024	aar	Zip archive data, at least v2.0 to extract									
+15.8596	78732	18.4366	11262	361423	aar	Zip archive data, at least v2.0 to extract									
+15.8607	78578	18.4365	11315	361421	aar	Zip archive data, at least v2.0 to extract									
+15.3114	78378	16.3019	5943	81703	aar	Zip archive data, at least v2.0 to extract									
+15.3196	78309	16.3021	5855	81663	aar	Zip archive data, at least v2.0 to extract									
+15.3197	78286	16.3021	5852	81664	aar	Zip archive data, at least v2.0 to extract									
+15.2257	78154	16.1225	13242	72692	aar	Zip archive data, at least v2.0 to extract									
+15.6528	77417.5	17.2416	5968	156692	aar	Zip archive data, at least v2.0 to extract									
+15.6547	77267.5	17.2415	6118	156712	aar	Zip archive data, at least v2.0 to extract									
+15.6549	77200	17.2412	6116	156695	aar	Zip archive data, at least v2.0 to extract									
+15.3196	77151	16.3017	5900	81652	aar	Zip archive data, at least v2.0 to extract									
+15.6532	77030.5	17.2417	5954	156680	aar	Zip archive data, at least v2.0 to extract									
+15.848	74552.8	18.3412	21995	338380	aar	Zip archive data, at least v2.0 to extract									
+15.8475	74359.8	18.3348	22403	336974	aar	Zip archive data, at least v2.0 to extract									
+15.8152	72043.5	18.073	8242	279905	aar	Zip archive data, at least v2.0 to extract									
+15.2675	71962	16.2091	6382	76646	aar	Zip archive data, at least v2.0 to extract									
+15.7974	71960.8	17.9636	21354	260094	aar	Zip archive data, at least v2.0 to extract									
+15.2664	71886	16.2077	6374	76565	aar	Zip archive data, at least v2.0 to extract									
+15.2666	71855	16.2077	6374	76565	aar	Zip archive data, at least v2.0 to extract									
+15.2666	71708	16.2062	6374	76489	aar	Zip archive data, at least v2.0 to extract									
+15.6322	71532	17.1703	7095	149239	aar	Zip archive data, at least v2.0 to extract									
+15.8175	71337.8	18.0753	8466	280322	aar	Zip archive data, at least v2.0 to extract									
+15.6347	71082.5	17.1707	7138	149250	aar	Zip archive data, at least v2.0 to extract									
+15.6348	71074.5	17.1708	7123	149250	aar	Zip archive data, at least v2.0 to extract									
+15.6336	71042.5	17.1718	7042	149320	aar	Zip archive data, at least v2.0 to extract									
+15.7532	70743	17.688	8021	213909	aar	Zip archive data, at least v2.0 to extract									
+15.7567	70633.7	17.6883	8091	213905	aar	Zip archive data, at least v2.0 to extract									
+15.7529	70580.7	17.6892	7330	214027	aar	Zip archive data, at least v2.0 to extract									
+15.6374	70396.5	17.1732	7012	149418	aar	Zip archive data, at least v2.0 to extract									
+15.7551	70316.3	17.6894	7701	213934	aar	Zip archive data, at least v2.0 to extract									
+15.7497	69955.7	17.6737	8030	211820	aar	Zip archive data, at least v2.0 to extract									
+15.7984	69938	17.9627	21018	259881	aar	Zip archive data, at least v2.0 to extract									
+15.7549	69880.7	17.6892	7241	213922	aar	Zip archive data, at least v2.0 to extract									
+15.8083	69867	18.0321	9477	271893	aar	Zip archive data, at least v2.0 to extract									
+15.7546	69841	17.6888	7261	213922	aar	Zip archive data, at least v2.0 to extract									
+15.8103	69834	18.036	10059	272779	aar	Zip archive data, at least v2.0 to extract									
+15.7999	69770.5	17.9757	19334	261959	aar	Zip archive data, at least v2.0 to extract									
+15.8118	69653.5	18.0359	10036	272783	aar	Zip archive data, at least v2.0 to extract									
+15.8023	69372	17.9749	19457	261889	aar	Zip archive data, at least v2.0 to extract									
+15.7484	69151	17.6655	8065	210529	aar	Zip archive data, at least v2.0 to extract									
+15.75	69023	17.6664	7939	210715	aar	Zip archive data, at least v2.0 to extract									
+15.8022	68917.5	17.9758	19278	261961	aar	Zip archive data, at least v2.0 to extract									
+15.7492	68835.3	17.665	7924	210535	aar	Zip archive data, at least v2.0 to extract									
+15.8102	68692.3	18.0329	9430	271890	aar	Zip archive data, at least v2.0 to extract									
+15.7485	68598.7	17.6648	7945	210535	aar	Zip archive data, at least v2.0 to extract									
+15.812	68518.8	18.034	9650	272252	aar	Zip archive data, at least v2.0 to extract									
+15.2569	68185	16.1753	6326	74878	aar	Zip archive data, at least v2.0 to extract									
+15.2569	68109	16.1736	6295	74781	aar	Zip archive data, at least v2.0 to extract									
+15.2588	68072	16.1754	6321	74876	aar	Zip archive data, at least v2.0 to extract									
+15.8078	67979.8	18.0197	8996	269862	aar	Zip archive data, at least v2.0 to extract									
+15.8086	67973.8	18.0219	8983	270152	aar	Zip archive data, at least v2.0 to extract									
+15.2504	67953	16.1682	6372	74530	aar	Zip archive data, at least v2.0 to extract									
+15.2505	67929	16.1682	6372	74530	aar	Zip archive data, at least v2.0 to extract									
+15.7523	67623.7	17.6684	6790	210924	aar	Zip archive data, at least v2.0 to extract									
+15.7523	67606.3	17.6683	6813	210924	aar	Zip archive data, at least v2.0 to extract									
+15.7484	67571.7	17.6571	7874	209383	aar	Zip archive data, at least v2.0 to extract									
+15.7487	67519.7	17.6572	7926	209382	aar	Zip archive data, at least v2.0 to extract									
+15.8116	67175.3	18.0221	8878	270080	aar	Zip archive data, at least v2.0 to extract									
+15.7412	65739.7	17.6273	7719	204968	aar	Zip archive data, at least v2.0 to extract									
+15.2428	65474	16.1515	5871	73674	aar	Zip archive data, at least v2.0 to extract									
+15.7394	65362.3	17.6155	8098	203300	aar	Zip archive data, at least v2.0 to extract									
+15.7354	65190.3	17.6135	7746	203095	aar	Zip archive data, at least v2.0 to extract									
+15.7357	65182	17.6138	7840	203096	aar	Zip archive data, at least v2.0 to extract									
+15.7368	65023.7	17.6145	8080	203299	aar	Zip archive data, at least v2.0 to extract									
+15.7223	64607.7	17.5382	16082	193098	aar	Zip archive data, at least v2.0 to extract									
+15.7223	64603.7	17.5383	16078	193098	aar	Zip archive data, at least v2.0 to extract									
+15.8	64598.8	17.9623	8889	259568	aar	Zip archive data, at least v2.0 to extract									
+15.7223	64566.3	17.5381	16125	193099	aar	Zip archive data, at least v2.0 to extract									
+15.7212	64534	17.5378	16162	193037	aar	Zip archive data, at least v2.0 to extract									
+15.7381	64449.7	17.6132	7740	203050	aar	Zip archive data, at least v2.0 to extract									
+15.7983	64376.3	17.9605	8746	259084	aar	Zip archive data, at least v2.0 to extract									
+15.7994	64102	17.9601	8637	259079	aar	Zip archive data, at least v2.0 to extract									
+15.7392	64036.3	17.612	7707	202828	aar	Zip archive data, at least v2.0 to extract									
+15.8	63957.5	17.9608	8715	259171	aar	Zip archive data, at least v2.0 to extract									
+15.7121	63760.3	17.4914	19088	187144	aar	Zip archive data, at least v2.0 to extract									
+15.1942	61349	16.0655	7109	69454	aar	Zip archive data, at least v2.0 to extract									
+15.1983	61029	16.0647	7021	69361	aar	Zip archive data, at least v2.0 to extract									
+15.7214	57608	17.5251	7338	190781	aar	Zip archive data, at least v2.0 to extract									
+15.7216	57528.7	17.5248	7374	190786	aar	Zip archive data, at least v2.0 to extract									
+15.7172	57055.7	17.5111	6153	188955	aar	Zip archive data, at least v2.0 to extract									
+15.1557	56951	15.9856	7240	65735	aar	Zip archive data, at least v2.0 to extract									
+15.7158	56881.7	17.5109	6186	188956	aar	Zip archive data, at least v2.0 to extract									
+15.7164	56832	17.511	6225	188957	aar	Zip archive data, at least v2.0 to extract									
+15.1586	56830	15.9859	7263	65735	aar	Zip archive data, at least v2.0 to extract									
+15.7081	55951.7	17.475	7905	184728	aar	Zip archive data, at least v2.0 to extract									
+15.7075	55948.7	17.4737	8009	184499	aar	Zip archive data, at least v2.0 to extract									
+15.709	55600.3	17.4749	7805	184633	aar	Zip archive data, at least v2.0 to extract									
+15.7086	55572.7	17.4752	7610	184507	aar	Zip archive data, at least v2.0 to extract									
+15.7094	55571.7	17.4748	7811	184633	aar	Zip archive data, at least v2.0 to extract									
+15.5132	54633	16.8015	17468	116051	aar	Zip archive data, at least v2.0 to extract									
+15.1652	53847	15.9973	5653	66105	aar	Zip archive data, at least v2.0 to extract									
+15.5169	53760.5	16.7999	17484	115904	aar	Zip archive data, at least v2.0 to extract									
+15.5166	53710	16.8002	17481	115909	aar	Zip archive data, at least v2.0 to extract									
+15.1607	53187	15.9968	5675	66093	aar	Zip archive data, at least v2.0 to extract									
+15.1639	52949	15.9962	5667	66065	aar	Zip archive data, at least v2.0 to extract									
+15.1654	52828	15.9966	5652	66084	aar	Zip archive data, at least v2.0 to extract									
+15.5017	52544	16.7573	17423	112573	aar	Zip archive data, at least v2.0 to extract									
+15.5017	52543	16.7573	17423	112573	aar	Zip archive data, at least v2.0 to extract									
+15.0991	50476	15.8755	7183	60929	aar	Zip archive data, at least v2.0 to extract									
+15.0992	50468	15.8755	7183	60929	aar	Zip archive data, at least v2.0 to extract									
+15.0979	49675	15.8781	6480	61042	aar	Zip archive data, at least v2.0 to extract									
+15.0988	49582	15.8784	6422	61042	aar	Zip archive data, at least v2.0 to extract									
+15.0852	49209	15.8589	6456	60240	aar	Zip archive data, at least v2.0 to extract									
+15.0874	49111	15.861	6429	60320	aar	Zip archive data, at least v2.0 to extract									
+15.1008	48713	15.8773	6381	60988	aar	Zip archive data, at least v2.0 to extract									
+15.0928	48565	15.862	6471	60373	aar	Zip archive data, at least v2.0 to extract									
+15.093	48372	15.86	6477	60275	aar	Zip archive data, at least v2.0 to extract									
+15.0604	47937	15.8103	7362	58264	aar	Zip archive data, at least v2.0 to extract									
+15.0485	47783	15.7916	7341	57515	aar	Zip archive data, at least v2.0 to extract									
+15.0976	47732	15.8779	5567	60980	aar	Zip archive data, at least v2.0 to extract									
+15.0976	47717	15.8782	5522	60980	aar	Zip archive data, at least v2.0 to extract									
+15.0967	47607	15.8774	5548	60976	aar	Zip archive data, at least v2.0 to extract									
+15.0381	47149	15.7783	7311	56970	aar	Zip archive data, at least v2.0 to extract									
+15.0535	46432	15.7969	7183	57725	aar	Zip archive data, at least v2.0 to extract									
+15.0521	46393	15.7933	7144	57557	aar	Zip archive data, at least v2.0 to extract									
+15.0478	46345	15.7891	7154	57390	aar	Zip archive data, at least v2.0 to extract									
+15.0559	46283	15.7941	7182	57627	aar	Zip archive data, at least v2.0 to extract									
+15.0534	46110	15.7925	7196	57551	aar	Zip archive data, at least v2.0 to extract									
+15.0506	46049	15.7894	7128	57389	aar	Zip archive data, at least v2.0 to extract									
+15.0468	45990	15.784	7160	57197	aar	Zip archive data, at least v2.0 to extract									
+15.5273	44992	16.8334	5905	118123	aar	Zip archive data, at least v2.0 to extract									
+15.0394	44535	15.7739	6645	56780	aar	Zip archive data, at least v2.0 to extract									
+15.5275	44381.5	16.8317	5847	117960	aar	Zip archive data, at least v2.0 to extract									
+15.5285	44268	16.8322	5895	118015	aar	Zip archive data, at least v2.0 to extract									
+15.0702	44250	15.8302	5762	58919	aar	Zip archive data, at least v2.0 to extract									
+15.0703	44238	15.8302	5762	58919	aar	Zip archive data, at least v2.0 to extract									
+15.5213	43934	16.8221	5918	117205	aar	Zip archive data, at least v2.0 to extract									
+15.0685	43801	15.8232	5768	58630	aar	Zip archive data, at least v2.0 to extract									
+15.0764	43727	15.828	5765	58823	aar	Zip archive data, at least v2.0 to extract									
+14.9789	41085	15.6767	6387	53115	aar	Zip archive data, at least v2.0 to extract									
+14.9767	40435	15.6705	6349	52876	aar	Zip archive data, at least v2.0 to extract									
+14.9801	40162	15.6668	6335	52734	aar	Zip archive data, at least v2.0 to extract									
+14.9759	40142	15.6649	6368	52707	aar	Zip archive data, at least v2.0 to extract									
+15.4571	38115	16.6475	7425	103781	aar	Zip archive data, at least v2.0 to extract									
+14.9161	37478	15.5787	6346	49677	aar	Zip archive data, at least v2.0 to extract									
+15.4719	37162.5	16.6759	5433	105784	aar	Zip archive data, at least v2.0 to extract									
+15.469	37066.5	16.6749	5449	105732	aar	Zip archive data, at least v2.0 to extract									
+15.4713	36723	16.6754	5364	105775	aar	Zip archive data, at least v2.0 to extract									
+14.9537	36236	15.6376	5049	51592	aar	Zip archive data, at least v2.0 to extract									
+14.9269	35820	15.5813	5924	49763	aar	Zip archive data, at least v2.0 to extract									
+14.92	35551	15.5673	6003	49334	aar	Zip archive data, at least v2.0 to extract									
+14.9196	35544	15.5678	5943	49334	aar	Zip archive data, at least v2.0 to extract									
+14.9489	35515	15.6316	5053	51395	aar	Zip archive data, at least v2.0 to extract									
+14.9134	35174	15.5662	5132	49242	aar	Zip archive data, at least v2.0 to extract									
+14.9674	35019	15.6386	5030	51610	aar	Zip archive data, at least v2.0 to extract									
+14.9654	34977	15.6383	5032	51610	aar	Zip archive data, at least v2.0 to extract									
+14.9169	34583	15.5667	5115	49236	aar	Zip archive data, at least v2.0 to extract									
+14.917	33855	15.5674	5076	49241	aar	Zip archive data, at least v2.0 to extract									
+14.8797	33188	15.5138	5781	47439	aar	Zip archive data, at least v2.0 to extract									
+14.8781	33120	15.5142	5747	47423	aar	Zip archive data, at least v2.0 to extract									
+14.8796	32281	15.5148	5720	47415	aar	Zip archive data, at least v2.0 to extract									
+14.8636	31823	15.488	5069	46649	aar	Zip archive data, at least v2.0 to extract									
+14.8651	31814	15.4881	5101	46648	aar	Zip archive data, at least v2.0 to extract									
+14.8304	28807	15.4331	5024	44836	aar	Zip archive data, at least v2.0 to extract									
+14.8377	28717	15.4357	5012	44904	aar	Zip archive data, at least v2.0 to extract									
+14.8339	28706	15.4336	5029	44840	aar	Zip archive data, at least v2.0 to extract									
+14.8375	28428	15.4335	5026	44837	aar	Zip archive data, at least v2.0 to extract									
+14.6942	26989	15.2331	5928	39204	aar	Zip archive data, at least v2.0 to extract									
+14.4979	20104	14.9696	4970	32612	aar	Zip archive data, at least v2.0 to extract									
+14.5158	19798	14.9709	4995	32663	aar	Zip archive data, at least v2.0 to extract									
+14.368	18393	14.7757	5669	28580	aar	Zip archive data, at least v2.0 to extract									
+15.9998	67895.6	23.9613	18199400	315944882	gpg	GPG symmetrically encrypted data (AES256 cipher)									
+15.9998	67895.6	23.9613	18199400	315944882	gpg	GPG symmetrically encrypted data (AES256 cipher)									
+15.9817	66573.4	21.1527	210024	2586352	gpg	GPG symmetrically encrypted data (AES256 cipher)									
+15.9817	66573.4	21.1527	210024	2586352	gpg	GPG symmetrically encrypted data (AES256 cipher)									
+15.9984	65549.5	23.5357	9738880	29958374	gpg	GPG symmetrically encrypted data (AES256 cipher)									
+15.0125	26177	15.6994	65	53301	gpg	GPG symmetrically encrypted data (AES256 cipher)									
+15.0125	26177	15.6994	65	53301	gpg	GPG symmetrically encrypted data (AES256 cipher)									
+15.0125	26177	15.6994	65	53301	gpg	GPG symmetrically encrypted data (AES256 cipher)									
+13.761	2223	13.998	8	16374	gpg	GPG symmetrically encrypted data (AES256 cipher)									
+15.9915	65662.2	22.1001	1024080	5579459	gpg	PGP RSA encrypted session key - keyid									
+15.9915	65662.2	22.1001	1024080	5579459	gpg	PGP RSA encrypted session key - keyid									
+8.85175	0	8.84862	0	463	gpg	PGP RSA encrypted session key - keyid									
+8.85175	0	8.84862	0	463	gpg	PGP RSA encrypted session key - keyid									
+11.9559	170	12.0278	4	4181	gz	gzip compressed data, max compression, from TOPS/20, original size 13660									
+11.9559	170	12.0278	4	4181	gz	gzip compressed data, max compression, from TOPS/20, original size 13660									
+12.8317	570	12.9615	7	7988	gz	"gzip compressed data, was ""bytebuffer-dataview.min.js"", last modified"									
+12.8317	570	12.9615	7	7988	gz	"gzip compressed data, was ""bytebuffer-dataview.min.js"", last modified"									
+10.7978	21	10.8202	0	1810	gz	"gzip compressed data, was ""error-stack-parser.min.js"", last modified"									
+10.7978	21	10.8202	0	1810	gz	"gzip compressed data, was ""error-stack-parser.min.js"", last modified"									
+13.3956	1355	13.5863	16	12319	gz	"gzip compressed data, was ""protobuf-light.min.js"", last modified"									
+13.3956	1355	13.5863	16	12319	gz	"gzip compressed data, was ""protobuf-light.min.js"", last modified"									
+13.6404	1898	13.8649	8	14932	gz	"gzip compressed data, was ""protobuf.min.js"", last modified"									
+13.6404	1898	13.8649	8	14932	gz	"gzip compressed data, was ""protobuf.min.js"", last modified"									
+9.30659	2	9.31061	0	637	nc	data									
+9.30659	2	9.31061	0	637	nc	data									
+9.30659	2	9.31061	0	637	nc	data									
+8.17493	0	8.16993	0	290	nc	data									
+12.5977	608	12.7293	30	6810	png	PNG image data, 100 x 91, 8-bit/color RGBA, non-interlaced									
+13.2015	1489	13.399	77	10857	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+13.2015	1489	13.399	77	10857	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+13.2015	1489	13.399	77	10857	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+13.2015	1489	13.399	77	10857	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+12.801	1010	12.9599	68	8010	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+12.801	1010	12.9599	68	8010	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+12.801	1010	12.9599	68	8010	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+12.801	1010	12.9599	68	8010	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+12.4983	796	12.6435	68	6439	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+12.4983	796	12.6435	68	6439	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+12.4983	796	12.6435	68	6439	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+12.4983	796	12.6435	68	6439	png	PNG image data, 103 x 103, 8-bit/color RGBA, non-interlaced									
+12.1577	482	12.2687	38	4953	png	PNG image data, 104 x 120, 8-bit colormap, non-interlaced									
+11.8876	510	12.01	62	4169	png	PNG image data, 104 x 35, 8-bit/color RGBA, non-interlaced									
+11.8876	510	12.01	62	4169	png	PNG image data, 104 x 35, 8-bit/color RGBA, non-interlaced									
+11.8876	510	12.01	62	4169	png	PNG image data, 104 x 35, 8-bit/color RGBA, non-interlaced									
+11.8876	510	12.01	62	4169	png	PNG image data, 104 x 35, 8-bit/color RGBA, non-interlaced									
+11.172	300	11.2408	45	2448	png	PNG image data, 107 x 58, 8-bit/color RGBA, non-interlaced									
+11.172	300	11.2408	45	2448	png	PNG image data, 107 x 58, 8-bit/color RGBA, non-interlaced									
+11.172	300	11.2408	45	2448	png	PNG image data, 107 x 58, 8-bit/color RGBA, non-interlaced									
+11.172	300	11.2408	45	2448	png	PNG image data, 107 x 58, 8-bit/color RGBA, non-interlaced									
+9.83507	171	9.88968	56	983	png	PNG image data, 108 x 108, 8-bit gray+alpha, non-interlaced									
+9.83507	171	9.88968	56	983	png	PNG image data, 108 x 108, 8-bit gray+alpha, non-interlaced									
+9.83507	171	9.88968	56	983	png	PNG image data, 108 x 108, 8-bit gray+alpha, non-interlaced									
+9.83507	171	9.88968	56	983	png	PNG image data, 108 x 108, 8-bit gray+alpha, non-interlaced									
+9.83507	171	9.88968	56	983	png	PNG image data, 108 x 108, 8-bit gray+alpha, non-interlaced									
+9.83507	171	9.88968	56	983	png	PNG image data, 108 x 108, 8-bit gray+alpha, non-interlaced									
+9.83507	171	9.88968	56	983	png	PNG image data, 108 x 108, 8-bit gray+alpha, non-interlaced									
+9.83507	171	9.88968	56	983	png	PNG image data, 108 x 108, 8-bit gray+alpha, non-interlaced									
+9.83507	171	9.88968	56	983	png	PNG image data, 108 x 108, 8-bit gray+alpha, non-interlaced									
+12.5351	496	12.6361	40	6387	png	PNG image data, 113 x 66, 8-bit/color RGBA, non-interlaced									
+12.5351	496	12.6361	40	6387	png	PNG image data, 113 x 66, 8-bit/color RGBA, non-interlaced									
+12.5351	496	12.6361	40	6387	png	PNG image data, 113 x 66, 8-bit/color RGBA, non-interlaced									
+12.5351	496	12.6361	40	6387	png	PNG image data, 113 x 66, 8-bit/color RGBA, non-interlaced									
+11.5657	211	11.627	29	3181	png	PNG image data, 119 x 35, 8-bit/color RGBA, non-interlaced									
+10.9398	220	11.0031	36	2068	png	PNG image data, 119 x 62, 8-bit/color RGBA, non-interlaced									
+10.9398	220	11.0031	36	2068	png	PNG image data, 119 x 62, 8-bit/color RGBA, non-interlaced									
+10.9398	220	11.0031	36	2068	png	PNG image data, 119 x 62, 8-bit/color RGBA, non-interlaced									
+10.9398	220	11.0031	36	2068	png	PNG image data, 119 x 62, 8-bit/color RGBA, non-interlaced									
+10.9738	216	11.0275	36	2103	png	PNG image data, 119 x 62, 8-bit/color RGBA, non-interlaced									
+10.9738	216	11.0275	36	2103	png	PNG image data, 119 x 62, 8-bit/color RGBA, non-interlaced									
+10.9738	216	11.0275	36	2103	png	PNG image data, 119 x 62, 8-bit/color RGBA, non-interlaced									
+10.9738	216	11.0275	36	2103	png	PNG image data, 119 x 62, 8-bit/color RGBA, non-interlaced									
+12.0707	589	12.1857	171	4752	png	PNG image data, 120 x 120, 8-bit/color RGBA, non-interlaced									
+12.3205	1002	12.4349	194	5634	png	PNG image data, 122 x 122, 8-bit gray+alpha, non-interlaced									
+12.3205	1002	12.4349	194	5634	png	PNG image data, 122 x 122, 8-bit gray+alpha, non-interlaced									
+12.3205	1002	12.4349	194	5634	png	PNG image data, 122 x 122, 8-bit gray+alpha, non-interlaced									
+12.3205	1002	12.4349	194	5634	png	PNG image data, 122 x 122, 8-bit gray+alpha, non-interlaced									
+12.0408	416	12.1318	78	4541	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+12.0408	416	12.1318	78	4541	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+12.0408	416	12.1318	78	4541	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+12.0408	416	12.1318	78	4541	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+12.0542	374	12.1376	56	4549	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+12.0542	374	12.1376	56	4549	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+12.0542	374	12.1376	56	4549	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+12.0542	374	12.1376	56	4549	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+11.2895	305	11.3525	94	2669	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+11.2895	305	11.3525	94	2669	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+11.2895	305	11.3525	94	2669	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+11.2895	305	11.3525	94	2669	png	PNG image data, 122 x 75, 8-bit/color RGBA, non-interlaced									
+12.0128	480	12.1096	104	4494	png	PNG image data, 140 x 86, 8-bit/color RGBA, non-interlaced									
+12.0128	480	12.1096	104	4494	png	PNG image data, 140 x 86, 8-bit/color RGBA, non-interlaced									
+12.0128	480	12.1096	104	4494	png	PNG image data, 140 x 86, 8-bit/color RGBA, non-interlaced									
+12.0128	480	12.1096	104	4494	png	PNG image data, 140 x 86, 8-bit/color RGBA, non-interlaced									
+12.0224	453	12.1174	98	4510	png	PNG image data, 140 x 86, 8-bit/color RGBA, non-interlaced									
+12.0224	453	12.1174	98	4510	png	PNG image data, 140 x 86, 8-bit/color RGBA, non-interlaced									
+12.0224	453	12.1174	98	4510	png	PNG image data, 140 x 86, 8-bit/color RGBA, non-interlaced									
+12.0224	453	12.1174	98	4510	png	PNG image data, 140 x 86, 8-bit/color RGBA, non-interlaced									
+12.073	466	12.1892	42	4694	png	PNG image data, 141 x 184, 8-bit/color RGBA, non-interlaced									
+12.073	466	12.1892	42	4694	png	PNG image data, 141 x 184, 8-bit/color RGBA, non-interlaced									
+12.073	466	12.1892	42	4694	png	PNG image data, 141 x 184, 8-bit/color RGBA, non-interlaced									
+12.073	466	12.1892	42	4694	png	PNG image data, 141 x 184, 8-bit/color RGBA, non-interlaced									
+10.178	224	10.2503	80	1269	png	PNG image data, 144 x 144, 8-bit gray+alpha, non-interlaced									
+10.178	224	10.2503	80	1269	png	PNG image data, 144 x 144, 8-bit gray+alpha, non-interlaced									
+10.178	224	10.2503	80	1269	png	PNG image data, 144 x 144, 8-bit gray+alpha, non-interlaced									
+10.178	224	10.2503	80	1269	png	PNG image data, 144 x 144, 8-bit gray+alpha, non-interlaced									
+10.178	224	10.2503	80	1269	png	PNG image data, 144 x 144, 8-bit gray+alpha, non-interlaced									
+10.178	224	10.2503	80	1269	png	PNG image data, 144 x 144, 8-bit gray+alpha, non-interlaced									
+10.178	224	10.2503	80	1269	png	PNG image data, 144 x 144, 8-bit gray+alpha, non-interlaced									
+9.4326	172	9.48483	36	732	png	PNG image data, 15 x 37, 8-bit/color RGBA, non-interlaced									
+9.4326	172	9.48483	36	732	png	PNG image data, 15 x 37, 8-bit/color RGBA, non-interlaced									
+9.4326	172	9.48483	36	732	png	PNG image data, 15 x 37, 8-bit/color RGBA, non-interlaced									
+9.4326	172	9.48483	36	732	png	PNG image data, 15 x 37, 8-bit/color RGBA, non-interlaced									
+13.9661	8304	14.4138	352	22208	png	PNG image data, 150 x 225, 8-bit/color RGB, non-interlaced									
+12.3087	457	12.4128	61	5502	png	PNG image data, 150 x 53, 8-bit/color RGBA, non-interlaced									
+13.5357	2103	13.7609	64	13921	png	PNG image data, 160 x 111, 8-bit/color RGB, non-interlaced									
+12.7663	1477	12.9294	546	7989	png	PNG image data, 162 x 99, 8-bit/color RGBA, non-interlaced									
+12.7663	1477	12.9294	546	7989	png	PNG image data, 162 x 99, 8-bit/color RGBA, non-interlaced									
+12.7663	1477	12.9294	546	7989	png	PNG image data, 162 x 99, 8-bit/color RGBA, non-interlaced									
+12.7663	1477	12.9294	546	7989	png	PNG image data, 162 x 99, 8-bit/color RGBA, non-interlaced									
+9.07847	279	9.23181	95	671	png	PNG image data, 170 x 75, 8-bit/color RGBA, non-interlaced									
+9.07847	279	9.23181	95	671	png	PNG image data, 170 x 75, 8-bit/color RGBA, non-interlaced									
+13.7184	2737	13.9676	104	16105	png	PNG image data, 171 x 115, 8-bit/color RGB, non-interlaced									
+8.46326	126	8.54578	27	389	png	PNG image data, 19 x 19, 8-bit/color RGBA, non-interlaced									
+8.46326	126	8.54578	27	389	png	PNG image data, 19 x 19, 8-bit/color RGBA, non-interlaced									
+8.46326	126	8.54578	27	389	png	PNG image data, 19 x 19, 8-bit/color RGBA, non-interlaced									
+8.46326	126	8.54578	27	389	png	PNG image data, 19 x 19, 8-bit/color RGBA, non-interlaced									
+12.749	1106	12.9366	63	7878	png	PNG image data, 200 x 139, 8-bit colormap, non-interlaced									
+14.1388	5610	14.4771	142	22887	png	PNG image data, 200 x 148, 8-bit/color RGBA, non-interlaced									
+14.0926	4821	14.4139	143	21912	png	PNG image data, 200 x 148, 8-bit/color RGBA, non-interlaced									
+14.0327	4765	14.351	133	20967	png	PNG image data, 200 x 148, 8-bit/color RGBA, non-interlaced									
+14.0339	4441	14.338	132	20777	png	PNG image data, 200 x 148, 8-bit/color RGBA, non-interlaced									
+13.1412	1510	13.3542	53	10511	png	PNG image data, 200 x 157, 8-bit colormap, non-interlaced									
+13.0212	1341	13.2175	71	9574	png	PNG image data, 200 x 160, 8-bit colormap, non-interlaced									
+12.2409	738	12.396	76	5458	png	PNG image data, 200 x 53, 8-bit/color RGBA, non-interlaced									
+8.60494	124	8.67609	26	423	png	PNG image data, 21 x 21, 8-bit/color RGBA, non-interlaced									
+8.60494	124	8.67609	26	423	png	PNG image data, 21 x 21, 8-bit/color RGBA, non-interlaced									
+8.60494	124	8.67609	26	423	png	PNG image data, 21 x 21, 8-bit/color RGBA, non-interlaced									
+8.60494	124	8.67609	26	423	png	PNG image data, 21 x 21, 8-bit/color RGBA, non-interlaced									
+8.43785	123	8.51198	26	379	png	PNG image data, 21 x 21, 8-bit/color RGBA, non-interlaced									
+8.43785	123	8.51198	26	379	png	PNG image data, 21 x 21, 8-bit/color RGBA, non-interlaced									
+8.43785	123	8.51198	26	379	png	PNG image data, 21 x 21, 8-bit/color RGBA, non-interlaced									
+8.43785	123	8.51198	26	379	png	PNG image data, 21 x 21, 8-bit/color RGBA, non-interlaced									
+8.94434	129	9.01959	26	533	png	PNG image data, 21 x 24, 8-bit/color RGBA, non-interlaced									
+12.7752	855	12.9063	43	7702	png	PNG image data, 215 x 28, 8-bit/color RGBA, non-interlaced									
+12.0509	535	12.1965	42	4730	png	PNG image data, 228 x 49, 8-bit/color RGBA, non-interlaced									
+10.0131	137	10.0638	25	1083	png	PNG image data, 23 x 40, 8-bit/color RGBA, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.54952	123	8.61854	26	407	png	PNG image data, 24 x 24, 8-bit gray+alpha, non-interlaced									
+8.27606	173	8.38504	37	351	png	PNG image data, 24 x 24, 8-bit/color RGBA, non-interlaced									
+8.27606	173	8.38504	37	351	png	PNG image data, 24 x 24, 8-bit/color RGBA, non-interlaced									
+8.27606	173	8.38504	37	351	png	PNG image data, 24 x 24, 8-bit/color RGBA, non-interlaced									
+8.27606	173	8.38504	37	351	png	PNG image data, 24 x 24, 8-bit/color RGBA, non-interlaced									
+11.4028	303	11.47	38	2855	png	PNG image data, 242 x 21, 8-bit/color RGBA, non-interlaced									
+11.4028	303	11.47	38	2855	png	PNG image data, 242 x 21, 8-bit/color RGBA, non-interlaced									
+11.4028	303	11.47	38	2855	png	PNG image data, 242 x 21, 8-bit/color RGBA, non-interlaced									
+11.4028	303	11.47	38	2855	png	PNG image data, 242 x 21, 8-bit/color RGBA, non-interlaced									
+8.89685	129	8.97443	26	517	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.89685	129	8.97443	26	517	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.89685	129	8.97443	26	517	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.82209	126	8.89182	26	489	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.51524	126	8.60008	26	402	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.51524	126	8.60008	26	402	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.82209	126	8.89182	26	489	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.51524	126	8.60008	26	402	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.82209	126	8.89182	26	489	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.95938	125	9.01583	27	533	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.95938	125	9.01583	27	533	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.80382	125	8.87041	26	482	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.95938	125	9.01583	27	533	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.80382	125	8.87041	26	482	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.95068	125	9.01123	26	530	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.80382	125	8.87041	26	482	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.95068	125	9.01123	26	530	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.95068	125	9.01123	26	530	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.44499	124	8.51851	27	382	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.38607	124	8.46239	27	368	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.44499	124	8.51851	27	382	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.38607	124	8.46239	27	368	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.44086	124	8.51985	26	381	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.44499	124	8.51851	27	382	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.38607	124	8.46239	27	368	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.44086	124	8.51985	26	381	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.44086	124	8.51985	26	381	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.53796	123	8.6075	26	404	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.53796	123	8.6075	26	404	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.53796	123	8.6075	26	404	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.61074	122	8.67256	26	422	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.61074	122	8.67256	26	422	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+8.61074	122	8.67256	26	422	png	PNG image data, 25 x 25, 8-bit gray+alpha, non-interlaced									
+9.36393	202	9.47427	40	730	png	PNG image data, 25 x 25, 8-bit/color RGBA, non-interlaced									
+9.91459	197	9.989	40	1035	png	PNG image data, 25 x 25, 8-bit/color RGBA, non-interlaced									
+9.45184	185	9.51681	42	754	png	PNG image data, 25 x 25, 8-bit/color RGBA, non-interlaced									
+9.49773	179	9.5551	40	771	png	PNG image data, 25 x 25, 8-bit/color RGBA, non-interlaced									
+9.43318	178	9.4904	40	738	png	PNG image data, 25 x 25, 8-bit/color RGBA, non-interlaced									
+12.7226	907	12.868	152	7588	png	PNG image data, 252 x 39, 8-bit/color RGBA, non-interlaced									
+9.91403	178	9.9616	37	1014	png	PNG image data, 26 x 26, 8-bit/color RGBA, non-interlaced									
+9.91403	178	9.9616	37	1014	png	PNG image data, 26 x 26, 8-bit/color RGBA, non-interlaced									
+9.91403	178	9.9616	37	1014	png	PNG image data, 26 x 26, 8-bit/color RGBA, non-interlaced									
+9.91403	178	9.9616	37	1014	png	PNG image data, 26 x 26, 8-bit/color RGBA, non-interlaced									
+8.56099	123	8.62951	26	410	png	PNG image data, 27 x 27, 8-bit gray+alpha, non-interlaced									
+8.56099	123	8.62951	26	410	png	PNG image data, 27 x 27, 8-bit gray+alpha, non-interlaced									
+8.56099	123	8.62951	26	410	png	PNG image data, 27 x 27, 8-bit gray+alpha, non-interlaced									
+14.0691	5368	14.4254	113	22128	png	PNG image data, 288 x 167, 8-bit/color RGB, non-interlaced									
+9.32015	197	9.42436	40	708	png	PNG image data, 29 x 29, 8-bit/color RGB, non-interlaced									
+9.32015	197	9.42436	40	708	png	PNG image data, 29 x 29, 8-bit/color RGB, non-interlaced									
+9.32015	197	9.42436	40	708	png	PNG image data, 29 x 29, 8-bit/color RGB, non-interlaced									
+9.32015	197	9.42436	40	708	png	PNG image data, 29 x 29, 8-bit/color RGB, non-interlaced									
+9.3851	177	9.51524	38	762	png	PNG image data, 29 x 29, 8-bit/color RGBA, non-interlaced									
+9.3851	177	9.51524	38	762	png	PNG image data, 29 x 29, 8-bit/color RGBA, non-interlaced									
+9.3851	177	9.51524	38	762	png	PNG image data, 29 x 29, 8-bit/color RGBA, non-interlaced									
+9.35307	144	9.44701	26	712	png	PNG image data, 29 x 64, 8-bit/color RGBA, non-interlaced									
+9.35307	144	9.44701	26	712	png	PNG image data, 29 x 64, 8-bit/color RGBA, non-interlaced									
+9.35307	144	9.44701	26	712	png	PNG image data, 29 x 64, 8-bit/color RGBA, non-interlaced									
+9.35307	144	9.44701	26	712	png	PNG image data, 29 x 64, 8-bit/color RGBA, non-interlaced									
+10.2902	185	10.3392	36	1311	png	PNG image data, 29 x 67, 8-bit/color RGBA, non-interlaced									
+10.2902	185	10.3392	36	1311	png	PNG image data, 29 x 67, 8-bit/color RGBA, non-interlaced									
+10.2902	185	10.3392	36	1311	png	PNG image data, 29 x 67, 8-bit/color RGBA, non-interlaced									
+10.2902	185	10.3392	36	1311	png	PNG image data, 29 x 67, 8-bit/color RGBA, non-interlaced									
+10.4413	216	10.4879	50	1456	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.4413	216	10.4879	50	1456	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.4413	216	10.4879	50	1456	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.4413	216	10.4879	50	1456	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.7964	211	10.8552	36	1868	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.7964	211	10.8552	36	1868	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.7964	211	10.8552	36	1868	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.7964	211	10.8552	36	1868	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.8323	208	10.8883	36	1911	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.8323	208	10.8883	36	1911	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.8323	208	10.8883	36	1911	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+10.8323	208	10.8883	36	1911	png	PNG image data, 30 x 32, 8-bit/color RGBA, non-interlaced									
+8.57054	125	8.64526	25	413	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.57054	125	8.64526	25	413	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.57054	125	8.64526	25	413	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.57054	125	8.64526	25	413	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.51174	122	8.58269	25	396	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.51174	122	8.58269	25	396	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.51174	122	8.58269	25	396	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.51174	122	8.58269	25	396	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.51174	122	8.58269	25	396	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.51174	122	8.58269	25	396	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.51174	122	8.58269	25	396	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.51174	122	8.58269	25	396	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.51174	122	8.58269	25	396	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.52463	121	8.59019	25	398	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.52463	121	8.59019	25	398	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.52463	121	8.59019	25	398	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.52463	121	8.59019	25	398	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.52463	121	8.59019	25	398	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.52463	121	8.59019	25	398	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+8.52463	121	8.59019	25	398	png	PNG image data, 30 x 36, 8-bit/color RGBA, non-interlaced									
+10.5342	202	10.5879	40	1558	png	PNG image data, 31 x 31, 8-bit/color RGBA, non-interlaced									
+10.5342	202	10.5879	40	1558	png	PNG image data, 31 x 31, 8-bit/color RGBA, non-interlaced									
+10.5342	202	10.5879	40	1558	png	PNG image data, 31 x 31, 8-bit/color RGBA, non-interlaced									
+10.5342	202	10.5879	40	1558	png	PNG image data, 31 x 31, 8-bit/color RGBA, non-interlaced									
+11.2688	224	11.3219	37	2577	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+11.2688	224	11.3219	37	2577	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+11.2688	224	11.3219	37	2577	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.37974	172	8.47692	37	373	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.37974	172	8.47692	37	373	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.37974	172	8.47692	37	373	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.37974	172	8.47692	37	373	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+9.44479	130	9.50176	26	739	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+9.44479	130	9.50176	26	739	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+9.44479	130	9.50176	26	739	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+9.44479	130	9.50176	26	739	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.63216	126	8.71092	26	433	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.63216	126	8.71092	26	433	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.63216	126	8.71092	26	433	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.63216	126	8.71092	26	433	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.57508	124	8.6476	26	415	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.32913	124	8.41392	26	355	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.59753	124	8.66902	26	421	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.57508	124	8.6476	26	415	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.32913	124	8.41392	26	355	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.59753	124	8.66902	26	421	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.32913	124	8.41392	26	355	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.59753	124	8.66902	26	421	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.59753	124	8.66902	26	421	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.32913	124	8.41392	26	355	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+9.00103	123	9.05256	26	545	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+9.00103	123	9.05256	26	545	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+9.00103	123	9.05256	26	545	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+9.00103	123	9.05256	26	545	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.43069	122	8.50008	26	376	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+8.43069	122	8.50008	26	376	png	PNG image data, 32 x 32, 8-bit/color RGBA, non-interlaced									
+11.1615	228	11.2299	35	2426	png	PNG image data, 320 x 54, 8-bit/color RGB, non-interlaced									
+11.1615	228	11.2299	35	2426	png	PNG image data, 320 x 54, 8-bit/color RGB, non-interlaced									
+11.1615	228	11.2299	35	2426	png	PNG image data, 320 x 54, 8-bit/color RGB, non-interlaced									
+11.1615	228	11.2299	35	2426	png	PNG image data, 320 x 54, 8-bit/color RGB, non-interlaced									
+10.7432	160	10.8	26	1797	png	PNG image data, 33 x 33, 8-bit/color RGBA, non-interlaced									
+10.7432	160	10.8	26	1797	png	PNG image data, 33 x 33, 8-bit/color RGBA, non-interlaced									
+10.7432	160	10.8	26	1797	png	PNG image data, 33 x 33, 8-bit/color RGBA, non-interlaced									
+10.7432	160	10.8	26	1797	png	PNG image data, 33 x 33, 8-bit/color RGBA, non-interlaced									
+10.6481	169	10.7145	25	1693	png	PNG image data, 35 x 37, 8-bit/color RGBA, non-interlaced									
+9.40753	175	9.46587	37	724	png	PNG image data, 35 x 54, 8-bit/color RGBA, non-interlaced									
+9.40753	175	9.46587	37	724	png	PNG image data, 35 x 54, 8-bit/color RGBA, non-interlaced									
+9.40753	175	9.46587	37	724	png	PNG image data, 35 x 54, 8-bit/color RGBA, non-interlaced									
+9.40753	175	9.46587	37	724	png	PNG image data, 35 x 54, 8-bit/color RGBA, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52593	127	8.60992	27	406	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.46842	125	8.55094	26	389	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.46842	125	8.55094	26	389	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.46842	125	8.55094	26	389	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.46842	125	8.55094	26	389	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.46842	125	8.55094	26	389	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.46842	125	8.55094	26	389	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.46842	125	8.55094	26	389	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.46842	125	8.55094	26	389	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.46842	125	8.55094	26	389	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52911	124	8.60379	26	403	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.51739	124	8.59263	26	400	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52911	124	8.60379	26	403	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52911	124	8.60379	26	403	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.51739	124	8.59263	26	400	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52911	124	8.60379	26	403	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.51739	124	8.59263	26	400	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.51739	124	8.59263	26	400	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.51739	124	8.59263	26	400	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.51739	124	8.59263	26	400	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.52911	124	8.60379	26	403	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.533	124	8.6075	26	404	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.48677	123	8.55861	26	391	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.48677	123	8.55861	26	391	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.48677	123	8.55861	26	391	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.48677	123	8.55861	26	391	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.48677	123	8.55861	26	391	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.48677	123	8.55861	26	391	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.48677	123	8.55861	26	391	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+8.48677	123	8.55861	26	391	png	PNG image data, 36 x 36, 8-bit gray+alpha, non-interlaced									
+11.2928	206	11.3624	26	2647	png	PNG image data, 36 x 36, 8-bit/color RGBA, non-interlaced									
+10.685	157	10.7365	28	1723	png	PNG image data, 36 x 36, 8-bit/color RGBA, non-interlaced									
+10.685	157	10.7365	28	1723	png	PNG image data, 36 x 36, 8-bit/color RGBA, non-interlaced									
+10.5283	143	10.5726	26	1537	png	PNG image data, 36 x 36, 8-bit/color RGBA, non-interlaced									
+10.5283	143	10.5726	26	1537	png	PNG image data, 36 x 36, 8-bit/color RGBA, non-interlaced									
+10.8129	231	10.8933	37	1919	png	PNG image data, 37 x 36, 8-bit/color RGBA, non-interlaced									
+10.8129	231	10.8933	37	1919	png	PNG image data, 37 x 36, 8-bit/color RGBA, non-interlaced									
+10.8129	231	10.8933	37	1919	png	PNG image data, 37 x 36, 8-bit/color RGBA, non-interlaced									
+10.8129	231	10.8933	37	1919	png	PNG image data, 37 x 36, 8-bit/color RGBA, non-interlaced									
+11.1406	352	11.2082	96	2415	png	PNG image data, 38 x 89, 8-bit/color RGBA, non-interlaced									
+11.1406	352	11.2082	96	2415	png	PNG image data, 38 x 89, 8-bit/color RGBA, non-interlaced									
+11.1406	352	11.2082	96	2415	png	PNG image data, 38 x 89, 8-bit/color RGBA, non-interlaced									
+11.1406	352	11.2082	96	2415	png	PNG image data, 38 x 89, 8-bit/color RGBA, non-interlaced									
+10.2744	187	10.3208	40	1300	png	PNG image data, 40 x 40, 8-bit/color RGBA, non-interlaced									
+10.2744	187	10.3208	40	1300	png	PNG image data, 40 x 40, 8-bit/color RGBA, non-interlaced									
+10.2744	187	10.3208	40	1300	png	PNG image data, 40 x 40, 8-bit/color RGBA, non-interlaced									
+10.2744	187	10.3208	40	1300	png	PNG image data, 40 x 40, 8-bit/color RGBA, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.60444	121	8.66671	25	419	png	PNG image data, 41 x 34, 8-bit gray+alpha, non-interlaced									
+8.39237	126	8.48406	26	372	png	PNG image data, 41 x 50, 8-bit/color RGBA, non-interlaced									
+9.37905	176	9.44118	37	712	png	PNG image data, 42 x 42, 8-bit colormap, non-interlaced									
+9.37905	176	9.44118	37	712	png	PNG image data, 42 x 42, 8-bit colormap, non-interlaced									
+8.42541	169	8.51025	36	380	png	PNG image data, 42 x 7, 8-bit/color RGBA, non-interlaced									
+8.42541	169	8.51025	36	380	png	PNG image data, 42 x 7, 8-bit/color RGBA, non-interlaced									
+8.42541	169	8.51025	36	380	png	PNG image data, 42 x 7, 8-bit/color RGBA, non-interlaced									
+8.42541	169	8.51025	36	380	png	PNG image data, 42 x 7, 8-bit/color RGBA, non-interlaced									
+10.2044	190	10.3112	27	1286	png	PNG image data, 43 x 43, 8-bit/color RGBA, non-interlaced									
+10.2044	190	10.3112	27	1286	png	PNG image data, 43 x 43, 8-bit/color RGBA, non-interlaced									
+10.2044	190	10.3112	27	1286	png	PNG image data, 43 x 43, 8-bit/color RGBA, non-interlaced									
+10.2044	190	10.3112	27	1286	png	PNG image data, 43 x 43, 8-bit/color RGBA, non-interlaced									
+9.90288	173	10.0021	30	1045	png	PNG image data, 43 x 43, 8-bit/color RGBA, non-interlaced									
+9.90288	173	10.0021	30	1045	png	PNG image data, 43 x 43, 8-bit/color RGBA, non-interlaced									
+9.90288	173	10.0021	30	1045	png	PNG image data, 43 x 43, 8-bit/color RGBA, non-interlaced									
+9.90288	173	10.0021	30	1045	png	PNG image data, 43 x 43, 8-bit/color RGBA, non-interlaced									
+10.171	235	10.3042	33	1288	png	PNG image data, 44 x 44, 8-bit/color RGBA, non-interlaced									
+10.9487	216	11.0032	41	2075	png	PNG image data, 44 x 44, 8-bit/color RGBA, non-interlaced									
+10.9487	216	11.0032	41	2075	png	PNG image data, 44 x 44, 8-bit/color RGBA, non-interlaced									
+10.9487	216	11.0032	41	2075	png	PNG image data, 44 x 44, 8-bit/color RGBA, non-interlaced									
+10.9487	216	11.0032	41	2075	png	PNG image data, 44 x 44, 8-bit/color RGBA, non-interlaced									
+11.8837	308	11.9736	32	4044	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+11.8837	308	11.9736	32	4044	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+11.8837	308	11.9736	32	4044	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+11.8837	308	11.9736	32	4044	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+11.8994	306	11.9708	37	4031	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+11.744	300	11.8391	29	3682	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+11.744	300	11.8391	29	3682	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+11.744	300	11.8391	29	3682	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+11.744	300	11.8391	29	3682	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+10.5443	196	10.5981	37	1567	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+10.5443	196	10.5981	37	1567	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+10.5443	196	10.5981	37	1567	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+10.5443	196	10.5981	37	1567	png	PNG image data, 45 x 45, 8-bit/color RGBA, non-interlaced									
+10.2471	304	10.3004	53	1285	png	PNG image data, 46 x 34, 8-bit/color RGBA, non-interlaced									
+10.2471	304	10.3004	53	1285	png	PNG image data, 46 x 34, 8-bit/color RGBA, non-interlaced									
+10.2471	304	10.3004	53	1285	png	PNG image data, 46 x 34, 8-bit/color RGBA, non-interlaced									
+10.2471	304	10.3004	53	1285	png	PNG image data, 46 x 34, 8-bit/color RGBA, non-interlaced									
+8.76239	135	8.85168	29	480	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76239	135	8.85168	29	480	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76239	135	8.85168	29	480	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76239	135	8.85168	29	480	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.55675	131	8.64996	27	417	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.55675	131	8.64996	27	417	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.55675	131	8.64996	27	417	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.55675	131	8.64996	27	417	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.55675	131	8.64996	27	417	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.55675	131	8.64996	27	417	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.55675	131	8.64996	27	417	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.50819	129	8.60252	27	404	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.71471	128	8.79774	26	459	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.71471	128	8.79774	26	459	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.71471	128	8.79774	26	459	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.71471	128	8.79774	26	459	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.82662	128	8.90392	26	493	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.71471	128	8.79774	26	459	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.85445	125	8.91889	26	498	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.57025	125	8.6476	26	415	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+8.76329	123	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit gray+alpha, non-interlaced									
+11.4261	371	11.5292	65	2996	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.4261	371	11.5292	65	2996	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.4261	371	11.5292	65	2996	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.4261	371	11.5292	65	2996	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+12.0116	356	12.0999	38	4408	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+12.0116	356	12.0999	38	4408	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+12.0116	356	12.0999	38	4408	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.8624	345	11.9515	41	3983	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.2444	296	11.3401	41	2615	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.2444	296	11.3401	41	2615	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.2444	296	11.3401	41	2615	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.2444	296	11.3401	41	2615	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.7362	295	11.8136	38	3618	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.6713	294	11.7469	40	3458	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.5285	284	11.6073	37	3137	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.6064	274	11.6743	39	3288	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.7518	269	11.8148	38	3621	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.5612	268	11.6301	38	3188	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.3109	242	11.3726	41	2674	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.3109	242	11.3726	41	2674	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.3109	242	11.3726	41	2674	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.3109	242	11.3726	41	2674	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.2727	241	11.336	37	2602	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.2727	241	11.336	37	2602	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.2727	241	11.336	37	2602	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.2727	241	11.336	37	2602	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1811	224	11.234	38	2427	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1811	224	11.234	38	2427	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1811	224	11.234	38	2427	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1811	224	11.234	38	2427	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.6143	221	11.6803	26	3296	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.6143	221	11.6803	26	3296	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+10.8341	217	10.8922	41	1923	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.2135	217	11.2645	37	2477	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1437	215	11.1942	37	2360	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1437	215	11.1942	37	2360	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1437	215	11.1942	37	2360	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1437	215	11.1942	37	2360	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.256	197	11.3219	26	2574	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.256	197	11.3219	26	2574	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.256	197	11.3219	26	2574	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.256	197	11.3219	26	2574	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.4153	194	11.4722	28	2858	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1525	189	11.2167	26	2394	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.0289	187	11.0922	28	2200	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.0289	187	11.0922	28	2200	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.1131	187	11.1765	27	2330	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+10.5686	180	10.6018	37	1571	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.0251	178	11.0858	27	2189	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.0251	178	11.0858	27	2189	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+11.0251	178	11.0858	27	2189	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+9.35066	176	9.41108	38	699	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+9.35066	176	9.41108	38	699	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+9.35066	176	9.41108	38	699	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+9.35066	176	9.41108	38	699	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.52407	133	8.60129	31	409	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.52407	133	8.60129	31	409	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.52407	133	8.60129	31	409	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.52407	133	8.60129	31	409	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.49738	132	8.58384	30	403	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.49738	132	8.58384	30	403	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.49738	132	8.58384	30	403	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.49738	132	8.58384	30	403	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.66315	131	8.75267	28	448	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.66315	131	8.75267	28	448	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.73753	129	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.73753	129	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.73753	129	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.73753	129	8.82343	26	467	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.66953	128	8.74147	29	446	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.66953	128	8.74147	29	446	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.54248	126	8.62095	27	409	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.22975	126	8.32529	27	336	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.22975	126	8.32529	27	336	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.54248	126	8.62095	27	409	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.54248	126	8.62095	27	409	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.22975	126	8.32529	27	336	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.22975	126	8.32529	27	336	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.54248	126	8.62095	27	409	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.61127	125	8.68191	27	426	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.61127	125	8.68191	27	426	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.84196	125	8.90286	27	494	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.84196	125	8.90286	27	494	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.32466	124	8.40969	26	354	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.32466	124	8.40969	26	354	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.88399	123	8.9396	26	505	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.88399	123	8.9396	26	505	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.88399	123	8.9396	26	505	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+8.88399	123	8.9396	26	505	png	PNG image data, 48 x 48, 8-bit/color RGBA, non-interlaced									
+13.4993	1649	13.7036	31	13362	png	PNG image data, 482 x 40, 8-bit/color RGBA, non-interlaced									
+13.4993	1649	13.7036	31	13362	png	PNG image data, 482 x 40, 8-bit/color RGBA, non-interlaced									
+13.4993	1649	13.7036	31	13362	png	PNG image data, 482 x 40, 8-bit/color RGBA, non-interlaced									
+13.4993	1649	13.7036	31	13362	png	PNG image data, 482 x 40, 8-bit/color RGBA, non-interlaced									
+8.58635	124	8.66316	25	418	png	PNG image data, 49 x 34, 8-bit gray+alpha, non-interlaced									
+8.58635	124	8.66316	25	418	png	PNG image data, 49 x 34, 8-bit gray+alpha, non-interlaced									
+8.58635	124	8.66316	25	418	png	PNG image data, 49 x 34, 8-bit gray+alpha, non-interlaced									
+8.58635	124	8.66316	25	418	png	PNG image data, 49 x 34, 8-bit gray+alpha, non-interlaced									
+8.58635	124	8.66316	25	418	png	PNG image data, 49 x 34, 8-bit gray+alpha, non-interlaced									
+8.58635	124	8.66316	25	418	png	PNG image data, 49 x 34, 8-bit gray+alpha, non-interlaced									
+11.6393	271	11.7284	28	3410	png	PNG image data, 49 x 49, 8-bit/color RGBA, non-interlaced									
+11.6393	271	11.7284	28	3410	png	PNG image data, 49 x 49, 8-bit/color RGBA, non-interlaced									
+11.6393	271	11.7284	28	3410	png	PNG image data, 49 x 49, 8-bit/color RGBA, non-interlaced									
+11.6393	271	11.7284	28	3410	png	PNG image data, 49 x 49, 8-bit/color RGBA, non-interlaced									
+8.43863	126	8.52244	27	383	png	PNG image data, 49 x 67, 8-bit/color RGBA, non-interlaced									
+8.43863	126	8.52244	27	383	png	PNG image data, 49 x 67, 8-bit/color RGBA, non-interlaced									
+11.9665	278	12.044	26	4237	png	PNG image data, 50 x 45, 8-bit/color RGBA, non-interlaced									
+10.2305	139	10.2784	26	1256	png	PNG image data, 50 x 50, 8-bit gray+alpha, non-interlaced									
+10.2305	139	10.2784	26	1256	png	PNG image data, 50 x 50, 8-bit gray+alpha, non-interlaced									
+10.2305	139	10.2784	26	1256	png	PNG image data, 50 x 50, 8-bit gray+alpha, non-interlaced									
+9.56346	137	9.63043	27	808	png	PNG image data, 50 x 50, 8-bit gray+alpha, non-interlaced									
+9.56346	137	9.63043	27	808	png	PNG image data, 50 x 50, 8-bit gray+alpha, non-interlaced									
+9.56346	137	9.63043	27	808	png	PNG image data, 50 x 50, 8-bit gray+alpha, non-interlaced									
+8.34041	134	8.446	30	368	png	PNG image data, 50 x 50, 8-bit gray+alpha, non-interlaced									
+8.34041	134	8.446	30	368	png	PNG image data, 50 x 50, 8-bit gray+alpha, non-interlaced									
+8.34041	134	8.446	30	368	png	PNG image data, 50 x 50, 8-bit gray+alpha, non-interlaced									
+11.2546	196	11.3166	27	2566	png	PNG image data, 50 x 50, 8-bit/color RGBA, non-interlaced									
+10.7325	193	10.8139	28	1817	png	PNG image data, 50 x 50, 8-bit/color RGBA, non-interlaced									
+10.7325	193	10.8139	28	1817	png	PNG image data, 50 x 50, 8-bit/color RGBA, non-interlaced									
+10.7325	193	10.8139	28	1817	png	PNG image data, 50 x 50, 8-bit/color RGBA, non-interlaced									
+8.58889	175	8.6827	38	429	png	PNG image data, 50 x 50, 8-bit/color RGBA, non-interlaced									
+11.218	183	11.2753	27	2494	png	PNG image data, 50 x 92, 8-bit/color RGBA, non-interlaced									
+10.7222	271	10.7872	42	1791	png	PNG image data, 50 x 98, 8-bit/color RGBA, non-interlaced									
+10.7222	271	10.7872	42	1791	png	PNG image data, 50 x 98, 8-bit/color RGBA, non-interlaced									
+10.7222	271	10.7872	42	1791	png	PNG image data, 50 x 98, 8-bit/color RGBA, non-interlaced									
+10.7222	271	10.7872	42	1791	png	PNG image data, 50 x 98, 8-bit/color RGBA, non-interlaced									
+9.41978	130	9.47217	28	727	png	PNG image data, 54 x 54, 8-bit gray+alpha, non-interlaced									
+9.41978	130	9.47217	28	727	png	PNG image data, 54 x 54, 8-bit gray+alpha, non-interlaced									
+8.97863	126	9.04166	26	541	png	PNG image data, 54 x 54, 8-bit gray+alpha, non-interlaced									
+8.97863	126	9.04166	26	541	png	PNG image data, 54 x 54, 8-bit gray+alpha, non-interlaced									
+8.97863	126	9.04166	26	541	png	PNG image data, 54 x 54, 8-bit gray+alpha, non-interlaced									
+8.97863	126	9.04166	26	541	png	PNG image data, 54 x 54, 8-bit gray+alpha, non-interlaced									
+8.35144	235	8.50405	89	421	png	PNG image data, 54 x 66, 8-bit/color RGBA, non-interlaced									
+8.50035	161	8.59594	53	419	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.50035	161	8.59594	53	419	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.55015	138	8.64875	31	422	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.55015	138	8.64875	31	422	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.55015	138	8.64875	31	422	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.55015	138	8.64875	31	422	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.54703	133	8.63314	32	419	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.54703	133	8.63314	32	419	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.54703	133	8.63314	32	419	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.54703	133	8.63314	32	419	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+8.54703	133	8.63314	32	419	png	PNG image data, 56 x 74, 8-bit gray+alpha, non-interlaced									
+11.7977	295	11.8684	37	3756	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7977	295	11.8684	37	3756	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7977	295	11.8684	37	3756	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7977	295	11.8684	37	3756	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7408	293	11.8141	40	3622	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7408	293	11.8141	40	3622	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7408	293	11.8141	40	3622	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7408	293	11.8141	40	3622	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.8058	287	11.8715	40	3768	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.8058	287	11.8715	40	3768	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.8058	287	11.8715	40	3768	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.8058	287	11.8715	40	3768	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7482	276	11.8105	40	3613	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7482	276	11.8105	40	3613	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7482	276	11.8105	40	3613	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+11.7482	276	11.8105	40	3613	png	PNG image data, 57 x 57, 8-bit/color RGBA, non-interlaced									
+10.8982	372	10.9724	148	2082	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.8982	372	10.9724	148	2082	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.8982	372	10.9724	148	2082	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.8982	372	10.9724	148	2082	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9049	278	10.9744	81	2069	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9049	278	10.9744	81	2069	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9049	278	10.9744	81	2069	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9049	278	10.9744	81	2069	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9152	272	10.9805	76	2073	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9152	272	10.9805	76	2073	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9152	272	10.9805	76	2073	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9152	272	10.9805	76	2073	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9153	270	10.9848	76	2079	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9153	270	10.9848	76	2079	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9153	270	10.9848	76	2079	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9153	270	10.9848	76	2079	png	PNG image data, 60 x 60, 8-bit/color RGBA, non-interlaced									
+10.9493	159	10.9945	28	2057	png	PNG image data, 60 x 68, 8-bit/color RGBA, non-interlaced									
+9.4581	135	9.53007	25	752	png	PNG image data, 60 x 72, 8-bit/color RGBA, non-interlaced									
+9.4581	135	9.53007	25	752	png	PNG image data, 60 x 72, 8-bit/color RGBA, non-interlaced									
+9.4581	135	9.53007	25	752	png	PNG image data, 60 x 72, 8-bit/color RGBA, non-interlaced									
+9.4581	135	9.53007	25	752	png	PNG image data, 60 x 72, 8-bit/color RGBA, non-interlaced									
+9.4581	135	9.53007	25	752	png	PNG image data, 60 x 72, 8-bit/color RGBA, non-interlaced									
+9.4581	135	9.53007	25	752	png	PNG image data, 60 x 72, 8-bit/color RGBA, non-interlaced									
+9.4581	135	9.53007	25	752	png	PNG image data, 60 x 72, 8-bit/color RGBA, non-interlaced									
+9.4581	135	9.53007	25	752	png	PNG image data, 60 x 72, 8-bit/color RGBA, non-interlaced									
+9.4581	135	9.53007	25	752	png	PNG image data, 60 x 72, 8-bit/color RGBA, non-interlaced									
+10.2285	270	10.3205	38	1297	png	PNG image data, 62 x 39, 8-bit/color RGBA, non-interlaced									
+10.2285	270	10.3205	38	1297	png	PNG image data, 62 x 39, 8-bit/color RGBA, non-interlaced									
+10.2285	270	10.3205	38	1297	png	PNG image data, 62 x 39, 8-bit/color RGBA, non-interlaced									
+10.2285	270	10.3205	38	1297	png	PNG image data, 62 x 39, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+8.67052	173	8.76017	36	449	png	PNG image data, 63 x 32, 8-bit/color RGBA, non-interlaced									
+11.1172	274	11.176	38	2332	png	PNG image data, 63 x 55, 8-bit/color RGBA, non-interlaced									
+11.1172	274	11.176	38	2332	png	PNG image data, 63 x 55, 8-bit/color RGBA, non-interlaced									
+11.1172	274	11.176	38	2332	png	PNG image data, 63 x 55, 8-bit/color RGBA, non-interlaced									
+11.1172	274	11.176	38	2332	png	PNG image data, 63 x 55, 8-bit/color RGBA, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+9.53294	152	9.58266	38	785	png	PNG image data, 64 x 64, 8-bit gray+alpha, non-interlaced									
+13.0442	1009	13.1923	57	9390	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+13.0442	1009	13.1923	57	9390	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+13.0442	1009	13.1923	57	9390	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+12.7161	763	12.8508	50	7407	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+12.5485	726	12.68	54	6588	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+12.5485	726	12.68	54	6588	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+12.5485	726	12.68	54	6588	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+12.4646	624	12.5811	56	6156	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+12.4646	624	12.5811	56	6156	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+12.4646	624	12.5811	56	6156	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+12.5816	620	12.6907	52	6634	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+12.4252	601	12.5403	51	5978	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.4845	466	11.6246	65	3213	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.4845	466	11.6246	65	3213	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.4845	466	11.6246	65	3213	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.4845	466	11.6246	65	3213	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.8243	361	11.9054	53	3875	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.8243	361	11.9054	53	3875	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.8243	361	11.9054	53	3875	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.8243	361	11.9054	53	3875	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.6073	333	11.6864	66	3339	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.6073	333	11.6864	66	3339	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.6073	333	11.6864	66	3339	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.6073	333	11.6864	66	3339	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.7264	313	11.803	53	3610	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.7264	313	11.803	53	3610	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.7264	313	11.803	53	3610	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.7264	313	11.803	53	3610	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.6429	304	11.7169	50	3401	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.6429	304	11.7169	50	3401	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.6429	304	11.7169	50	3401	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+11.6429	304	11.7169	50	3401	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+8.62381	149	8.69616	45	443	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+8.62381	149	8.69616	45	443	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+8.62381	149	8.69616	45	443	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+8.62381	149	8.69616	45	443	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+9.41836	144	9.47606	35	734	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+9.41836	144	9.47606	35	734	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+9.41836	144	9.47606	35	734	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+9.41836	144	9.47606	35	734	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+9.41836	144	9.47606	35	734	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+9.41836	144	9.47606	35	734	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+9.41836	144	9.47606	35	734	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+9.41836	144	9.47606	35	734	png	PNG image data, 64 x 64, 8-bit/color RGBA, non-interlaced									
+8.58801	126	8.67379	25	421	png	PNG image data, 66 x 26, 8-bit/color RGBA, non-interlaced									
+8.58801	126	8.67379	25	421	png	PNG image data, 66 x 26, 8-bit/color RGBA, non-interlaced									
+8.58801	126	8.67379	25	421	png	PNG image data, 66 x 26, 8-bit/color RGBA, non-interlaced									
+8.58801	126	8.67379	25	421	png	PNG image data, 66 x 26, 8-bit/color RGBA, non-interlaced									
+8.58801	126	8.67379	25	421	png	PNG image data, 66 x 26, 8-bit/color RGBA, non-interlaced									
+8.58801	126	8.67379	25	421	png	PNG image data, 66 x 26, 8-bit/color RGBA, non-interlaced									
+11.3874	373	11.4578	53	2837	png	PNG image data, 66 x 66, 8-bit/color RGBA, non-interlaced									
+11.3874	373	11.4578	53	2837	png	PNG image data, 66 x 66, 8-bit/color RGBA, non-interlaced									
+11.3874	373	11.4578	53	2837	png	PNG image data, 66 x 66, 8-bit/color RGBA, non-interlaced									
+11.3874	373	11.4578	53	2837	png	PNG image data, 66 x 66, 8-bit/color RGBA, non-interlaced									
+12.6874	790	12.8422	38	7374	png	PNG image data, 67 x 67, 8-bit/color RGBA, non-interlaced									
+12.6874	790	12.8422	38	7374	png	PNG image data, 67 x 67, 8-bit/color RGBA, non-interlaced									
+12.6874	790	12.8422	38	7374	png	PNG image data, 67 x 67, 8-bit/color RGBA, non-interlaced									
+12.6874	790	12.8422	38	7374	png	PNG image data, 67 x 67, 8-bit/color RGBA, non-interlaced									
+11.544	237	11.616	29	3157	png	PNG image data, 70 x 70, 8-bit/color RGBA, non-interlaced									
+11.544	237	11.616	29	3157	png	PNG image data, 70 x 70, 8-bit/color RGBA, non-interlaced									
+10.5373	244	10.6303	62	1637	png	PNG image data, 71 x 74, 8-bit/color RGBA, non-interlaced									
+10.5373	244	10.6303	62	1637	png	PNG image data, 71 x 74, 8-bit/color RGBA, non-interlaced									
+10.5373	244	10.6303	62	1637	png	PNG image data, 71 x 74, 8-bit/color RGBA, non-interlaced									
+10.5373	244	10.6303	62	1637	png	PNG image data, 71 x 74, 8-bit/color RGBA, non-interlaced									
+8.51236	150	8.66902	26	421	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.51236	150	8.66902	26	421	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.51236	150	8.66902	26	421	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.51236	150	8.66902	26	421	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.51236	150	8.66902	26	421	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.51236	150	8.66902	26	421	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.51236	150	8.66902	26	421	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.35087	149	9.44495	26	711	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.74068	147	8.82067	40	476	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.3477	147	9.43664	26	707	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.3477	147	9.43664	26	707	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.3477	147	9.43664	26	707	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.74068	147	8.82067	40	476	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.3477	147	9.43664	26	707	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.3477	147	9.43664	26	707	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.3477	147	9.43664	26	707	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.74068	147	8.82067	40	476	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.3477	147	9.43664	26	707	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.3477	147	9.43664	26	707	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+10.3203	145	10.3672	29	1339	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+10.3203	145	10.3672	29	1339	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+10.3203	145	10.3672	29	1339	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+10.3203	145	10.3672	29	1339	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34866	144	9.4344	29	710	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34866	144	9.4344	29	710	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34866	144	9.4344	29	710	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34866	144	9.4344	29	710	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34866	144	9.4344	29	710	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.34043	143	9.42394	29	705	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+9.33896	138	9.422	26	700	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.54325	134	8.62396	31	413	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+8.37405	127	8.46648	27	369	png	PNG image data, 72 x 72, 8-bit gray+alpha, non-interlaced									
+12.7223	784	12.8766	43	7556	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+12.4774	588	12.6109	35	6282	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+12.4774	588	12.6109	35	6282	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+11.8352	378	11.9453	32	3966	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+11.8352	378	11.9453	32	3966	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+11.8849	327	11.9652	39	4018	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+11.8849	327	11.9652	39	4018	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+11.8849	327	11.9652	39	4018	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+11.7628	278	11.8497	29	3709	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+11.8671	252	11.9376	27	3938	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+11.8671	252	11.9376	27	3938	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+9.42542	138	9.4889	30	738	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+9.42542	138	9.4889	30	738	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+9.42542	138	9.4889	30	738	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+9.42542	138	9.4889	30	738	png	PNG image data, 72 x 72, 8-bit/color RGBA, non-interlaced									
+8.13664	250	8.2733	108	367	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+8.13664	250	8.2733	108	367	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+8.13664	250	8.2733	108	367	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+8.13664	250	8.2733	108	367	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+8.04803	244	8.19907	112	354	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+8.04803	244	8.19907	112	354	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+8.04803	244	8.19907	112	354	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+8.04803	244	8.19907	112	354	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+8.04803	244	8.19907	112	354	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+8.04803	244	8.19907	112	354	png	PNG image data, 74 x 98, 8-bit gray+alpha, non-interlaced									
+11.6448	266	11.7101	36	3366	png	PNG image data, 75 x 44, 8-bit/color RGBA, non-interlaced									
+11.6448	266	11.7101	36	3366	png	PNG image data, 75 x 44, 8-bit/color RGBA, non-interlaced									
+11.6448	266	11.7101	36	3366	png	PNG image data, 75 x 44, 8-bit/color RGBA, non-interlaced									
+11.6448	266	11.7101	36	3366	png	PNG image data, 75 x 44, 8-bit/color RGBA, non-interlaced									
+11.6938	283	11.7657	37	3499	png	PNG image data, 75 x 60, 8-bit/color RGBA, non-interlaced									
+11.6938	283	11.7657	37	3499	png	PNG image data, 75 x 60, 8-bit/color RGBA, non-interlaced									
+11.6938	283	11.7657	37	3499	png	PNG image data, 75 x 60, 8-bit/color RGBA, non-interlaced									
+11.6938	283	11.7657	37	3499	png	PNG image data, 75 x 60, 8-bit/color RGBA, non-interlaced									
+10.3151	199	10.3678	45	1347	png	PNG image data, 80 x 42, 8-bit/color RGBA, non-interlaced									
+10.3151	199	10.3678	45	1347	png	PNG image data, 80 x 42, 8-bit/color RGBA, non-interlaced									
+10.3151	199	10.3678	45	1347	png	PNG image data, 80 x 42, 8-bit/color RGBA, non-interlaced									
+10.3151	199	10.3678	45	1347	png	PNG image data, 80 x 42, 8-bit/color RGBA, non-interlaced									
+8.94895	127	9.02058	25	532	png	PNG image data, 80 x 66, 8-bit gray+alpha, non-interlaced									
+8.94895	127	9.02058	25	532	png	PNG image data, 80 x 66, 8-bit gray+alpha, non-interlaced									
+8.94895	127	9.02058	25	532	png	PNG image data, 80 x 66, 8-bit gray+alpha, non-interlaced									
+8.94895	127	9.02058	25	532	png	PNG image data, 80 x 66, 8-bit gray+alpha, non-interlaced									
+8.94895	127	9.02058	25	532	png	PNG image data, 80 x 66, 8-bit gray+alpha, non-interlaced									
+8.94895	127	9.02058	25	532	png	PNG image data, 80 x 66, 8-bit gray+alpha, non-interlaced									
+8.94895	127	9.02058	25	532	png	PNG image data, 80 x 66, 8-bit gray+alpha, non-interlaced									
+12.7296	642	12.8595	31	7453	png	PNG image data, 80 x 80, 8-bit/color RGBA, non-interlaced									
+11.2189	259	11.2842	50	2522	png	PNG image data, 81 x 50, 8-bit/color RGBA, non-interlaced									
+11.2189	259	11.2842	50	2522	png	PNG image data, 81 x 50, 8-bit/color RGBA, non-interlaced									
+11.2189	259	11.2842	50	2522	png	PNG image data, 81 x 50, 8-bit/color RGBA, non-interlaced									
+11.2189	259	11.2842	50	2522	png	PNG image data, 81 x 50, 8-bit/color RGBA, non-interlaced									
+10.7368	227	10.7959	47	1804	png	PNG image data, 81 x 50, 8-bit/color RGBA, non-interlaced									
+10.7368	227	10.7959	47	1804	png	PNG image data, 81 x 50, 8-bit/color RGBA, non-interlaced									
+10.7368	227	10.7959	47	1804	png	PNG image data, 81 x 50, 8-bit/color RGBA, non-interlaced									
+10.7368	227	10.7959	47	1804	png	PNG image data, 81 x 50, 8-bit/color RGBA, non-interlaced									
+11.8398	417	11.9495	47	3986	png	PNG image data, 81 x 80, 8-bit/color RGBA, non-interlaced									
+11.8398	417	11.9495	47	3986	png	PNG image data, 81 x 80, 8-bit/color RGBA, non-interlaced									
+11.8398	417	11.9495	47	3986	png	PNG image data, 81 x 80, 8-bit/color RGBA, non-interlaced									
+11.8398	417	11.9495	47	3986	png	PNG image data, 81 x 80, 8-bit/color RGBA, non-interlaced									
+11.5427	391	11.6606	74	3305	png	PNG image data, 83 x 83, 8-bit/color RGBA, non-interlaced									
+11.5427	391	11.6606	74	3305	png	PNG image data, 83 x 83, 8-bit/color RGBA, non-interlaced									
+11.5427	391	11.6606	74	3305	png	PNG image data, 83 x 83, 8-bit/color RGBA, non-interlaced									
+11.5427	391	11.6606	74	3305	png	PNG image data, 83 x 83, 8-bit/color RGBA, non-interlaced									
+12.1414	561	12.2724	56	4988	png	PNG image data, 86 x 86, 8-bit/color RGBA, non-interlaced									
+12.1414	561	12.2724	56	4988	png	PNG image data, 86 x 86, 8-bit/color RGBA, non-interlaced									
+12.1414	561	12.2724	56	4988	png	PNG image data, 86 x 86, 8-bit/color RGBA, non-interlaced									
+12.1414	561	12.2724	56	4988	png	PNG image data, 86 x 86, 8-bit/color RGBA, non-interlaced									
+12.4824	527	12.5919	43	6199	png	PNG image data, 86 x 86, 8-bit/color RGBA, non-interlaced									
+12.4824	527	12.5919	43	6199	png	PNG image data, 86 x 86, 8-bit/color RGBA, non-interlaced									
+12.4824	527	12.5919	43	6199	png	PNG image data, 86 x 86, 8-bit/color RGBA, non-interlaced									
+12.4824	527	12.5919	43	6199	png	PNG image data, 86 x 86, 8-bit/color RGBA, non-interlaced									
+11.3752	354	11.4808	56	2901	png	PNG image data, 88 x 19, 8-bit/color RGBA, non-interlaced									
+11.111	352	11.1718	128	2381	png	PNG image data, 90 x 75, 8-bit/color RGBA, non-interlaced									
+13.2926	1721	13.519	70	11807	png	PNG image data, 90 x 90, 8-bit/color RGBA, non-interlaced									
+13.2926	1721	13.519	70	11807	png	PNG image data, 90 x 90, 8-bit/color RGBA, non-interlaced									
+13.2926	1721	13.519	70	11807	png	PNG image data, 90 x 90, 8-bit/color RGBA, non-interlaced									
+13.2926	1721	13.519	70	11807	png	PNG image data, 90 x 90, 8-bit/color RGBA, non-interlaced									
+12.3584	1009	12.5026	256	5944	png	PNG image data, 92 x 108, 8-bit/color RGBA, non-interlaced									
+12.3584	1009	12.5026	256	5944	png	PNG image data, 92 x 108, 8-bit/color RGBA, non-interlaced									
+12.3584	1009	12.5026	256	5944	png	PNG image data, 92 x 108, 8-bit/color RGBA, non-interlaced									
+12.3584	1009	12.5026	256	5944	png	PNG image data, 92 x 108, 8-bit/color RGBA, non-interlaced									
+12.5996	665	12.7261	64	6823	png	PNG image data, 92 x 108, 8-bit/color RGBA, non-interlaced									
+12.5996	665	12.7261	64	6823	png	PNG image data, 92 x 108, 8-bit/color RGBA, non-interlaced									
+12.5996	665	12.7261	64	6823	png	PNG image data, 92 x 108, 8-bit/color RGBA, non-interlaced									
+12.5996	665	12.7261	64	6823	png	PNG image data, 92 x 108, 8-bit/color RGBA, non-interlaced									
+11.3303	267	11.3908	51	2717	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.3303	267	11.3908	51	2717	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.3303	267	11.3908	51	2717	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.3303	267	11.3908	51	2717	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.2903	242	11.3559	37	2638	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.2903	242	11.3559	37	2638	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.2903	242	11.3559	37	2638	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.2903	242	11.3559	37	2638	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.2801	236	11.3401	36	2608	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.2801	236	11.3401	36	2608	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.2801	236	11.3401	36	2608	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.2801	236	11.3401	36	2608	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.3341	226	11.3872	36	2694	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.3341	226	11.3872	36	2694	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.3341	226	11.3872	36	2694	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+11.3341	226	11.3872	36	2694	png	PNG image data, 94 x 58, 8-bit/color RGBA, non-interlaced									
+13.8525	3768	14.1589	77	18349	png	PNG image data, 96 x 96, 8-bit/color RGBA, interlaced									
+12.6095	705	12.7473	56	6919	png	PNG image data, 96 x 96, 8-bit/color RGBA, non-interlaced									
+12.6095	705	12.7473	56	6919	png	PNG image data, 96 x 96, 8-bit/color RGBA, non-interlaced									
+12.6095	705	12.7473	56	6919	png	PNG image data, 96 x 96, 8-bit/color RGBA, non-interlaced									
+12.6095	705	12.7473	56	6919	png	PNG image data, 96 x 96, 8-bit/color RGBA, non-interlaced									
+12.3468	577	12.4638	72	5703	png	PNG image data, 96 x 96, 8-bit/color RGBA, non-interlaced									
+12.3468	577	12.4638	72	5703	png	PNG image data, 96 x 96, 8-bit/color RGBA, non-interlaced									
+12.3468	577	12.4638	72	5703	png	PNG image data, 96 x 96, 8-bit/color RGBA, non-interlaced									
+12.3468	577	12.4638	72	5703	png	PNG image data, 96 x 96, 8-bit/color RGBA, non-interlaced									
+10.9935	97	11.0435	11	2121	snap	data									
+10.9935	97	11.0435	11	2121	snap	data									
+11.938	143	11.9964	11	4096	tgz	gzip compressed data, from Unix, original size 328327252									
+11.938	143	11.9964	11	4096	tgz	gzip compressed data, from Unix, original size 328327252									
+11.938	143	11.9964	11	4096	tgz	gzip compressed data, from Unix, original size 328327252									
+11.938	143	11.9964	11	4096	tgz	gzip compressed data, from Unix, original size 328327252									
+15.0029	32137	15.7433	645	55415	tgz	gzip compressed data, last modified									
+15.0029	32137	15.7433	645	55415	tgz	gzip compressed data, last modified									
+15.0029	32137	15.7433	645	55415	tgz	gzip compressed data, last modified									
+15.0029	32137	15.7433	645	55415	tgz	gzip compressed data, last modified									
+9.0875	89	9.10231	75	583	tgz	gzip compressed data, last modified									
+9.0875	89	9.10231	75	583	tgz	gzip compressed data, last modified									
+8.36937	71	8.40658	40	360	tgz	"gzip compressed data, was ""gitignore-and-npmignore.tar"", last modified"									
+8.36937	71	8.40658	40	360	tgz	"gzip compressed data, was ""gitignore-and-npmignore.tar"", last modified"									
+8.36937	71	8.40658	40	360	tgz	"gzip compressed data, was ""gitignore-and-npmignore.tar"", last modified"									
+8.36937	71	8.40658	40	360	tgz	"gzip compressed data, was ""gitignore-and-npmignore.tar"", last modified"									
+9.09977	9	9.12928	0	562	txt	data									
+13.9718	3807	14.2445	544	19508	woff2	Web Open Font Format (Version 2), TrueType, length 19508, version 2.0									
+13.9718	3807	14.2445	544	19508	woff2	Web Open Font Format (Version 2), TrueType, length 19508, version 2.0									
+13.9718	3807	14.2445	544	19508	woff2	Web Open Font Format (Version 2), TrueType, length 19508, version 2.0									
+13.9718	3807	14.2445	544	19508	woff2	Web Open Font Format (Version 2), TrueType, length 19508, version 2.0									
+13.9775	4256	14.2698	600	19868	woff2	Web Open Font Format (Version 2), TrueType, length 19868, version 2.0									
+13.9775	4256	14.2698	600	19868	woff2	Web Open Font Format (Version 2), TrueType, length 19868, version 2.0									
+13.9775	4256	14.2698	600	19868	woff2	Web Open Font Format (Version 2), TrueType, length 19868, version 2.0									
+13.9775	4256	14.2698	600	19868	woff2	Web Open Font Format (Version 2), TrueType, length 19868, version 2.0									
+13.9842	4281	14.2764	589	19944	woff2	Web Open Font Format (Version 2), TrueType, length 19944, version 2.0									
+13.9842	4281	14.2764	589	19944	woff2	Web Open Font Format (Version 2), TrueType, length 19944, version 2.0									
+13.9842	4281	14.2764	589	19944	woff2	Web Open Font Format (Version 2), TrueType, length 19944, version 2.0									
+13.9842	4281	14.2764	589	19944	woff2	Web Open Font Format (Version 2), TrueType, length 19944, version 2.0									
+14.8322	19022	15.4294	514	44300	woff2	Web Open Font Format (Version 2), TrueType, length 44300, version 1.720									
+14.8322	19022	15.4294	514	44300	woff2	Web Open Font Format (Version 2), TrueType, length 44300, version 1.720									
+14.8322	19022	15.4294	514	44300	woff2	Web Open Font Format (Version 2), TrueType, length 44300, version 1.720									
+14.8322	19022	15.4294	514	44300	woff2	Web Open Font Format (Version 2), TrueType, length 44300, version 1.720									
+15.2319	51906	16.1249	643	71896	woff2	Web Open Font Format (Version 2), TrueType, length 71896, version 4.393									
+15.2319	51906	16.1249	643	71896	woff2	Web Open Font Format (Version 2), TrueType, length 71896, version 4.393									

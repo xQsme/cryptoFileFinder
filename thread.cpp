@@ -47,14 +47,15 @@ void Thread::search(QString dir)
 void Thread::analyzeFile(QString file)
 {
     QFile fileToCheck(file);
-    fileToCheck.open(QIODevice::ReadOnly);
     if(fileToCheck.size() < 32)
     {
         return;
     }
-    QString command = fileCommand(file);
+    fileToCheck.open(QIODevice::ReadOnly);
+
+    /*QString command = fileCommand(file);
     if(true || command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.contains("image") && !command.contains("archive")))
-    {
+    {*/
         total=0;
         QHash<char, long> data;
         while(!fileToCheck.atEnd())
@@ -70,15 +71,29 @@ void Thread::analyzeFile(QString file)
             double limit= 22017.84 + (374.6088 - 22017.84)/(1.0 + pow((1.0*fileToCheck.size()/2269952000), 0.8129303));
             if(chi2 < limit)
             {
-                nGrams(&fileToCheck);
-                /*double piError = approximatePi(&fileToCheck);
-                if(piError < 0.2 && piError > 0.1)*/
-                count++;
-                qDebug() << command;
-                *stream << command.split(": ")[1] << endl;
+                double nGramChi2 = nGramSequence(&fileToCheck);
+                double limit2;
+                if(fileToCheck.size() < 2250000)
+                {
+                    limit2=0.8734828 + 0.0001491228*fileToCheck.size() + pow(0.00000002666479*fileToCheck.size(), 2);
+                }
+                else
+                {
+                    limit2 = 0.4522293*fileToCheck.size() - 823248.4;
+                }
+                if(nGramChi2 < limit2)
+                {
+                    count++;
+                    QString command = fileCommand(file);
+                    qDebug() << command;
+                    *stream << nGramChi2 << ";";
+                    *stream << fileToCheck.size() << ";";
+                    *stream << file.split(".").last() << ";";
+                    *stream << command.split(": ")[1] << endl;
+                }
             }
         }
-    }
+    //}
     fileToCheck.close();
 }
 
@@ -135,7 +150,7 @@ double Thread::approximatePi(QFile* file)
 
 void Thread::nGrams(QFile* file)
 {
-    for(int i=2; i <= 16; i*=2)
+    for(int i=2; i <= 4; i++)
     {
         file->reset();
         total=0;
@@ -187,25 +202,23 @@ double Thread::sumChi2(QHash<int, long> data){
     return chi2;
 }
 
-void Thread::nGramSequence(QFile* file)
+double Thread::nGramSequence(QFile* file)
 {
-    for(int i=2; i <= 16; i*=2)
+    file->reset();
+    total=0;
+    QHash<QByteArray, long> data;
+    while(!file->atEnd())
     {
-        file->reset();
-        total=0;
-        QHash<QByteArray, long> data;
-        while(!file->atEnd())
+        data[file->read(3)]++;
+        total++;
+        if(!file->atEnd())
         {
-            data[file->read(i)]++;
-            total++;
-            if(!file->atEnd())
-            {
-                file->seek(file->pos()-i+1);
-            }
+            file->seek(file->pos()-2);
         }
-        *stream << nGramEntropy(data) << ";";
-        *stream << nGramChi2(data) << ";";
     }
+    //*stream << nGramEntropy(data) << ";";
+    //*stream << nGramChi2(data) << ";";
+    return nGramChi2(data);
 }
 
 double Thread::nGramEntropy(QHash<QByteArray, long> data)

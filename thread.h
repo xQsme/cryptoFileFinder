@@ -24,7 +24,7 @@ private:
     void nGrams(QFile* file);
     double sumEntropy(QHash<int, long> data);
     double sumChi2(QHash<int, long> data);
-    void nGramSequence(QFile* file);
+    double nGramSequence(QFile* file);
     double nGramEntropy(QHash<QByteArray, long> data);
     double nGramChi2(QHash<QByteArray, long> data);
     QString fileCommand(QString file);
