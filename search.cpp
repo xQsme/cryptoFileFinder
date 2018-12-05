@@ -27,7 +27,7 @@ void Search::search()
     qDebug() << "Searching encrypted files with " + QString::number(totalThreads) + " thread(s).";
     for(int i = 2; i <= 16; i*=2)
     {
-        stream << "Entropy " + QString::number(i) + "-grams;" + "Chi^2 " + QString::number(i) + ";";
+        stream << "Entropy " + QString::number(i) + "-grams;" + "Chi^2 " + QString::number(i) + "-grams;";
     }
     stream << "File Command" << endl;
     for(int i = 0; i < totalThreads; i++)

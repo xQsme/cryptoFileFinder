@@ -139,7 +139,7 @@ void Thread::nGrams(QFile* file)
     {
         file->reset();
         total=0;
-        QHash<char, long> data;
+        QHash<int, long> data;
         while(!file->atEnd())
         {
             int current = 0;
@@ -154,12 +154,37 @@ void Thread::nGrams(QFile* file)
             {
                 file->seek(file->pos()-i+1);
             }
-            data[static_cast<char>(current)]++;
+            data[current]++;
             total++;
         }
-        *stream << fileEntropy(data) << ";";
-        *stream << calculateChi2(data) << ";";
+        *stream << sumEntropy(data) << ";";
+        *stream << sumChi2(data) << ";";
     }
+}
+
+double Thread::sumEntropy(QHash<int, long> data)
+{
+    QHashIterator<int, long> i(data);
+    double entropy=0;
+    while (i.hasNext())
+    {
+        i.next();
+        double current = 1.0*i.value()/total;
+        entropy -= current*log2(current);
+    }
+    return entropy;
+}
+
+double Thread::sumChi2(QHash<int, long> data){
+    double avg = total/data.size();
+    QHashIterator<int, long> i(data);
+    double chi2=0;
+    while (i.hasNext())
+    {
+        i.next();
+        chi2+=(i.value()-avg)*(i.value()-avg)/avg;
+    }
+    return chi2;
 }
 
 void Thread::nGramSequence(QFile* file)
@@ -193,7 +218,6 @@ double Thread::nGramEntropy(QHash<QByteArray, long> data)
         double current = 1.0*i.value()/total;
         entropy -= current*log2(current);
     }
-    qDebug() << entropy;
     return entropy;
 }
 

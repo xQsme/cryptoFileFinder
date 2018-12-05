@@ -22,6 +22,8 @@ private:
     double calculateChi2(QHash<char, long> data);
     double approximatePi(QFile* file);
     void nGrams(QFile* file);
+    double sumEntropy(QHash<int, long> data);
+    double sumChi2(QHash<int, long> data);
     void nGramSequence(QFile* file);
     double nGramEntropy(QHash<QByteArray, long> data);
     double nGramChi2(QHash<QByteArray, long> data);
