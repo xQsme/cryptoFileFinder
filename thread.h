@@ -6,7 +6,7 @@ class Thread : public QThread
 {
     Q_OBJECT
 public:
-    Thread(int thread, int totalThreads, QString dir, QTextStream* stream);
+    Thread(int thread, int totalThreads, QString dir);
     void run();
 private:
     int thread;
@@ -20,15 +20,16 @@ private:
     void analyzeFile(QString file);
     double fileEntropy(QHash<char, long> data);
     double calculateChi2(QHash<char, long> data);
+    double nGramSequence(QFile* file);
+    double nGramChi2(QHash<QByteArray, long> data);
+    QString fileCommand(QString file);
+    /*double nGramEntropy(QHash<QByteArray, long> data);
     double approximatePi(QFile* file);
     void nGrams(QFile* file);
     double sumEntropy(QHash<int, long> data);
-    double sumChi2(QHash<int, long> data);
-    double nGramSequence(QFile* file);
-    double nGramEntropy(QHash<QByteArray, long> data);
-    double nGramChi2(QHash<QByteArray, long> data);
-    QString fileCommand(QString file);
+    double sumChi2(QHash<int, long> data);*/
 signals:
+    void content(QString content);
     void ended(int thread);
 };
 

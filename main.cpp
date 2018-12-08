@@ -76,8 +76,8 @@ int main(int argc, char *argv[])
         }
         match=1;
         Search s;
-        s.setStuff(dir, file, toUnmount);
-        s.search();
+        s.setStuff(dir, file, toUnmount, &a);
+        return s.search();
     }
     else
     {

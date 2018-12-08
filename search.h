@@ -10,12 +10,13 @@ class Search : public QObject
     Q_OBJECT
 public:
     explicit Search(QObject *parent = nullptr);
-    void setStuff(QString dir, QString file, int toUnmount);
-    void search();
+    void setStuff(QString dir, QString file, int toUnmount, QCoreApplication* app);
+    int search();
 private:
     QString dir;
     QString file;
     QFile* output;
+    QTextStream* stream;
     QCoreApplication* app;
     int totalThreads=0;
     int endedThreads=0;
@@ -24,6 +25,7 @@ private:
 signals:
 
 public slots:
+    void content(QString content);
     void ended(int count);
 };
 

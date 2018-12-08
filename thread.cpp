@@ -1,11 +1,10 @@
 #include "thread.h"
 
-Thread::Thread(int thread, int totalThreads, QString dir, QTextStream* stream)
+Thread::Thread(int thread, int totalThreads, QString dir)
 {
     this->thread=thread;
     this->totalThreads=totalThreads;
     this->dir=dir;
-    this->stream=stream;
     currentFile=0;
     count=0;
 }
@@ -52,7 +51,6 @@ void Thread::analyzeFile(QString file)
         return;
     }
     fileToCheck.open(QIODevice::ReadOnly);
-
     /*QString command = fileCommand(file);
     if(true || command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.contains("image") && !command.contains("archive")))
     {*/
@@ -65,31 +63,31 @@ void Thread::analyzeFile(QString file)
             total++;
         }
         double entropy = fileEntropy(data);
-        if(entropy > 7)
+        if(entropy > 6.5)
         {
             double chi2 = calculateChi2(data);
-            double limit= 22017.84 + (374.6088 - 22017.84)/(1.0 + pow((1.0*fileToCheck.size()/2269952000), 0.8129303));
-            if(chi2 < limit)
+            double limit= 22017.84 + (374.6088 - 22017.84)/(1.0 + pow((1.0*total/2269952000), 0.8129303));
+            if(chi2 < limit*1.5)
             {
                 double nGramChi2 = nGramSequence(&fileToCheck);
                 double limit2;
                 if(fileToCheck.size() < 2250000)
                 {
-                    limit2=0.8734828 + 0.0001491228*fileToCheck.size() + pow(0.00000002666479*fileToCheck.size(), 2);
+                    limit2=0.8734828 + 0.0001491228*fileToCheck.size() + pow(0.00000002666479*(total+1), 2);
                 }
                 else
                 {
                     limit2 = 0.4522293*fileToCheck.size() - 823248.4;
                 }
-                if(nGramChi2 < limit2)
+                if(nGramChi2 < limit2*1.5)
                 {
                     count++;
                     QString command = fileCommand(file);
                     qDebug() << command;
-                    *stream << nGramChi2 << ";";
-                    *stream << fileToCheck.size() << ";";
-                    *stream << file.split(".").last() << ";";
-                    *stream << command.split(": ")[1] << endl;
+                    emit content(QString::number(entropy) + ";" + QString::number(chi2) + ";" +
+                                 QString::number(limit) + ";" + QString::number(nGramChi2) + ";" +
+                                 QString::number(limit2) + ";" + QString::number(fileToCheck.size()) + ";" +
+                                 file.split(".").last() + ";" + command.split(": ")[1]);
                 }
             }
         }
@@ -120,6 +118,63 @@ double Thread::calculateChi2(QHash<char, long> data){
         chi2+=(i.value()-avg)*(i.value()-avg)/avg;
     }
     return chi2;
+}
+
+double Thread::nGramSequence(QFile* file)
+{
+    file->reset();
+    total=0;
+    QHash<QByteArray, long> data;
+    while(!file->atEnd())
+    {
+        data[file->read(3)]++;
+        total++;
+        if(!file->atEnd())
+        {
+            file->seek(file->pos()-2);
+        }
+    }
+    //*stream << nGramEntropy(data) << ";";
+    //*stream << nGramChi2(data) << ";";
+    return nGramChi2(data);
+}
+
+double Thread::nGramChi2(QHash<QByteArray, long> data){
+    double avg = total/data.size();
+    QHashIterator<QByteArray, long> i(data);
+    double chi2=0;
+    while (i.hasNext())
+    {
+        i.next();
+        chi2+=(i.value()-avg)*(i.value()-avg)/avg;
+    }
+    return chi2;
+}
+
+QString Thread::fileCommand(QString file)
+{
+    QProcess process;
+    QStringList args;
+    args << file;
+    process.start("file", args);
+    process.waitForFinished();
+    QString output(process.readAllStandardOutput());
+    return output;
+}
+
+/* UNUSED FUNCTIONS
+
+double Thread::nGramEntropy(QHash<QByteArray, long> data)
+{
+    QHashIterator<QByteArray, long> i(data);
+    double entropy=0;
+    while (i.hasNext())
+    {
+        i.next();
+        double current = 1.0*i.value()/total;
+        entropy -= current*log2(current);
+    }
+    return entropy;
 }
 
 double Thread::approximatePi(QFile* file)
@@ -201,58 +256,4 @@ double Thread::sumChi2(QHash<int, long> data){
     }
     return chi2;
 }
-
-double Thread::nGramSequence(QFile* file)
-{
-    file->reset();
-    total=0;
-    QHash<QByteArray, long> data;
-    while(!file->atEnd())
-    {
-        data[file->read(3)]++;
-        total++;
-        if(!file->atEnd())
-        {
-            file->seek(file->pos()-2);
-        }
-    }
-    //*stream << nGramEntropy(data) << ";";
-    //*stream << nGramChi2(data) << ";";
-    return nGramChi2(data);
-}
-
-double Thread::nGramEntropy(QHash<QByteArray, long> data)
-{
-    QHashIterator<QByteArray, long> i(data);
-    double entropy=0;
-    while (i.hasNext())
-    {
-        i.next();
-        double current = 1.0*i.value()/total;
-        entropy -= current*log2(current);
-    }
-    return entropy;
-}
-
-double Thread::nGramChi2(QHash<QByteArray, long> data){
-    double avg = total/data.size();
-    QHashIterator<QByteArray, long> i(data);
-    double chi2=0;
-    while (i.hasNext())
-    {
-        i.next();
-        chi2+=(i.value()-avg)*(i.value()-avg)/avg;
-    }
-    return chi2;
-}
-
-QString Thread::fileCommand(QString file)
-{
-    QProcess process;
-    QStringList args;
-    args << file;
-    process.start("file", args);
-    process.waitForFinished();
-    QString output(process.readAllStandardOutput());
-    return output;
-}
+*/
