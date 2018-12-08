@@ -5,12 +5,13 @@ Search::Search(QObject *parent) : QObject(parent)
 
 }
 
-void Search::setStuff(QString dir, QString file, int toUnmount, QCoreApplication* app)
+void Search::setStuff(QString dir, QString file, int toUnmount, QCoreApplication* app, int testing)
 {
     this->dir=dir;
     this->file=file;
     this->toUnmount=toUnmount;
     this->app=app;
+    this->testing=testing;
 }
 
 int Search::search()
@@ -22,12 +23,22 @@ int Search::search()
     QList<Thread*> threads;
     for(int i = 0; i < totalThreads; i++)
     {
-        threads.append(new Thread(i, totalThreads, dir));
+        threads.append(new Thread(i, totalThreads, dir, testing));
         connect(threads[i], SIGNAL(ended(int)), this, SLOT(ended(int)));
         connect(threads[i], SIGNAL(content(QString)), this, SLOT(content(QString)));
     }
-    qDebug() << "Searching encrypted files with " + QString::number(totalThreads) + " thread(s).";
-    *stream << "entropy;chi^2;limit;3-gram Chi^2;3-gram limit;Size;Termination;File Command" << endl;
+    if(testing)
+    {
+        qDebug() << "Generating data with " + QString::number(totalThreads) + " thread(s).";
+    }
+    else
+    {
+        qDebug() << "Searching encrypted files with " + QString::number(totalThreads) + " thread(s).";
+    }
+    if(testing)
+    {
+        *stream << "entropy;chi^2;limit;3-gram Chi^2;3-gram limit;Size;Termination;File Command" << endl;
+    }
     for(int i = 0; i < totalThreads; i++)
     {
         threads[i]->start();
@@ -50,12 +61,26 @@ void Search::ended(int found)
             }
             qDebug() << "Done unmounting.";
         }
-        qDebug() << "Found " + QString::number(count) + " encryted files.";
+        if(testing)
+        {
+            qDebug() << "Generated data for " + QString::number(count) + " files.";
+        }
+        else
+        {
+            qDebug() << "Found " + QString::number(count) + " encryted files.";
+        }
         app->exit();
     }
 }
 
 void Search::content(QString content)
 {
-    *stream << content;
+    if(!content.contains('\n'))
+    {
+        *stream << content << endl;
+    }
+    else
+    {
+        *stream << content;
+    }
 }

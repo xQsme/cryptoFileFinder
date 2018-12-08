@@ -6,7 +6,7 @@ class Thread : public QThread
 {
     Q_OBJECT
 public:
-    Thread(int thread, int totalThreads, QString dir);
+    Thread(int thread, int totalThreads, QString dir, int testing);
     void run();
 private:
     int thread;
@@ -16,6 +16,7 @@ private:
     long total;
     int count;
     int currentFile;
+    int testing;
     void search(QString dir);
     void analyzeFile(QString file);
     double fileEntropy(QHash<char, long> data);

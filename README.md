@@ -19,6 +19,7 @@ Usage:
 -d   --dir      --directory   Directory to search ("~/dev" by default)
 -s   --search                 Search for encrypted files
 -o   --output                 Output file ("output.txt" by default)
+-t   --test     --testing     Generate csv test data (statistical values for every file)
 ```
 
 Common Usage:

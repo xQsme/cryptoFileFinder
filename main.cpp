@@ -21,6 +21,9 @@ int main(int argc, char *argv[])
     QCommandLineOption unmountOption(QStringList() << "u" << "umount" << "unmount",
                 QCoreApplication::translate("main", "Mount all partitions"));
     parser.addOption(unmountOption);
+    QCommandLineOption testOption(QStringList() << "t" << "test" << "testing",
+                QCoreApplication::translate("main", "Generate test data"));
+    parser.addOption(testOption);
     QCommandLineOption searchOption(QStringList() << "s" << "search",
                 QCoreApplication::translate("main", "Search for encrypted files"));
     parser.addOption(searchOption);
@@ -65,7 +68,19 @@ int main(int argc, char *argv[])
     }
     else
     {
-        file="output.txt";
+        if(args.contains("t") || args.contains("test") || args.contains("testing"))
+        {
+            file="output.csv";
+        }
+        else
+        {
+            file="output.txt";
+        }
+    }
+    int testing=0;
+    if(args.contains("t") || args.contains("test") || args.contains("testing"))
+    {
+        testing=1;
     }
     if(args.contains("s")  || args.contains("search"))
     {
@@ -76,7 +91,7 @@ int main(int argc, char *argv[])
         }
         match=1;
         Search s;
-        s.setStuff(dir, file, toUnmount, &a);
+        s.setStuff(dir, file, toUnmount, &a, testing);
         return s.search();
     }
     else
@@ -124,5 +139,6 @@ void help()
                 "\n-u   --umount\t--unmount\tUnmount all partitions at \"~/dev\"" <<
                 "\n-d   --dir\t--directory\tDirectory to search (\"~/dev\" by default)" <<
                 "\n-s   --search\t\t\tSearch for encrypted files" <<
-                "\n-o   --output\t\t\tOutput file (\"output.txt\" by default)";
+                "\n-o   --output\t\t\tOutput file (\"output.txt\" by default)" <<
+                "\n-t   --test\t--testing\tGenerate csv test data (statistical values for every file)";
 }

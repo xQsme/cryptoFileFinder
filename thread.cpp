@@ -1,10 +1,11 @@
 #include "thread.h"
 
-Thread::Thread(int thread, int totalThreads, QString dir)
+Thread::Thread(int thread, int totalThreads, QString dir, int testing)
 {
     this->thread=thread;
     this->totalThreads=totalThreads;
     this->dir=dir;
+    this->testing=testing;
     currentFile=0;
     count=0;
 }
@@ -51,47 +52,51 @@ void Thread::analyzeFile(QString file)
         return;
     }
     fileToCheck.open(QIODevice::ReadOnly);
-    /*QString command = fileCommand(file);
-    if(true || command.contains("enc'd") || command.contains("encrypted") || (command.contains("data") && !command.contains("image") && !command.contains("archive")))
-    {*/
-        total=0;
-        QHash<char, long> data;
-        while(!fileToCheck.atEnd())
+    total=0;
+    QHash<char, long> data;
+    while(!fileToCheck.atEnd())
+    {
+        QByteArray read = fileToCheck.read(1);
+        data[read[0]]++;
+        total++;
+    }
+    double entropy = fileEntropy(data);
+    if(testing || entropy > 7.3)
+    {
+        double chi2 = calculateChi2(data);
+        double limit= 22017.84 + (374.6088 - 22017.84)/(1.0 + pow((1.0*fileToCheck.size()/2269952000), 0.8129303));
+        if(testing || chi2 < limit)
         {
-            QByteArray read = fileToCheck.read(1);
-            data[read[0]]++;
-            total++;
-        }
-        double entropy = fileEntropy(data);
-        if(entropy > 6.5)
-        {
-            double chi2 = calculateChi2(data);
-            double limit= 22017.84 + (374.6088 - 22017.84)/(1.0 + pow((1.0*total/2269952000), 0.8129303));
-            if(chi2 < limit*1.5)
+            double nGramChi2 = nGramSequence(&fileToCheck);
+            double limit2;
+            if(fileToCheck.size() < 2000000)
             {
-                double nGramChi2 = nGramSequence(&fileToCheck);
-                double limit2;
-                if(fileToCheck.size() < 2250000)
+                limit2 =  1.989952 - 0.000003931848*fileToCheck.size() + 0.00000003232853*pow(fileToCheck.size(),2);
+            }
+            else
+            {
+                limit2 = 0.4522293*fileToCheck.size() - 823248.4;
+            }
+            if(testing || nGramChi2 < limit2)
+            {
+                count++;
+                QString command = fileCommand(file);
+                qDebug() << command;
+                if(testing)
                 {
-                    limit2=0.8734828 + 0.0001491228*fileToCheck.size() + pow(0.00000002666479*(total+1), 2);
-                }
-                else
-                {
-                    limit2 = 0.4522293*fileToCheck.size() - 823248.4;
-                }
-                if(nGramChi2 < limit2*1.5)
-                {
-                    count++;
-                    QString command = fileCommand(file);
-                    qDebug() << command;
                     emit content(QString::number(entropy) + ";" + QString::number(chi2) + ";" +
                                  QString::number(limit) + ";" + QString::number(nGramChi2) + ";" +
                                  QString::number(limit2) + ";" + QString::number(fileToCheck.size()) + ";" +
                                  file.split(".").last() + ";" + command.split(": ")[1]);
                 }
+                else
+                {
+                    emit content(command);
+                }
+
             }
         }
-    //}
+    }
     fileToCheck.close();
 }
 
@@ -134,8 +139,6 @@ double Thread::nGramSequence(QFile* file)
             file->seek(file->pos()-2);
         }
     }
-    //*stream << nGramEntropy(data) << ";";
-    //*stream << nGramChi2(data) << ";";
     return nGramChi2(data);
 }
 

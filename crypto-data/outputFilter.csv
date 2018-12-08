@@ -1,52 +1,51 @@
-3-gram Chi^2;Size;Termination;File Command
-9.73888e+06;29958374;gpg;GPG symmetrically encrypted data (AES256 cipher)
-
-0;290;nc;data
-
-1.0218e+06;5577296;192-cbc;openssl enc'd data with salted password
-
-0;1810;gz;gzip compressed data, was "error-stack-parser.min.js", last modified
-9.73888e+06;29958374;gpg;GPG symmetrically encrypted data (AES256 cipher)
-
-0;463;gpg;PGP RSA encrypted session key - keyid
-1.02181e+06;5577296;128-cbc;openssl enc'd data with salted password
-
-1.02298e+06;5577296;256-cbc;openssl enc'd data with salted password
-
-1.02408e+06;5579459;gpg;PGP RSA encrypted session key - keyid
-0;637;nc;data
-
-1.02023e+06;5577296;192-ecb;openssl enc'd data with salted password
-
-2;9348;gz;gzip compressed data, was "stacktrace.min.js", last modified
-2;9348;gz;gzip compressed data, was "stacktrace.min.js", last modified
-210024;2586352;gpg;GPG symmetrically encrypted data (AES256 cipher)
-
-1.02192e+06;5577296;128-ecb;openssl enc'd data with salted password
-
-1.02029e+06;5577296;256-ecb;openssl enc'd data with salted password
-
-0;562;txt;data
-
-1.81994e+07;315944882;gpg;GPG symmetrically encrypted data (AES256 cipher)
-
-0;463;gpg;PGP RSA encrypted session key - keyid
-1.02181e+06;5577296;128-cbc;openssl enc'd data with salted password
-
-1.02298e+06;5577296;256-cbc;openssl enc'd data with salted password
-
-1.02408e+06;5579459;gpg;PGP RSA encrypted session key - keyid
-0;290;nc;data
-
-1.0218e+06;5577296;192-cbc;openssl enc'd data with salted password
-
-210024;2586352;gpg;GPG symmetrically encrypted data (AES256 cipher)
-
-1.02192e+06;5577296;128-ecb;openssl enc'd data with salted password
-
-1.02029e+06;5577296;256-ecb;openssl enc'd data with salted password
-
-0;637;nc;data
-
-1.02023e+06;5577296;192-ecb;openssl enc'd data with salted password
-
+3-gram Chi^2	Size	Termination	File Command
+0	290	nc	data
+0	637	nc	data
+0	562	txt	data
+0	290	nc	data
+9738880	29958374	gpg	GPG symmetrically encrypted data (AES256 cipher)
+9738880	29958374	gpg	GPG symmetrically encrypted data (AES256 cipher)
+210024	2586352	gpg	GPG symmetrically encrypted data (AES256 cipher)
+18199400	315944882	gpg	GPG symmetrically encrypted data (AES256 cipher)
+210024	2586352	gpg	GPG symmetrically encrypted data (AES256 cipher)
+0	1810	gz	"gzip compressed data, was ""error-stack-parser.min.js"", last modified"
+2	9348	gz	"gzip compressed data, was ""stacktrace.min.js"", last modified"
+2	9348	gz	"gzip compressed data, was ""stacktrace.min.js"", last modified"
+1021800	5577296	192-cbc	openssl enc'd data with salted password
+1021810	5577296	128-cbc	openssl enc'd data with salted password
+1022980	5577296	256-cbc	openssl enc'd data with salted password
+1020230	5577296	192-ecb	openssl enc'd data with salted password
+1021920	5577296	128-ecb	openssl enc'd data with salted password
+1020290	5577296	256-ecb	openssl enc'd data with salted password
+1021810	5577296	128-cbc	openssl enc'd data with salted password
+1022980	5577296	256-cbc	openssl enc'd data with salted password
+1021800	5577296	192-cbc	openssl enc'd data with salted password
+1021920	5577296	128-ecb	openssl enc'd data with salted password
+1020290	5577296	256-ecb	openssl enc'd data with salted password
+0	463	gpg	PGP RSA encrypted session key - keyid
+1024080	5579459	gpg	PGP RSA encrypted session key - keyid
+0	463	gpg	PGP RSA encrypted session key - keyid
+1024080	5579459	gpg	PGP RSA encrypted session key - keyid
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+0	637	nc	data
+			
+1020230	5577296	192-ecb	openssl enc'd data with salted password
