@@ -14,6 +14,7 @@ cd cryptoFileFinder/release
 
 Usage:
 ```
+-f   --file\                  Single file to analyze
 -m   --mnt      --mount       Mount all partitions at "~/dev"
 -u   --umount   --unmount     Unmount all partitions at "~/dev" 
 -d   --dir      --directory   Directory to search ("~/dev" by default)
@@ -22,7 +23,9 @@ Usage:
 -t   --test     --testing     Generate csv test data (statistical values for every file)
 ```
 
-Common Usage:
+Common Usages:
 ```
 ./cryptoFinder -m -u -s
+./cryptoFinder -d targetDir -o outputFile.csv -s -t
+./cryptoFinder -f fileToAnalize
 ```

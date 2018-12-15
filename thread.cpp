@@ -69,13 +69,13 @@ void Thread::analyzeFile(QString file)
         {
             double nGramChi2 = nGramSequence(&fileToCheck);
             double limit2;
-            if(fileToCheck.size() < 2000000)
+            if(fileToCheck.size() < 1000000)
             {
-                limit2 =  1.989952 - 0.000003931848*fileToCheck.size() + 0.00000003232853*pow(fileToCheck.size(),2);
+                limit2 = 1.335831 + 0.0004732094*fileToCheck.size() + 0.00000003104824*fileToCheck.size() * fileToCheck.size();
             }
             else
             {
-                limit2 = 0.4522293*fileToCheck.size() - 823248.4;
+                limit2 = 18715610 + (-20651.77 - 18715610)/(1.0 + pow((1.0*fileToCheck.size()/25331810), 1.824073));
             }
             if(testing || nGramChi2 < limit2)
             {
