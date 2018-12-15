@@ -14,7 +14,7 @@ cd cryptoFileFinder/release
 
 Usage:
 ```
--f   --file                   Single file to analyze
+-f   --file                    Single file to analyze
 -m   --mnt      --mount       Mount all partitions at "~/dev"
 -u   --umount   --unmount     Unmount all partitions at "~/dev" 
 -d   --dir      --directory   Directory to search ("~/dev" by default)
