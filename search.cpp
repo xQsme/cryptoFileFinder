@@ -5,13 +5,14 @@ Search::Search(QObject *parent) : QObject(parent)
 
 }
 
-void Search::setStuff(QString dir, QString file, int toUnmount, QCoreApplication* app, int testing)
+void Search::setStuff(QString dir, QString file, int toUnmount, QCoreApplication* app, int testing, int nonRecursive)
 {
     this->dir=dir;
     this->file=file;
     this->toUnmount=toUnmount;
     this->app=app;
     this->testing=testing;
+    this->nonRecursive=nonRecursive;
 }
 
 int Search::search()
@@ -23,7 +24,7 @@ int Search::search()
     QList<Thread*> threads;
     for(int i = 0; i < totalThreads; i++)
     {
-        threads.append(new Thread(i, totalThreads, dir, testing));
+        threads.append(new Thread(i, totalThreads, dir, testing, nonRecursive));
         connect(threads[i], SIGNAL(ended(int)), this, SLOT(ended(int)));
         connect(threads[i], SIGNAL(content(QString)), this, SLOT(content(QString)));
     }

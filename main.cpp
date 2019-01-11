@@ -47,6 +47,11 @@ int main(int argc, char *argv[])
                 QCoreApplication::translate("main", "File to analyze"),
                 QCoreApplication::translate("main", "file"));
     parser.addOption(fileOption);
+
+    QCommandLineOption recursiveOption(QStringList() << "n" << "non-recursive",
+                QCoreApplication::translate("main", "Single directory"));
+    parser.addOption(recursiveOption);
+
     parser.process(a);
 
     QStringList args = parser.optionNames();
@@ -98,6 +103,13 @@ int main(int argc, char *argv[])
     {
         testing=1;
     }
+
+    int nonRecursive=0;
+    if(args.contains("n") || args.contains("non-recursive"))
+    {
+        nonRecursive=1;
+    }
+
     if(args.contains("s")  || args.contains("search"))
     {
         int toUnmount=0;
@@ -107,7 +119,7 @@ int main(int argc, char *argv[])
         }
         match=1;
         Search s;
-        s.setStuff(dir, output, toUnmount, &a, testing);
+        s.setStuff(dir, output, toUnmount, &a, testing, nonRecursive);
         return s.search();
     }
     else
@@ -155,6 +167,7 @@ void help()
                 "\n-m   --mount\t\t\tMount all partitions at \"~/dev\"" <<
                 "\n-u   --umount\t--unmount\tUnmount all partitions at \"~/dev\"" <<
                 "\n-d   --dir\t--directory\tDirectory to search (\"~/dev\" by default)" <<
+                "\n-n   --non-recursive\t\tSearch a single directory" <<
                 "\n-s   --search\t\t\tSearch for encrypted files recursively" <<
                 "\n-o   --output\t\t\tOutput file (\"output.txt\" by default)" <<
                 "\n-t   --test\t--testing\tGenerate csv test data (statistical values for every file)";

@@ -10,7 +10,7 @@ class Search : public QObject
     Q_OBJECT
 public:
     explicit Search(QObject *parent = nullptr);
-    void setStuff(QString dir, QString file, int toUnmount, QCoreApplication* app, int testing);
+    void setStuff(QString dir, QString file, int toUnmount, QCoreApplication* app, int testing,int nonRecursive);
     int search();
 private:
     QString dir;
@@ -23,6 +23,7 @@ private:
     int count=0;
     int toUnmount;
     int testing;
+    int nonRecursive;
 signals:
 
 public slots:

@@ -1,11 +1,12 @@
 #include "thread.h"
 
-Thread::Thread(int thread, int totalThreads, QString dir, int testing)
+Thread::Thread(int thread, int totalThreads, QString dir, int testing,int nonRecursive)
 {
     this->thread=thread;
     this->totalThreads=totalThreads;
     this->dir=dir;
     this->testing=testing;
+    this->nonRecursive=nonRecursive;
     currentFile=0;
     count=0;
 }
@@ -24,7 +25,7 @@ void Thread::search(QString dir)
     {
         if(!root.absolutePath().contains(file.absoluteFilePath()))
         {
-            if(file.isDir() && file.absoluteFilePath().left(2)!="/.")
+            if(file.isDir() && file.absoluteFilePath().left(2)!="/." && !nonRecursive)
             {
                 dirs.append(file.absoluteFilePath());
             }
